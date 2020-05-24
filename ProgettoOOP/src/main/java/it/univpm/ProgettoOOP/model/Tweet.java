@@ -8,6 +8,7 @@ public class Tweet {
 	protected int idTweet;
 	protected String testo;
 	protected ArrayList<Entities> entities = new ArrayList<Entities>();
-	protected ArrayList<Hashtag> hashtags = new ArrayList<Hashtag>();
+
+	
 	
 }
