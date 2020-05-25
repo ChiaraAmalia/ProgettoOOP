@@ -2,9 +2,13 @@ package it.univpm.ProgettoOOP.controller;
 
 import java.util.ArrayList;
 
+import org.springframework.expression.spel.InternalParseException;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.fasterxml.jackson.core.JsonParser;
 
 import it.univpm.ProgettoOOP.database.DatabaseClass;
 import it.univpm.ProgettoOOP.model.Tweet;
@@ -25,7 +29,7 @@ public class ControllerClass {
 	
 	@RequestMapping(value="filtered",method=RequestMethod.POST) 
 	public ArrayList <Tweet> getFilteredWithPost(@RequestBody Object filter)
-			 throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException {
+			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException {
 	         return JsonParser.JsonParserColumn(filter);
 	       }
 		
