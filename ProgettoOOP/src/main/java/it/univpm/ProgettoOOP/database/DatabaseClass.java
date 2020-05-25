@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import it.univpm.ProgettoOOP.model.Tweet;
 
 public class DatabaseClass {
-	public static ArrayList<Tweet> tweet= new ArrayList <Tweet>();
+	public static ArrayList<Tweet> tweets= new ArrayList <Tweet>();
 	
-public static ArrayList<Tweet> getTweet(){
-	return tweet;
+public ArrayList<Tweet> getTweet(){
+	return tweets;
   }
 
 
