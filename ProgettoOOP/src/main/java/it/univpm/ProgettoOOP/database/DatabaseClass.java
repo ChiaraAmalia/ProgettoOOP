@@ -7,7 +7,7 @@ import it.univpm.ProgettoOOP.model.Tweet;
 public class DatabaseClass {
 	public static ArrayList<Tweet> tweets= new ArrayList <Tweet>();
 	
-public ArrayList<Tweet> getTweet(){
+public static ArrayList<Tweet> getTweet(){
 	return tweets;
   }
 

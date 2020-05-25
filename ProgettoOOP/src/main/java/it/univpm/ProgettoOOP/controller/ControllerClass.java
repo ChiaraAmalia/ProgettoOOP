@@ -23,5 +23,12 @@ public class ControllerClass {
 		return DatabaseClass.getTweet();
 	}
 	
+	@RequestMapping(value="filtered",method=RequestMethod.POST) 
+	public ArrayList <Tweet> getFilteredWithPost(@RequestBody Object filter)
+			 throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException {
+	         return JsonParser.JsonParserColumn(filter);
+	       }
+		
+	}
+	
 
-}
