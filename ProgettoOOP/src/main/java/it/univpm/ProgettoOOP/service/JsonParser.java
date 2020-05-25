@@ -15,14 +15,14 @@ public class JsonParser {
 	  @return ArrayList di Tweet filtrati
 	 */
 	public static ArrayList<Tweet> JsonParserColumn(Object filter){
-		throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException{
-			ArrayList<Tweet> previousArray= new ArrayList<Tweet>();                     
-			ArrayList<Tweet> filteredArray= new ArrayList<Tweet>(); //vedere se posso anche non istanziarlo quì
-			HashMap<String,Object> result= new ObjectMapper().convertValue(filter,HashMap.getClass());
+		throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException{ 
+			ArrayList<Tweet> previousArray= new ArrayList<Tweet>();
+			                                     //vedere se posso anche non istanziarlo quì
+			HashMap<String,Object> result= new ObjectMapper().convertValue(filter,HashMap.class);
 			
 			//Itera con tutti gli elementi dell'ArrayList
 			for(Map.Entry<String, Object> entry: result.entrySet()) {
-				ArrayList<Tweet> previousArray=new ArrayList<Tweet>();
+				ArrayList<Tweet> filteredArray= new ArrayList<Tweet>();
 				Object filterParam=entry.getValue();
 				Object column=entry.getKey();
 				try {
@@ -31,8 +31,10 @@ public class JsonParser {
 				throw new InternalGeneralException ("Error in I/O parsing information");
 				
 			}
+			previousArray= new ArrayList<Tweet>();
+			previousArray.addAll(filteredArray);
 		}
-		
+		return filteredArray;
 	}
 	public static ArrayList<Tweet> jsonParserOperator (String column,Object filterParam,ArrayList<Tweet> previousArray)
 			throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException{
@@ -40,6 +42,7 @@ public class JsonParser {
 		Filter filter;
 		ArrayList <Tweet> filteredArray= new ArrayList <Tweet>();
 		HashMap <String,Object> result= new ObjectMapper().convertValue(filterParam,HashMap.class);
+		
 		for(Map.Entry<String, Object> entry: result.entrySet()) {
 			String operator=entry.getValue();
 			Object value=entry.getValue();
