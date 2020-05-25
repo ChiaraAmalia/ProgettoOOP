@@ -4,26 +4,23 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.*;
-import java.util.*;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
-import org.json.*;
 
-import it.univpm.ProgettoOOP.model.Tweet;
+import it.univpm.ProgettoOOP.model.*;
 
 public class DatabaseClass {
 	
-	public static JSONObject downloadJSON(String url){
+	public static JSONObject downloadJSON() {
 		
 		String data = "";
 		String line = "";
+		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=5&include_rts=false&tweet_mode=extended";
 		
 		try {
 			
@@ -49,8 +46,11 @@ public class DatabaseClass {
 			e.printStackTrace();	
 		}
 		
-		JSONObject json =new JSONObject("{\"timeline\":"+data.toString()+"}");
+		//NON TOCCARE IL COMANDO MALEDETTO
+		JSONObject json = (JSONObject) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
+//		JSONObject json=new JSONObject("{\"timeline\":"+data.toString()+"}");
 		return json;
+
 	}
 	
 	public static void ParseJson(JSONObject json) {
