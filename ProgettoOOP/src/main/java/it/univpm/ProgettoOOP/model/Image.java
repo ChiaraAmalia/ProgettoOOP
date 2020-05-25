@@ -1,5 +1,5 @@
 package it.univpm.ProgettoOOP.model;
 
-public class Symbols {
+public class Image {
 
 }
