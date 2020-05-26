@@ -40,6 +40,10 @@ public class Tweet {
 		this.retweeted = retweeted;
 	}
 
+	public Tweet() {
+		super();
+	}
+	
 	/**
 	 * @return the dataOra
 	 */

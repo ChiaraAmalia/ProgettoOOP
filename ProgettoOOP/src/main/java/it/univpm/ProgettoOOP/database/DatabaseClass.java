@@ -53,9 +53,6 @@ public class DatabaseClass {
 
 	}
 	
-	public static void ParseJson(JSONObject json) {
-		
-	}
 }
 	
 

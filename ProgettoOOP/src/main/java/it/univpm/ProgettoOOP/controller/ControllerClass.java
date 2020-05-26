@@ -24,7 +24,7 @@ public class ControllerClass {
  */
 	@RequestMapping(value="tweet",method=RequestMethod.GET)
 	public ArrayList<Tweet> getTweet(){
-		return DatabaseClass.getTweet();
+		return Tweet.getTweet();
 	}
 	
 	@RequestMapping(value="filtered",method=RequestMethod.POST) 

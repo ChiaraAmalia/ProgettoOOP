@@ -14,7 +14,7 @@ public class Timeline {
 		this.timeline = timeline;
 	}
 
-	public void inserimentotweet(Tweet t) {
+	public void inserimentoTweet(Tweet t) {
 		timeline.add(t);
 	}
 	
