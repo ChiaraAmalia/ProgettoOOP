@@ -98,6 +98,7 @@ public class Tweet {
 	 */
 	public void setEntities(ArrayList<Entities> entities) {
 		this.entities = entities;
+		
 	}
 
 	/**
@@ -113,7 +114,9 @@ public class Tweet {
 	public void setUsers(ArrayList<User> users) {
 		this.users = users;
 	}
+
 	
+
 	/**
 	 * @return the retweeted
 	 */
@@ -133,6 +136,11 @@ public class Tweet {
 		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo + "\n entities=" + entities
 				+ "\n users=" + users + "\n retweeted" + retweeted + "\n ]";
 		
+	}
+
+	public boolean contains(String s) {
+		
+		return true;
 	}
 	
 	

@@ -28,6 +28,9 @@ public class Entities {
 		this.images = images;
 	}
 
+	public Entities() {
+	}
+
 	/**
 	 * @return the hashtags
 	 */
