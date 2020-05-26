@@ -16,11 +16,11 @@ import it.univpm.ProgettoOOP.model.*;
 
 public class DatabaseClass {
 	
-	public static JSONObject downloadJSON() {
+	public static JSONObject downloadJSON(String url) {
 		
 		String data = "";
 		String line = "";
-		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=5&include_rts=false&tweet_mode=extended";
+//		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=5&include_rts=false&tweet_mode=extended";
 		
 		try {
 			
