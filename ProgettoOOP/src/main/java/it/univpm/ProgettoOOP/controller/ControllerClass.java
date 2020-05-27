@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonParser;
 
+import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
+import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.database.DatabaseClass;
 import it.univpm.ProgettoOOP.model.Tweet;
 
