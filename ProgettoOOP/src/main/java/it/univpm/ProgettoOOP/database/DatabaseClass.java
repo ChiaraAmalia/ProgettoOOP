@@ -72,13 +72,17 @@ public class DatabaseClass {
 									tw.setRetweeted((boolean)tweet.get("retweeted"));
 									
 									Hashtag hashtag;
-									JSONObject obj = (JSONObject) tweet.get("entities");
+									JSONObject entities = (JSONObject) dataset.get(i);
+									JSONObject obj = (JSONObject) entities.get("entities");
 									JSONArray Hashtag = (JSONArray) obj.get("hashtags");
 									
 									for(int j=0; j<Hashtag.size(); j++) {
+										JSONObject text = (JSONObject) entities.get(j);
 										hashtag = new Hashtag();
-										hashtag.getTesto();
+										hashtag.setTesto((String) text.get("text"));
 									}
+									
+									
 							}
 
 					}
