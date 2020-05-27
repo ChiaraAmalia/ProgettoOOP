@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class Image {
+public class Image implements ToString{
 	
 	
 }

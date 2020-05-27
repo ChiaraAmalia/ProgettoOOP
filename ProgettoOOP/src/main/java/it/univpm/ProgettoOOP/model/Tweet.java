@@ -9,36 +9,43 @@ import java.util.ArrayList;
  *
  */
 
-public class Tweet {
+public class Tweet implements ToString{
 	
 	private String dataOra;
 	private int idTweet;
 	private String testo;
+	/**
+	 * @return the entities
+	 */
+	public ArrayList<Entities> getEntities() {
+		return entities;
+	}
+
+	/**
+	 * @param entities the entities to set
+	 */
+	public void setEntities(ArrayList<Entities> entities) {
+		this.entities = entities;
+	}
+
+	/**
+	 * @return the users
+	 */
+	public ArrayList<User> getUsers() {
+		return users;
+	}
+
+	/**
+	 * @param users the users to set
+	 */
+	public void setUsers(ArrayList<User> users) {
+		this.users = users;
+	}
+
 	private ArrayList<Entities> entities = new ArrayList<Entities>();
 	private ArrayList<User> users = new ArrayList<User>();
 	private boolean retweeted;
 	
-	/**
-	 * 
-	 * @param dataOra
-	 * @param idTweet
-	 * @param testo
-	 * @param entities
-	 * @param users
-	 * 
-	 * the constructor
-	 */
-	public Tweet(String dataOra, int idTweet, String testo, ArrayList<Entities> entities,
-				ArrayList<User> users, boolean retweeted) {
-		
-		super();
-		this.dataOra = dataOra;
-		this.idTweet = idTweet;
-		this.testo = testo;
-		this.entities = entities;
-		this.users = users;
-		this.retweeted = retweeted;
-	}
 
 	public Tweet() {
 		super();
@@ -84,38 +91,7 @@ public class Tweet {
 	 */
 	public void setTesto(String testo) {
 		this.testo = testo;
-	}
-
-	/**
-	 * @return the entities
-	 */
-	public ArrayList<Entities> getEntities() {
-		return entities;
-	}
-
-	/**
-	 * @param entities the entities to set
-	 */
-	public void setEntities(ArrayList<Entities> entities) {
-		this.entities = entities;
-		
-	}
-
-	/**
-	 * @return the users
-	 */
-	public ArrayList<User> getUsers() {
-		return users;
-	}
-
-	/**
-	 * @param users the users to set
-	 */
-	public void setUsers(ArrayList<User> users) {
-		this.users = users;
-	}
-
-	
+	}	
 
 	/**
 	 * @return the retweeted
@@ -133,14 +109,9 @@ public class Tweet {
 
 	@Override
 	public String toString() {
-		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo + "\n entities=" + entities
-				+ "\n users=" + users + "\n retweeted" + retweeted + "\n ]";
+		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
+				+"\n entities=" + entities+ "\n users=" + users +"\n retweeted" + retweeted + "\n ]";
 		
-	}
-
-	public boolean contains(String s) {
-		
-		return true;
 	}
 	
 	

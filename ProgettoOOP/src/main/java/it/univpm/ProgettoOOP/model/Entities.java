@@ -2,7 +2,7 @@ package it.univpm.ProgettoOOP.model;
 
 import java.util.ArrayList;
 
-public class Entities {
+public class Entities implements ToString{
 	
 	private ArrayList<String> hashtags = new ArrayList<String>();
 	private ArrayList<UserMentions> mentions = new ArrayList<UserMentions>();

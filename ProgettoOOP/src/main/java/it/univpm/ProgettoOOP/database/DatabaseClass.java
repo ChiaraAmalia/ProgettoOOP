@@ -6,15 +6,23 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
 
+
+
 import it.univpm.ProgettoOOP.model.*;
 
 public class DatabaseClass {
+	
+	private static ArrayList<Tweet>  tweets = new ArrayList<Tweet>();
+	public static ArrayList<Tweet> getTweets() {
+		return tweets;
+	}
 	
 	public static JSONObject downloadJSON(String url) {
 		
@@ -40,6 +48,7 @@ public class DatabaseClass {
 			}finally {
 				in.close();
 			} 
+			
 		}catch (IOException e) {	
 				e.printStackTrace();	
 		}catch (Exception e) {	
@@ -53,7 +62,8 @@ public class DatabaseClass {
 
 	}
 	
-	public static void InformazioniSalvate(JSONObject json) throws Exception {
+	
+	public static ArrayList<Tweet> Timeline(JSONObject json) throws Exception {
 		
 		if(json != null) {
 				try {
@@ -71,7 +81,7 @@ public class DatabaseClass {
 									tw.setTesto((String)tweet.get("full_text"));
 									tw.setRetweeted((boolean)tweet.get("retweeted"));
 									
-									Hashtag hashtag;
+/*									Hashtag hashtag;
 									JSONObject entities = (JSONObject) dataset.get(i);
 //									JSONArray entities = (JSONArray) dataset.get("entities");
 									JSONArray Hashtag = (JSONArray) entities.get("hashtags");
@@ -80,7 +90,7 @@ public class DatabaseClass {
 										JSONObject text = (JSONObject) Hashtag.get(j);
 										hashtag = new Hashtag();
 										hashtag.setTesto((String) text.get("text"));
-									}
+									}*/
 									
 									
 							}
@@ -92,8 +102,9 @@ public class DatabaseClass {
 				}
 
 		}
+		
+		return 
 	}
-	
 }
 	
 

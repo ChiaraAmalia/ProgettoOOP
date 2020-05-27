@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class UserMentions {
+public class UserMentions implements ToString{
 	
 	private String ScreenName;
 	private String name;

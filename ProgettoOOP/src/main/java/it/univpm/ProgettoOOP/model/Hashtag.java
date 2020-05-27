@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class Hashtag {
+public class Hashtag implements ToString{
 	
 	private String testo;
 

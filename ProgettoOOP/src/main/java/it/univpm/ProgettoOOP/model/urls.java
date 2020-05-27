@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class urls {
+public class urls implements ToString{
 	
 	private String url;
 	private String ExpandedUrl;

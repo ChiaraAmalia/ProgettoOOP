@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class User {
+public class User implements ToString{
 	
 	private int id;
 	private String name;
