@@ -55,8 +55,10 @@ public class JsonParser {
 				previousArray.addAll(filteredArray);
 				return filteredArray;
 			}
-		
-	public static ArrayList<Tweet> jsonParserOperator (Object column,Object filterParam,ArrayList<Tweet> previousArray)
+	
+	
+	public static ArrayList<Tweet> jsonParserOperator (Object column,Object filterParam,
+			                                          ArrayList<Tweet> previousArray)
 			throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException {
 		String line=" ";
 		Filter filter;
