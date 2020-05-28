@@ -12,9 +12,10 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 
 
-
+                                                                          /* Dobbiamo scrivere la classe Filter 
+                                                                             in  util/other/Filter */
 public class FilterService {
-private final static String path = "com.esame.util.filter.";
+private final static String path = "it.univpm.ProgettoOOP.util.other.Filter";
 	
 	private static ArrayList<Tweet> tweets = DatabaseClass.getTweet();
 	
