@@ -8,7 +8,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.stereotype.Service;
 
-import it.univpm.ProgettoOOP.model.Timeline;
 import it.univpm.ProgettoOOP.model.Tweet;
 
 @Service

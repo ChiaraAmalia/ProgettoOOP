@@ -75,7 +75,7 @@ public class JsonParser {
 		    	}
 		    	continue;
 		    }
-			filter=FilterService.istanceFilter(column,operator,value);
+			filter=FilterService.instanceFilter(column,operator,value);
 			if (line.equals("and"))
 				filteredArray = FilterService.runFilterAND(filter, previousArray);
 			else

@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -11,25 +12,18 @@ import java.util.ArrayList;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-import org.json.simple.parser.ParseException;
-
-
+//import org.json.simple.parser.ParseException;
 
 import it.univpm.ProgettoOOP.model.*;
 
 public class DatabaseClass {
 	
-	private static ArrayList<Tweet>  tweets = new ArrayList<Tweet>();
-	public static ArrayList<Tweet> getTweets() {
-		return tweets;
-	}
 	
-	public static JSONObject downloadJSON(String url) {
+	public static JSONArray downloadJSON() {
 		
 		String data = "";
 		String line = "";
-//		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=5&include_rts=false&tweet_mode=extended";
-		
+		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=5&include_rts=false&tweet_mode=extended";
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();
@@ -56,30 +50,37 @@ public class DatabaseClass {
 		}
 		
 		//NON TOCCARE IL COMANDO MALEDETTO
-		JSONObject json = (JSONObject) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
+		JSONArray json = (JSONArray) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
+/*		ArrayList<String> list = new ArrayList<String>();
+		for(int i = 0; i < list.size(); i++){
+		    list.addAll((JSONArray)json.get(i));
+		}*/
+/*	    String[] arr=new String[json.size()];
+	    for(int i=0; i<arr.length; i++) {
+	        arr[i]= (String) JSONValue.parse((Reader) json.get(i));
+	    }*/
 //		JSONObject json=new JSONObject("{\"timeline\":"+data.toString()+"}");
 		return json;
-
 	}
 	
 	
-	public static ArrayList<Tweet> Timeline(JSONObject json) throws Exception {
+	public static ArrayList<Tweet> afterDownload() throws Exception {
 		
-		if(json != null) {
-				try {
-					JSONArray dataset = (JSONArray) json.get("timeline");
-					 int length =  (int) dataset.size();
-					if(dataset != null) {
-						Timeline timeline = new Timeline();
-							for(int i=0; i<length; i++) {
-									JSONObject tweet = (JSONObject) dataset.get(i);
-								
-									Tweet tw = new Tweet();
-								
-									tw.setDataOra((String) tweet.get("created_at"));
-									tw.setIdTweet((int) tweet.get("id"));
-									tw.setTesto((String)tweet.get("full_text"));
-									tw.setRetweeted((boolean)tweet.get("retweeted"));
+		JSONArray parse = downloadJSON();
+//		String[] parse = downloadJSON();
+		ArrayList<Tweet> Timeline = new ArrayList<Tweet>(); 
+			for(int i=0; i<parse.size(); i++) {
+				
+				Tweet tw = new Tweet();
+				
+				JSONObject tweet = (JSONObject) JSONValue.parse((Reader) parse.get(i));
+//				JSONObject tweet = (JSONObject) JSONValue.parse(parse[i]);
+//				JSONArray arr1 = (JSONArray) tweet.get("timeline");
+				
+					tw.setDataOra((String) tweet.get("created_at"));
+					tw.setIdTweet((int) tweet.get("id"));
+					tw.setTesto((String) tweet.get("full_text"));
+					tw.setRetweeted((boolean) tweet.get("retweeted"));
 									
 /*									Hashtag hashtag;
 									JSONObject entities = (JSONObject) dataset.get(i);
@@ -92,18 +93,11 @@ public class DatabaseClass {
 										hashtag.setTesto((String) text.get("text"));
 									}*/
 									
-									
-							}
+					Timeline.add(tw);					
+			}
 
-					}
-					
-				}catch (SecurityException e) {
-					 throw new Exception("Error in parsing I/O operation");
-				}
-
-		}
-		
-		return 
+		System.out.println(Timeline);   
+		return Timeline;
 	}
 }
 	
