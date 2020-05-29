@@ -2,7 +2,8 @@ package it.univpm.ProgettoOOP.other;
 
 
 import java.util.ArrayList;
-
+/* Superclasse che istanzia 1 o 2 oggetti Stringa passati come parametri
+ */
 public class Filter2Compare {
 
 	protected String paramCompare1;
