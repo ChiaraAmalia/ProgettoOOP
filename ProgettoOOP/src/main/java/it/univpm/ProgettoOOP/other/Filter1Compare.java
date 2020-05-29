@@ -1,19 +1,21 @@
 package it.univpm.ProgettoOOP.other;
 
-public class Filter1Compare (Object paramCompare) {
+public class Filter1Compare{
+	
 	protected String paramCompare;
 	
-	if(paramCompare istanceofString) {
+public Filter1Compare (Object paramCompare) {
+	
+	if(paramCompare instanceof String) 
 		this.paramCompare=(String)paramCompare;
-	} else {
-		throw new IllegalArgumentException ("Unexpected request:String")
-	}
+	 else 
+		throw new IllegalArgumentException ("Unexpected request:String");
+}
 	
 	public void setParamToCompare (Object paramCompare) {
-		if(paramCompare istanceof String) {
+		if(paramCompare instanceof String)
 			this.paramCompare=(String)paramCompare;
-		}else {throw new IllegalArgumentException ("Unexpected request:String")
-		}
+		else throw new IllegalArgumentException ("Unexpected request:String");
 	}
 	
 	public void setParamToCompare (String paramCompare) {
