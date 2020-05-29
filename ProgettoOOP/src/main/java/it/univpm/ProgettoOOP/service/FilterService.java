@@ -17,7 +17,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 public class FilterService {
 private final static String path = "it.univpm.ProgettoOOP.util.other.Filter";
 	
-	private static ArrayList<Tweet> tweets = DatabaseClass.getTweet();
+	private static ArrayList<Tweet> tweets = DatabaseClass.getTweets();
 	
 
 	public static Filter instanceFilter(String column,String operator,Object param) 
