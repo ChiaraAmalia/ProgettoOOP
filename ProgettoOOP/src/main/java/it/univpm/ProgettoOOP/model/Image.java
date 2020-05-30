@@ -1,9 +1,10 @@
 package it.univpm.ProgettoOOP.model;
 
-public class Image implements ToString{
+public class Image extends ID implements ToString{
 	
 	private int idImage;
 	private String media_url;
+	
 	
 	/**
 	 * the constructor
@@ -12,24 +13,6 @@ public class Image implements ToString{
 		super();
 	}
 	
-	
-	/**
-	 * @return the idImage
-	 */
-	public int getIdImage() {
-		return idImage;
-	}
-
-
-
-	/**
-	 * @param idImage the idImage to set
-	 */
-	public void setIdImage(int idImage) {
-		this.idImage = idImage;
-	}
-
-
 
 	/**
 	 * @return the media_url

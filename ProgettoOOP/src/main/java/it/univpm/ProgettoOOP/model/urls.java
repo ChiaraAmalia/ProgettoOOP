@@ -15,6 +15,17 @@ public class urls implements ToString{
 		this.url = url;
 		ExpandedUrl = expandedUrl;
 	}
+	
+
+	/**
+	 * th constructor without fields
+	 */
+	public urls() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
 
 	/**
 	 * @return the url

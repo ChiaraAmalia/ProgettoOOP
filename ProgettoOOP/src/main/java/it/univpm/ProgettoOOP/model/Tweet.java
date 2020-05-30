@@ -9,45 +9,37 @@ import java.util.ArrayList;
  *
  */
 
-public class Tweet implements ToString{
+public class Tweet  extends ID implements ToString{
 	
-	private String dataOra;
 	private int idTweet;
+	private String dataOra;
 	private String testo;
 	private ArrayList<Entities> entities = new ArrayList<Entities>();
 	private ArrayList<User> users = new ArrayList<User>();
 	private boolean retweeted;
-	/**
-	 * @return the entities
-	 */
-	public ArrayList<Entities> getEntities() {
-		return entities;
-	}
 
 	/**
-	 * @param entities the entities to set
+	 * @param idTweet
+	 * @param dataOra
+	 * @param testo
+	 * @param entities
+	 * @param users
+	 * @param retweeted
 	 */
-	public void setEntities(ArrayList<Entities> entities) {
+	public Tweet(int idTweet, String dataOra, String testo, ArrayList<Entities> entities, ArrayList<User> users,
+			boolean retweeted) {
+		super(idTweet);
+		this.idTweet = idTweet;
+		this.dataOra = dataOra;
+		this.testo = testo;
 		this.entities = entities;
-	}
-
-	/**
-	 * @return the users
-	 */
-	public ArrayList<User> getUsers() {
-		return users;
-	}
-
-	/**
-	 * @param users the users to set
-	 */
-	public void setUsers(ArrayList<User> users) {
 		this.users = users;
+		this.retweeted = retweeted;
 	}
-
-
 	
-
+	/**
+	 * the constructor
+	 */
 	public Tweet() {
 		super();
 	}
@@ -64,20 +56,6 @@ public class Tweet implements ToString{
 	 */
 	public void setDataOra(String dataOra) {
 		this.dataOra = dataOra;
-	}
-
-	/**
-	 * @return the idTweet
-	 */
-	public int getIdTweet() {
-		return idTweet;
-	}
-
-	/**
-	 * @param idTweet the idTweet to set
-	 */
-	public void setIdTweet(int idTweet) {
-		this.idTweet = idTweet;
 	}
 
 	/**
@@ -107,17 +85,47 @@ public class Tweet implements ToString{
 	public void setRetweeted(boolean retweeted) {
 		this.retweeted = retweeted;
 	}
+	
 
-	@Override
+
+	/**
+	 * @return the entities
+	 */
+	public ArrayList<Entities> getEntities() {
+		return this.entities;
+	}
+
+	/**
+	 * @param entities the entities to set
+	 */
+	public void setEntities(Entities newEntities) {
+		entities.add(newEntities);
+	}
+
+	/**
+	 * @return the users
+	 */
+	public ArrayList<User> getUsers() {
+		return this.users;
+	}
+
+	/**
+	 * @param users the users to set
+	 */
+	public void setUsers(User newUsers) {
+		users.add(newUsers);
+	}
+	
 /*	public String toString() {
 		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
 				+"\n entities=" + entities+ "\n users=" + users +"\n retweeted" + retweeted + "\n ]";
 		
 	}*/
 	
+	@Override
 	public String toString() {
 		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
-				+ "\n ]";
+				+ "\n retweeted" + retweeted +"\n ]";
 		
 	}
 }

@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class User implements ToString{
+public class User extends ID implements ToString{
 	
 	private int id;
 	private String name;
@@ -17,27 +17,21 @@ public class User implements ToString{
 	 * the constructor
 	 */
 	public User(int id, String name, String screenName, String description, int followerCount) {
-		super();
-		this.id = id;
+		super(id);
 		this.name = name;
 		ScreenName = screenName;
 		this.description = description;
 		FollowerCount = followerCount;
 	}
-
+	
 	/**
-	 * @return the id
+	 * the constructor
 	 */
-	public int getId() {
-		return id;
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	/**
 	 * @return the name

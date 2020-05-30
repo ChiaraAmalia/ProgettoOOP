@@ -2,8 +2,15 @@ package it.univpm.ProgettoOOP.model;
 
 public class Hashtag implements ToString{
 	
-	private String testo;
+	private String testo;	
 
+	/**
+	 * the constructor
+	 */
+	public Hashtag() {
+		super();
+	}
+	
 	/**
 	 * @return the testo
 	 */
@@ -18,12 +25,12 @@ public class Hashtag implements ToString{
 		this.testo = testo;
 	}
 
-	/**
-	 * 
-	 */
-	public Hashtag() {
-		super();
+	@Override
+	public String toString() {
+		return "\n Hashtag: [\n testo=" + testo + "]";
 	}
 	
+	
+
 	
 }

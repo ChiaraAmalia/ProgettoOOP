@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class UserMentions implements ToString{
+public class UserMentions extends ID implements ToString{
 	
 	private String ScreenName;
 	private String name;
@@ -14,10 +14,9 @@ public class UserMentions implements ToString{
 	 */
 	
 	public UserMentions(String screenName, String name, int id) {
-		super();
+		super(id);
 		ScreenName = screenName;
 		this.name = name;
-		this.id = id;
 	}
 	/**
 	 * @return the screenName
@@ -42,18 +41,6 @@ public class UserMentions implements ToString{
 	 */
 	public void setName(String name) {
 		this.name = name;
-	}
-	/**
-	 * @return the id
-	 */
-	public int getId() {
-		return id;
-	}
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(int id) {
-		this.id = id;
 	}
 	
 	@Override
