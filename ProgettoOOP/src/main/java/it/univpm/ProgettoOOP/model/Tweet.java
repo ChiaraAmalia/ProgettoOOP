@@ -14,6 +14,9 @@ public class Tweet implements ToString{
 	private String dataOra;
 	private int idTweet;
 	private String testo;
+	private ArrayList<Entities> entities = new ArrayList<Entities>();
+	private ArrayList<User> users = new ArrayList<User>();
+	private boolean retweeted;
 	/**
 	 * @return the entities
 	 */
@@ -42,9 +45,7 @@ public class Tweet implements ToString{
 		this.users = users;
 	}
 
-	private ArrayList<Entities> entities = new ArrayList<Entities>();
-	private ArrayList<User> users = new ArrayList<User>();
-	private boolean retweeted;
+
 	
 
 	public Tweet() {
@@ -108,11 +109,15 @@ public class Tweet implements ToString{
 	}
 
 	@Override
-	public String toString() {
+/*	public String toString() {
 		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
 				+"\n entities=" + entities+ "\n users=" + users +"\n retweeted" + retweeted + "\n ]";
 		
+	}*/
+	
+	public String toString() {
+		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
+				+ "\n ]";
+		
 	}
-	
-	
 }

@@ -29,13 +29,13 @@ import it.univpm.ProgettoOOP.service.TweetService;
 @RestController
 public class ControllerClass {
 	
-	
+	@Autowired
 	TweetService tweetService;
 /** Risponde alla richiesta GET /timeline
  * @return ArrayList di oggetti Tweet
  */
 	@RequestMapping(value="/timeline")
-	public ResponseEntity<Object> getTweet() {
+	public ResponseEntity<Object> getTweets() {
 		return new ResponseEntity<>(tweetService.getTweet(), HttpStatus.OK);
 	}
 	

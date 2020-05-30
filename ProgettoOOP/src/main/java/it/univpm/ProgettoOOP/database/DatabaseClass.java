@@ -19,11 +19,22 @@ import it.univpm.ProgettoOOP.model.*;
 public class DatabaseClass {
 	
 	
-	public static JSONArray downloadJSON() {
+//	public static String[] downloadJSON() {
+//	public static JSONArray downloadJSON() {
+//	public static String[] downloadJSON(String args) {
+	public static JSONObject downloadJSON() {
 		
 		String data = "";
 		String line = "";
-		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=5&include_rts=false&tweet_mode=extended";
+//		String url = "";
+		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&include_rts=false&tweet_mode=extended";
+/*		if(args.length == 1) {
+			url = args[0]; //Url by args ;-)
+		}
+		else
+		{
+			return;
+		}*/
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();
@@ -43,6 +54,8 @@ public class DatabaseClass {
 				in.close();
 			} 
 			
+//		JSONArray json = (JSONArray) JSONValue.parse(data);
+//		JSONObject obj = (JSONObject) JSONValue.parseWithException(data);
 		}catch (IOException e) {	
 				e.printStackTrace();	
 		}catch (Exception e) {	
@@ -50,7 +63,8 @@ public class DatabaseClass {
 		}
 		
 		//NON TOCCARE IL COMANDO MALEDETTO
-		JSONArray json = (JSONArray) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
+//		JSONArray json = (JSONArray) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
+		JSONObject json = (JSONObject) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
 /*		ArrayList<String> list = new ArrayList<String>();
 		for(int i = 0; i < list.size(); i++){
 		    list.addAll((JSONArray)json.get(i));
@@ -61,15 +75,21 @@ public class DatabaseClass {
 	    }*/
 //		JSONObject json=new JSONObject("{\"timeline\":"+data.toString()+"}");
 		return json;
+//		return arr;
 	}
 	
 	
-	public static ArrayList<Tweet> afterDownload() throws Exception {
+	public static  ArrayList<Tweet> ParseInformazioni(){
+//	public static JSONArray ParseInformazioni(){
+//	public static JSONObject ParseInformazioni(){	
 		
-		JSONArray parse = downloadJSON();
+//		String[] parse = downloadJSON("https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=5&include_rts=false&tweet_mode=extended");
 //		String[] parse = downloadJSON();
+//		JSONArray parse = downloadJSON();
+		JSONObject parse = downloadJSON();
 		ArrayList<Tweet> Timeline = new ArrayList<Tweet>(); 
 			for(int i=0; i<parse.size(); i++) {
+//			for(int i=0; i<parse.length; i++) {	
 				
 				Tweet tw = new Tweet();
 				
@@ -96,8 +116,9 @@ public class DatabaseClass {
 					Timeline.add(tw);					
 			}
 
-		System.out.println(Timeline);   
-		return Timeline;
+//		System.out.println(Timeline);   
+//		return  Timeline;
+		return Timeline;	
 	}
 }
 	
