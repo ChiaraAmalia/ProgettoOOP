@@ -87,10 +87,10 @@ public class Entities implements ToString{
 		images.add(newImage);
 	}
 
-	@Override
-	public String toString() {
-		return "\nEntities: [\n hashtags=" + hashtags + "\n mentions=" + mentions + "\n url=" + url 
+	public String Visualizza() {
+		String stamp ="\nEntities: [\n hashtags=" + hashtags + "\n mentions=" + mentions + "\n url=" + url 
 				+ "\n images=" + images + "\n ]";
+		return stamp;
 	}
 	
 }

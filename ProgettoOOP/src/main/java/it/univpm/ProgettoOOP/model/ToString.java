@@ -2,5 +2,5 @@ package it.univpm.ProgettoOOP.model;
 
 public interface ToString {
 
-	public abstract String toString();
+	public abstract String Visualizza();
 }

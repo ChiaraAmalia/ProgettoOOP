@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class ID {
+public class ID implements ToString{
 	
 	protected int id;
 
@@ -33,5 +33,12 @@ public class ID {
 	public void setId(int id) {
 		this.id = id;
 	}
+
+	
+	public String Visualizza() {
+		return "id=" + id;
+	}
+	
+	
 	
 }

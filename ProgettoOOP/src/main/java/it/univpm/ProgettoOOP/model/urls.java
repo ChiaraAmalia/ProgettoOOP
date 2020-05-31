@@ -55,9 +55,10 @@ public class urls implements ToString{
 		ExpandedUrl = expandedUrl;
 	}
 
-	@Override
-	public String toString() {
-		return "urls[\n url=" + url + "\n ExpandedUrl=" + ExpandedUrl + "\n ]";
+	
+	public String Visualizza() {
+		 String stamp = "urls[\n url=" + url + "\n ExpandedUrl=" + ExpandedUrl + "\n ]";
+		 return stamp;
 	}
 	
 }

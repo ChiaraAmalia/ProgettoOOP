@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class Image extends ID implements ToString{
+public class Image extends ID {
 	
 	private int idImage;
 	private String media_url;
@@ -33,8 +33,9 @@ public class Image extends ID implements ToString{
 
 
 	@Override
-	public String toString() {
-		return "Image: [\n idImage=" + idImage + "\n media_url=" + media_url + "\n]";
+	public String Visualizza() {
+		String stamp= "Image: [\n idImage=" + idImage + "\n media_url=" + media_url + "\n]";
+		return stamp;
 	}
 	
 	

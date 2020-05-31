@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *
  */
 
-public class Tweet  extends ID implements ToString{
+public class Tweet  extends ID {
 	
 	private int idTweet;
 	private String dataOra;
@@ -116,16 +116,16 @@ public class Tweet  extends ID implements ToString{
 		users.add(newUsers);
 	}
 	
-/*	public String toString() {
-		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
+/*	public String Visualizza() {
+		String stamp= "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
 				+"\n entities=" + entities+ "\n users=" + users +"\n retweeted" + retweeted + "\n ]";
-		
+		return stamp;
 	}*/
 	
 	@Override
-	public String toString() {
-		return "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
+	public String Visualizza() {
+		String stamp= "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
 				+ "\n retweeted" + retweeted +"\n ]";
-		
+		return stamp;
 	}
 }

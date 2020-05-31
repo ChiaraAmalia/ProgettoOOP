@@ -25,9 +25,10 @@ public class Hashtag implements ToString{
 		this.testo = testo;
 	}
 
-	@Override
-	public String toString() {
-		return "\n Hashtag: [\n testo=" + testo + "]";
+	
+	public String Visualizza() {
+		String stamp="\n Hashtag: [\n testo=" + testo + "]";
+		return stamp;
 	}
 	
 	

@@ -1,6 +1,6 @@
 package it.univpm.ProgettoOOP.model;
 
-public class User extends ID implements ToString{
+public class User extends ID {
 	
 	private int id;
 	private String name;
@@ -90,9 +90,10 @@ public class User extends ID implements ToString{
 	}
 
 	@Override
-	public String toString() {
-		return "User[\n id=" + id + "\n name=" + name + "\n ScreenName=" + ScreenName + "\n description=" + description
+	public String Visualizza() {
+		String stamp= "User[\n id=" + id + "\n name=" + name + "\n ScreenName=" + ScreenName + "\n description=" + description
 				+ "\n FollowerCount=" + FollowerCount + "\n ]";
+		return stamp;
 	}
 	
 	
