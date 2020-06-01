@@ -16,20 +16,28 @@ import org.json.simple.JSONValue;
 
 import it.univpm.ProgettoOOP.model.*;
 
+/**
+ * Questa classe permette di scaricare il file JSON dove all'interno
+ * si trovano gli ultimi 100 tweet
+ * @author Chiara Amalia Caporusso
+ *
+ */
+
+
 public class DatabaseClass {
 	
 	
 //	public static String[] downloadJSON() {
-//	public static JSONArray downloadJSON() {
+	public static JSONArray downloadJSON() {
 //	public static String[] downloadJSON(String args) {
-	public static JSONObject downloadJSON() {
+//	public static JSONObject downloadJSON() {
 		
 		String data = "";
 		String line = "";
 //		String url = "";
 		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&include_rts=false&tweet_mode=extended";
 /*		if(args.length == 1) {
-			url = args[0]; //Url by args ;-)
+			url = args[0]; 
 		}
 		else
 		{
@@ -62,9 +70,9 @@ public class DatabaseClass {
 			e.printStackTrace();	
 		}
 		
-		//NON TOCCARE IL COMANDO MALEDETTO
-//		JSONArray json = (JSONArray) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
-		JSONObject json = (JSONObject) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
+		
+		JSONArray json = (JSONArray) JSONValue.parse(data);
+//		JSONObject json = (JSONObject) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
 /*		ArrayList<String> list = new ArrayList<String>();
 		for(int i = 0; i < list.size(); i++){
 		    list.addAll((JSONArray)json.get(i));

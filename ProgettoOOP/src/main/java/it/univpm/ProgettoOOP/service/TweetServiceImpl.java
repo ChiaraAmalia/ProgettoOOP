@@ -10,22 +10,22 @@ import org.json.simple.JSONObject;
 import org.springframework.stereotype.Service;
 
 import it.univpm.ProgettoOOP.database.DatabaseClass;
+import it.univpm.ProgettoOOP.service.JSONParse;
 import it.univpm.ProgettoOOP.model.Tweet;
 
 @Service
 public class TweetServiceImpl implements TweetService{
 
-//	private static Map<Integer, Tweet> timeline=new HashMap<>();
-	private Map<String, ArrayList<Tweet>> timeline=new HashMap<>();
-/*	private ArrayList<Tweet> timeline = new ArrayList<Tweet>();
-	private DatabaseClass data = new DatabaseClass();*/
+	private Map<String, Tweet> timeline=new HashMap<>();
 	
 	public TweetServiceImpl(){
 		super();
 		try {
 			ArrayList<Tweet> tmln = JSONParse.ParseInformazioni();
-//			timeline = data.ParseInformazioni();
-			timeline.put(tmln.toString(),tmln);
+			for(int i=0; i<tmln.size(); i++) {
+			Tweet tmln1 = tmln.get(i);
+			timeline.put(tmln1.Visualizza(),tmln1);
+			}
 		}
 		catch(Exception e){
 			e.printStackTrace();
@@ -33,10 +33,7 @@ public class TweetServiceImpl implements TweetService{
 	}
 
 	@Override
-	public Collection<ArrayList<Tweet>> getTweet() {
-//	public ArrayList<Tweet> getTweet() {
-		// TODO Auto-generated method stub
+	public Collection<Tweet> getTweet() {
 		return timeline.values();
-//		return this.timeline;
 	}
 }

@@ -29,12 +29,18 @@ import it.univpm.ProgettoOOP.service.TweetService;
 @RestController
 public class ControllerClass {
 	
+	/*
+	 * Autowired consente, all'interno del controller, di creare 
+	 * un'istanza del nostro servizio che protremo utilizzare per 
+	 * tutte le operazioni
+	 */
 	@Autowired
 	TweetService tweetService;
-/** Risponde alla richiesta GET /timeline
- * @return ArrayList di oggetti Tweet
- */
-	@RequestMapping(value="/timeline")
+	
+	/** Risponde alla richiesta GET /timeline
+	 * @return ArrayList di oggetti Tweet
+	 */
+	@RequestMapping(value="/timeline", method = RequestMethod.GET)
 	public ResponseEntity<Object> getTweets() {
 		return new ResponseEntity<>(tweetService.getTweet(), HttpStatus.OK);
 	}
