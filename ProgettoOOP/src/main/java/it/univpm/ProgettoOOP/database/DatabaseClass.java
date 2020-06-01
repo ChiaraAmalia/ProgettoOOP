@@ -35,8 +35,9 @@ public class DatabaseClass {
 		String data = "";
 		String line = "";
 //		String url = "";
-		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&include_rts=false&tweet_mode=extended";
-/*		if(args.length == 1) {
+//		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&include_rts=false&tweet_mode=extended";
+		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&tweet_mode=extended";
+		/*		if(args.length == 1) {
 			url = args[0]; 
 		}
 		else
@@ -62,28 +63,21 @@ public class DatabaseClass {
 				in.close();
 			} 
 			
-//		JSONArray json = (JSONArray) JSONValue.parse(data);
-//		JSONObject obj = (JSONObject) JSONValue.parseWithException(data);
 		}catch (IOException e) {	
 				e.printStackTrace();	
 		}catch (Exception e) {	
 			e.printStackTrace();	
+		}	
+		
+		JSONArray json = null;
+		try {
+			 json = (JSONArray) JSONValue.parse(data);
+			return json;
+		}catch(Exception e) {
+			e.printStackTrace();	
 		}
 		
-		
-		JSONArray json = (JSONArray) JSONValue.parse(data);
-//		JSONObject json = (JSONObject) JSONValue.parse("{\"timeline\":"+data.toString()+"}");
-/*		ArrayList<String> list = new ArrayList<String>();
-		for(int i = 0; i < list.size(); i++){
-		    list.addAll((JSONArray)json.get(i));
-		}*/
-/*	    String[] arr=new String[json.size()];
-	    for(int i=0; i<arr.length; i++) {
-	        arr[i]= (String) JSONValue.parse((Reader) json.get(i));
-	    }*/
-//		JSONObject json=new JSONObject("{\"timeline\":"+data.toString()+"}");
 		return json;
-//		return arr;
 	}
 	
 	
