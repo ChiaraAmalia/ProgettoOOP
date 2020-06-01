@@ -45,7 +45,6 @@ public class JSONParse {
 					
 					Hashtag hashtag;
 					Entities en = new Entities();
-//						JSONObject obj2 = (JSONObject) o;
 						JSONObject entities = (JSONObject) obj1.get("entities");
 						JSONArray Hashtag = (JSONArray) entities.get("hashtags");
 						
