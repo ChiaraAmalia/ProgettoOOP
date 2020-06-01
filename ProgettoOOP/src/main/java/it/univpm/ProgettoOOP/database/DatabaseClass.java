@@ -26,24 +26,13 @@ import it.univpm.ProgettoOOP.model.*;
 
 public class DatabaseClass {
 	
-	
-//	public static String[] downloadJSON() {
 	public static JSONArray downloadJSON() {
-//	public static String[] downloadJSON(String args) {
-//	public static JSONObject downloadJSON() {
-		
+
 		String data = "";
 		String line = "";
-//		String url = "";
 //		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&include_rts=false&tweet_mode=extended";
 		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&tweet_mode=extended";
-		/*		if(args.length == 1) {
-			url = args[0]; 
-		}
-		else
-		{
-			return;
-		}*/
+
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();

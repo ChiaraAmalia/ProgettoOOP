@@ -129,12 +129,6 @@ public class Tweet  extends ID {
 		user.add(newUser);
 	}
 	
-/*	public String Visualizza() {
-		String stamp= "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
-				+"\n entities=" + entities+ "\n user=" + user +"\n retweeted" + retweeted + "\n ]";
-		return stamp;
-	}*/
-	
 	/**
 	 * @return stamp
 	 * ritorna una stringa dove vengono visualizzati tutti i campi del tweet
@@ -142,7 +136,7 @@ public class Tweet  extends ID {
 	@Override
 	public String Visualizza() {
 		String stamp= "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
-				+ "\n retweeted" + retweeted +"\n ]";
+				+"\n entities=" + entities+ "\n user=" + user +"\n retweeted" + retweeted + "\n ]";
 		return stamp;
 	}
 }

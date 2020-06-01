@@ -16,7 +16,7 @@ import it.univpm.ProgettoOOP.model.Tweet;
 @Service
 public class TweetServiceImpl implements TweetService{
 
-	private Map<String, Tweet> timeline=new HashMap<>();
+	private Map<Long, Tweet> timeline=new HashMap<>();
 	
 	public TweetServiceImpl(){
 		super();
@@ -24,7 +24,7 @@ public class TweetServiceImpl implements TweetService{
 			ArrayList<Tweet> tmln = JSONParse.ParseInformazioni();
 			for(int i=0; i<tmln.size(); i++) {
 			Tweet tmln1 = tmln.get(i);
-			timeline.put(tmln1.Visualizza(),tmln1);
+			timeline.put(tmln1.getId(),tmln1);
 			}
 		}
 		catch(Exception e){
