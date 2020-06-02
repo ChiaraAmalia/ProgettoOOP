@@ -18,11 +18,12 @@ import java.util.ArrayList;
 public class Tweet  extends ID {
 	
 	private long idTweet;
-	private String dataOra;
-	private String testo;
+	private String created_at;
+	private String text;
 	private ArrayList<Entities> entities = new ArrayList<Entities>();
 	private ArrayList<User> user = new ArrayList<User>();
-	private boolean retweeted;
+	private long retweet_count;
+	private String lang;
 
 	/**
 	 * il costruttore con i campi
@@ -34,15 +35,16 @@ public class Tweet  extends ID {
 	 * @param users è un array contente le caratteristiche principali dell'autore del tweet
 	 * @param retweeted è un valore booleano che indica se il tweet è stato retwettato
 	 */
-	public Tweet(int idTweet, String dataOra, String testo, ArrayList<Entities> entities, ArrayList<User> user,
-			boolean retweeted) {
+	public Tweet(long idTweet, String created_at, String text, ArrayList<Entities> entities, ArrayList<User> user,
+			long retweet_count, String lingua) {
 		super(idTweet);
 		this.idTweet = idTweet;
-		this.dataOra = dataOra;
-		this.testo = testo;
+		this.created_at = created_at;
+		this.text = text;
 		this.entities = entities;
 		this.user = user;
-		this.retweeted = retweeted;
+		this.retweet_count = retweet_count;
+		lang = lingua;
 	}
 	
 	/**
@@ -55,46 +57,47 @@ public class Tweet  extends ID {
 	/**
 	 * @return il campo dataOra
 	 */
-	public String getDataOra() {
-		return dataOra;
+	public String getCreated_at() {
+		return created_at;
 	}
 
 	/**
 	 * @param dataOra 
 	 * viene settato ad un altro valore
 	 */
-	public void setDataOra(String dataOra) {
-		this.dataOra = dataOra;
+	public void setCreated_at(String created_at) {
+		this.created_at = created_at;
 	}
 
 	/**
 	 * @return il testo del tweet
 	 */
-	public String getTesto() {
-		return testo;
+	public String getText() {
+		return text;
 	}
 
 	/**
 	 * @param testo 
 	 * viene settato ad un altro valore
 	 */
-	public void setTesto(String testo) {
-		this.testo = testo;
+	public void setText(String text) {
+		this.text = text;
 	}	
 
 	/**
-	 * @return retweeted true o false
+	 * @return retweet_count
+	 * il numero di retweet
 	 */
-	public boolean isRetweeted() {
-		return retweeted;
+	public long getRetweet_count() {
+		return retweet_count;
 	}
 
 	/**
-	 * @param retweeted 
-	 * viene settato a true o false
+	 * @param retweet_count
+	 * modifica il numero di retweet
 	 */
-	public void setRetweeted(boolean retweeted) {
-		this.retweeted = retweeted;
+	public void setRetweet_count(long retweet_count) {
+		this.retweet_count = retweet_count;
 	}
 	
 
@@ -130,13 +133,19 @@ public class Tweet  extends ID {
 	}
 	
 	/**
-	 * @return stamp
-	 * ritorna una stringa dove vengono visualizzati tutti i campi del tweet
+	 * @return lang
+	 * lingua del tweet
 	 */
-	@Override
-	public String Visualizza() {
-		String stamp= "\nTweet[\n dataOra=" + dataOra + "\n idTweet=" + idTweet + "\n testo=" + testo  
-				+"\n entities=" + entities+ "\n user=" + user +"\n retweeted" + retweeted + "\n ]";
-		return stamp;
+	public String getLang() {
+		return lang;
 	}
+
+	/**
+	 * @param lang
+	 * viene aggiornata la lingua del tweet
+	 */
+	public void setLang(String lang) {
+		this.lang = lang;
+	}
+
 }

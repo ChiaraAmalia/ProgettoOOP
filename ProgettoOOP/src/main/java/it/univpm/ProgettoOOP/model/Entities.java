@@ -5,17 +5,15 @@ import java.util.ArrayList;
 /**
  * La classe Entities contiene diversi arraylist contenenti gli hashtag, gli userMentions
  * l'url citato nel tweet e la relativa immagine contenuta nel tweet.
- * Implementa l'interfaccia ToString dove ne prende il metodo astratto Visualizza()
  * @see Hashtag
  * @see UserMentions
  * @see urls
  * @see Image
- * @see ToString
  * @author Chiara Amalia Caporusso
  * @author Piero Campitelli
  *
  */
-public class Entities implements ToString{
+public class Entities {
 	
 	private ArrayList<Hashtag> hashtags = new ArrayList<Hashtag>();
 	private ArrayList<UserMentions> mentions = new ArrayList<UserMentions>();
@@ -106,18 +104,9 @@ public class Entities implements ToString{
 	 * permette di aggiungere l'immagine contenuta nel tweet
 	 */
 	public void setImages(Image newImage) {
+		
+		if(!(images.contains(newImage)))
 		images.add(newImage);
-	}
-	
-	/**
-	 * @return stamp
-	 * ritorna una stringa dove vengono visualizzati i campi delle entita'
-	 */
-	@Override
-	public String Visualizza() {
-		String stamp ="\nEntities: [\n hashtags=" + hashtags + "\n mentions=" + mentions + "\n url=" + url 
-				+ "\n images=" + images + "\n ]";
-		return stamp;
 	}
 	
 }

@@ -2,13 +2,11 @@ package it.univpm.ProgettoOOP.model;
 
 /**
  * Questa classe indica l'url presente all'interno del tweet
- * Viene implementata l'interfaccia ToString per ereditarne il metodo Visualizza()
- * @see ToString
  * @author Chiara Amalia Caporusso
  * @author Piero Campitelli
  *
  */
-public class urls implements ToString{
+public class urls {
 	
 	private String url;
 	private String ExpandedUrl;
@@ -60,15 +58,6 @@ public class urls implements ToString{
 	 */
 	public void setExpandedUrl(String expandedUrl) {
 		ExpandedUrl = expandedUrl;
-	}
-	
-	/**
-	 * @return una stringa dove vengono visualizzate le caratteristiche dell'url 
-	 */
-	@Override
-	public String Visualizza() {
-		 String stamp = "urls[\n url=" + url + "\n ExpandedUrl=" + ExpandedUrl + "\n ]";
-		 return stamp;
 	}
 	
 }

@@ -1,5 +1,7 @@
 package it.univpm.ProgettoOOP.model;
 
+import java.util.ArrayList;
+
 /**
  * Questa classe contiene le caratteristiche principali dell'immagine condivisa nel tweet come
  * ad esempio l'id dell'immagine e l'url dell'immagine.
@@ -13,14 +15,17 @@ public class Image extends ID {
 	
 	private long idImage;
 	private String media_url;
+	private String type;
+	
 		
 	/**
 	 * @param idImage rappresenta l'id dell'immagine
 	 * @param media_url rappresenta l'url dell'immagine
 	 */
-	public Image(long idImage, String media_url) {
+	public Image(long idImage, String media_url, String type) {
 		super(idImage);
 		this.media_url = media_url;
+		this.type = type;
 	}
 
 
@@ -31,15 +36,12 @@ public class Image extends ID {
 		super();
 	}
 	
-
 	/**
 	 * @return media_url
 	 */
 	public String getMedia_url() {
 		return media_url;
 	}
-
-
 
 	/**
 	 * @param media_url 
@@ -49,14 +51,21 @@ public class Image extends ID {
 		this.media_url = media_url;
 	}
 
+
 	/**
-	 * @return una stringa dove vengono visualizzate le caratteristiche dell'immagine
+	 * @return the type
 	 */
-	@Override
-	public String Visualizza() {
-		String stamp= "Image: [\n idImage=" + idImage + "\n media_url=" + media_url + "\n]";
-		return stamp;
+	public String getType() {
+		return type;
 	}
-	
-	
+
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
+
 }

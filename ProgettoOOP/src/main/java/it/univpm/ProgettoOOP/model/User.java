@@ -16,7 +16,7 @@ public class User extends ID {
 	private String name;
 	private String ScreenName;
 	private String description;
-	private int FollowerCount;
+	private long FollowerCount;
 	
 	/**
 	 * @param id indica l'id dell'utente
@@ -27,7 +27,7 @@ public class User extends ID {
 	 * 
 	 * il costruttore
 	 */
-	public User(long id, String name, String screenName, String description, int followerCount) {
+	public User(long id, String name, String screenName, String description, long followerCount) {
 		super(id);
 		this.name = name;
 		ScreenName = screenName;
@@ -91,7 +91,7 @@ public class User extends ID {
 	/**
 	 * @return followerCount
 	 */
-	public int getFollowerCount() {
+	public long getFollowerCount() {
 		return FollowerCount;
 	}
 
@@ -99,21 +99,8 @@ public class User extends ID {
 	 * @param followerCount 
 	 * modifica il numero di seguaci
 	 */
-	public void setFollowerCount(int followerCount) {
+	public void setFollowerCount(long followerCount) {
 		FollowerCount = followerCount;
 	}
-	
-	/**
-	 * @return una stringa dove vengono visualizzati i campi dell'user
-	 */
-	@Override
-	public String Visualizza() {
-		String stamp= "User[\n id=" + id + "\n name=" + name + "\n ScreenName=" + ScreenName + "\n description=" + description
-				+ "\n FollowerCount=" + FollowerCount + "\n ]";
-		return stamp;
-	}
-	
-	
-	
 	
 }

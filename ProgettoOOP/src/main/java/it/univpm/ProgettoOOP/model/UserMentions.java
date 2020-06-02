@@ -63,16 +63,5 @@ public class UserMentions extends ID {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	/**
-	 * @return una stringa che visualizza le caratteristiche degli utenti menzionati
-	 */
-	@Override
-	public String Visualizza() {
-		String stamp="\nUserMentions[\n ScreenName=" + ScreenName + "\n name=" + name + "\n id=" + id + "\n ]";
-		return stamp;
-	}
-	
-	
-	
+
 }
