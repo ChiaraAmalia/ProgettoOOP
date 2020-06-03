@@ -105,7 +105,6 @@ public class Entities {
 	 */
 	public void setImages(Image newImage) {
 		
-		if(!(images.contains(newImage)))
 		images.add(newImage);
 	}
 	

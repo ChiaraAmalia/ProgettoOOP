@@ -8,6 +8,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
 import it.univpm.ProgettoOOP.database.DatabaseClass;
+import it.univpm.ProgettoOOP.model.Dimensions;
 import it.univpm.ProgettoOOP.model.Entities;
 import it.univpm.ProgettoOOP.model.Hashtag;
 import it.univpm.ProgettoOOP.model.Image;
@@ -84,15 +85,23 @@ public class JSONParse {
 					}
 					
 					Image image;
-					
-					if(entities.containsKey("image")) {
+					if(entities.containsKey("media")) {
 						JSONArray media = (JSONArray) entities.get("media");
 						for(int j = 0; j<media.size(); j++) {
 							image = new Image();
-							JSONObject obj5 = (JSONObject) media.get(j);
+		 					JSONObject obj5 = (JSONObject) media.get(j);
 							image.setId((long) obj5.get("id"));
 							image.setMedia_url((String) obj5.get("media_url"));
 							image.setType((String) obj5.get("type"));
+							
+							Dimensions dimensions;
+							JSONObject Size = (JSONObject) obj5.get("sizes");
+							JSONObject dim = (JSONObject) Size.get("medium");
+							dimensions = new Dimensions();
+							dimensions.setWidth((long) dim.get("w"));
+							dimensions.setHeight((long) dim.get("h"));
+							dimensions.setResize((String) dim.get("resize"));
+							image.setSize(dimensions);
 							en.setImages(image);
 						}
 					}
@@ -106,7 +115,8 @@ public class JSONParse {
 					user.setScreenName((String) USER.get("screen_name"));
 					user.setDescription((String) USER.get("description"));
 					user.setFollowerCount((long) USER.get("followers_count"));
-					tw.setUsers(user);		
+					tw.setUsers(user);	
+					
 					
 					Timeline.add(tw);
 	
