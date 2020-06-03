@@ -1,26 +1,20 @@
-      e it.univpm.ProgettoOOP.service;
+package it.univpm.ProgettoOOP.service;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
-
-import it.univpm.ProgettoOOP.database.DatabaseClass;
 import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
 import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
 import it.univpm.ProgettoOOP.model.Tweet;
-import it.univpm.ProgettoOOP.util.other.Filter;
-
-
-                                                                          /* Dobbiamo scrivere la classe Filter 
-                                                                             in  util/other/Filter */
+import it.univpm.ProgettoOOP.other.Filter;
+                                                                       
 public class FilterService {
-private final static String path = "it.univpm.ProgettoOOP.util.other.Filter";
+private final static String path = "it.univpm.ProgettoOOP.filter.";
 	
-	private static ArrayList<Tweet> tweets = DatabaseClass.getTweets();
-	
+	private static ArrayList<Tweet> tweets = JSONParse.ParseInformazioni();
 
-	public static Filter instanceFilter(String column,String operator,Object param) 
+	public static Filter instanceFilter(Object column,String operator,Object param) 
 		   throws FilterNotFoundException, FilterIllegalArgumentException,InternalGeneralException{
 		
 		Filter filtro;
@@ -67,13 +61,13 @@ private final static String path = "it.univpm.ProgettoOOP.util.other.Filter";
 	}
 		
 	
-	public static ArrayList<Tweet> runFilterAND(Filter filtro, ArrayList<Tweet> previousArray){
+	public static ArrayList<Tweet> runFilterAND(Filter filter, ArrayList<Tweet> previousArray){
 
 		ArrayList<Tweet> filteredArray = new ArrayList<Tweet>();
 		
 		for(Tweet tweet :  previousArray) {
 
-			if(filtro.filter(tweet))
+			if(filter.filter(tweet))
 				filteredArray.add(tweet);
 		}				
 		
