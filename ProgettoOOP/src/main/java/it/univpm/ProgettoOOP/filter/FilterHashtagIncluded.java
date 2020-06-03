@@ -12,15 +12,12 @@ public class FilterHashtagIncluded extends Filter1Compare implements Filter{
 		super(paramCompare);
 	}
 	
-	public boolean filter(Hashtag hash) {
-		Hashtag hashtag = new Hashtag();
-		if((hashtag.getText()).equals(hash.getText())) {
+	public boolean filter1(Hashtag hashtag) {
+		Hashtag hashtags = new Hashtag();
+		if((hashtags.getText()).equals(hashtag.getText())) {
 			return true;
 	}
 		return false;
 		
 	}
-	
-	
-
 }

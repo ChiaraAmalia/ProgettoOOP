@@ -1,8 +1,8 @@
 package it.univpm.ProgettoOOP.other;
 
-import it.univpm.ProgettoOOP.model.Tweet;
+import it.univpm.ProgettoOOP.model.Hashtag;
 
 public interface Filter {
 
-	public boolean filter(Tweet tweet);
+	public abstract boolean filter1(Hashtag hashtag);
 }
