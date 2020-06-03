@@ -1,5 +1,21 @@
 package it.univpm.ProgettoOOP.filter;
 
-public class FilterHashtagNotIncluded {
+import com.fasterxml.classmate.Filter;
 
+import it.univpm.ProgettoOOP.model.Hashtag;
+import it.univpm.ProgettoOOP.other.Filter1Compare;
+
+public class FilterHashtagIncluded extends Filter1Compare implements Filter{
+	public FilterHashtagIncluded(Object paramCompare) {
+		super(paramCompare);
+	}
+	
+	public boolean filter1(Hashtag hashtag) {
+		Hashtag hashtags = new Hashtag();
+		if(!(hashtags.getText()).equals(hashtag.getText())) {
+			return true;
+	}
+		return false;
+		
+	}
 }
