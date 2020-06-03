@@ -45,6 +45,11 @@ public class ControllerClass {
 		return new ResponseEntity<>(tweetService.getTweet(), HttpStatus.OK);
 	}
 	
+	@RequestMapping(value="/metadata", method = RequestMethod.GET)
+	public ResponseEntity<Object> getMetadatas() {
+		return new ResponseEntity<>(tweetService.getMetada(), HttpStatus.OK);
+	}
+	
 /*	@RequestMapping(value="filtered",method=RequestMethod.POST) 
 	public ArrayList <Tweet> getFilteredWithPost(@RequestBody Object filter)
 			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException {
