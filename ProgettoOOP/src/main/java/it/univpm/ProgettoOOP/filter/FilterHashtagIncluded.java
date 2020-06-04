@@ -11,7 +11,11 @@ public class FilterHashtagIncluded extends Filter1Compare implements Filter{
 		super(paramCompare);
 	}
 	
+<<<<<<< HEAD
 	public boolean filter(Tweet tweet) {
+=======
+	public boolean filter(Hashtag hashtag) {
+>>>>>>> branch 'master' of https://github.com/ChiaraAmalia/ProgettoOOP.git
 		Hashtag hashtags = new Hashtag();
 		if((hashtags.getText()).equals(tweet.getEntities()) {
 			return true;
