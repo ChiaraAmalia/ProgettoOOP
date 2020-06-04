@@ -67,7 +67,7 @@ private final static String path = "it.univpm.ProgettoOOP.filter.";
 		
 		for(Tweet tweet :  previousArray) {
 
-			if(filter.filter1(tweet))
+			if(filter.filter(tweet))
 				filteredArray.add(tweet);
 		}				
 		
@@ -81,7 +81,7 @@ private final static String path = "it.univpm.ProgettoOOP.filter.";
 		
 		for(Tweet tweet : tweets) {
 
-			if(filtro.filter1(tweet))
+			if(filtro.filter(tweet))
 				filteredArray.add(tweet);
 		}	
 		

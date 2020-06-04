@@ -8,8 +8,6 @@ import java.util.Collection;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-
-import com.esame.service.FilterService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import ch.qos.logback.core.filter.Filter;
@@ -19,6 +17,7 @@ import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
 import it.univpm.ProgettoOOP.model.Entities;
 import it.univpm.ProgettoOOP.model.Hashtag;
 import it.univpm.ProgettoOOP.model.Tweet;
+import it.univpm.ProgettoOOP.service.FilterService;
 
 public class JsonParser {
 	
@@ -76,7 +75,7 @@ public class JsonParser {
 		    	continue;
 		    }
 			
-			filter= (Filter) FilterService.instanceFilter(column,operator,value);
+			filter= FilterService.instanceFilter(column,operator,value);
 			
 			if (line.equals("and"))
 				filteredArray = FilterService.runFilterAND(filter, previousArray);
@@ -84,7 +83,7 @@ public class JsonParser {
 				filteredArray = FilterService.runFilterOR(filter, previousArray);
 		        }
 			
-//				return filteredArray;
+				return filteredArray;
 				
 		    }
 }
