@@ -10,7 +10,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import ch.qos.logback.core.filter.Filter;
 import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
 import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
@@ -18,6 +17,7 @@ import it.univpm.ProgettoOOP.model.Entities;
 import it.univpm.ProgettoOOP.model.Hashtag;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.service.FilterService;
+import it.univpm.ProgettoOOP.other.Filter;
 
 public class JsonParser {
 	
