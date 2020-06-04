@@ -17,8 +17,8 @@ public class Entities {
 	
 	private ArrayList<Hashtag> hashtags = new ArrayList<Hashtag>();
 	private ArrayList<UserMentions> mentions = new ArrayList<UserMentions>();
-	private ArrayList<urls> url = new ArrayList<urls>();
-	private ArrayList<Image> images = new ArrayList<Image>();
+	private ArrayList<urls> Url = new ArrayList<urls>();
+	private ArrayList<Image> image = new ArrayList<Image>();
 	
 	/**
 	 * 
@@ -29,14 +29,14 @@ public class Entities {
 	 * 
 	 * il costruttore
 	 */
-	public Entities(ArrayList<Hashtag> hashtags, ArrayList<UserMentions> mentions, ArrayList<urls> url,
-					ArrayList<Image> images) {
+	public Entities(ArrayList<Hashtag> hashtags, ArrayList<UserMentions> mentions, ArrayList<urls> Url,
+					ArrayList<Image> image) {
 		
 		super();
 		this.hashtags = hashtags;
 		this.mentions = mentions;
-		this.url = url;
-		this.images = images;
+		this.Url = Url;
+		this.image = image;
 	}
 	
 	/**
@@ -81,7 +81,7 @@ public class Entities {
 	 * @return url
 	 */
 	public ArrayList<urls> getUrl() {
-		return this.url;
+		return this.Url;
 	}
 
 	/**
@@ -89,14 +89,14 @@ public class Entities {
 	 * permette di aggiungere l'url presente nel tweet
 	 */
 	public void setUrl(urls newUrl) {
-		url.add(newUrl);
+		Url.add(newUrl);
 	}
 
 	/**
 	 * @return l'immagine
 	 */
 	public ArrayList<Image> getImages() {
-		return this.images;
+		return this.image;
 	}
 
 	/**
@@ -105,7 +105,7 @@ public class Entities {
 	 */
 	public void setImages(Image newImage) {
 		
-		images.add(newImage);
+		image.add(newImage);
 	}
 	
 }

@@ -73,15 +73,15 @@ public class JSONParse {
 						en.setMentions(userMentions);
 					}
 					
-					urls url;
+					urls Url;
 					JSONArray URL = (JSONArray) entities.get("urls");
 					
 					for(int j=0; j<URL.size(); j++) {					
-						url = new urls();
+						Url = new urls();
 						JSONObject obj4 = (JSONObject) URL.get(j);
-						url.setUrl((String) obj4.get("url"));
-						url.setExpandedUrl((String) obj4.get("expanded_url"));
-						en.setUrl(url);
+						Url.setUrl((String) obj4.get("url"));
+						Url.setExpandedUrl((String) obj4.get("expanded_url"));
+						en.setUrl(Url);
 					}
 					
 					Image image;

@@ -8,7 +8,7 @@ package it.univpm.ProgettoOOP.model;
  */
 public class urls {
 	
-	private String url;
+	private String Url;
 	private String ExpandedUrl;
 	
 	/**
@@ -16,9 +16,9 @@ public class urls {
 	 * @param expanded_url indica l'url in forma estesa
 	 * il costruttore
 	 */
-	public urls(String url, String expandedUrl) {
+	public urls(String Url, String expandedUrl) {
 		super();
-		this.url = url;
+		this.Url = Url;
 		ExpandedUrl = expandedUrl;
 	}
 	
@@ -34,15 +34,15 @@ public class urls {
 	 * @return url
 	 */
 	public String getUrl() {
-		return url;
+		return Url;
 	}
 
 	/**
 	 * @param url 
 	 * permette di modificare l'url
 	 */
-	public void setUrl(String url) {
-		this.url = url;
+	public void setUrl(String Url) {
+		this.Url = Url;
 	}
 
 	/**
