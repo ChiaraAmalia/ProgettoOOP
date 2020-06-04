@@ -24,8 +24,8 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.service.TweetService;
 
 /** Classe che si occupa di effettuare le chiamate al Server.
- * @author Piero Campitelli
  * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
  */
 @RestController
 public class ControllerClass {
@@ -53,9 +53,8 @@ public class ControllerClass {
 	
 	@RequestMapping(value="/filtered",method=RequestMethod.POST) 
 	public ResponseEntity<Object> getFilteredWithPost(@RequestBody Object filter)
-			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException, InternalGeneralException {
-	         JsonParser.JsonParserColumn(filter);
-	         return new ResponseEntity<>("Product is updated successfully", HttpStatus.CREATED);
+			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException, InternalGeneralException { 
+	         return new ResponseEntity<>(JsonParser.JsonParserColumn(filter), HttpStatus.CREATED);
 	       }
 		
 	}
