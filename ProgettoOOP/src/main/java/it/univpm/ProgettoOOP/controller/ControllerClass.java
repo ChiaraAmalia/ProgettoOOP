@@ -14,10 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.JsonParser;
-
+//import com.fasterxml.jackson.core.JsonParser;
+import it.univpm.ProgettoOOP.service.JsonParser;
 import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
 import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
+import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
 import it.univpm.ProgettoOOP.database.DatabaseClass;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.service.TweetService;
@@ -50,10 +51,11 @@ public class ControllerClass {
 		return new ResponseEntity<>(tweetService.getMetada(), HttpStatus.OK);
 	}
 	
-	@RequestMapping(value="filtered",method=RequestMethod.POST) 
-	public ArrayList <Tweet> getFilteredWithPost(@RequestBody Object filter)
-			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException {
-	         return JsonParser.JsonParserColumn(filter);
+	@RequestMapping(value="/filtered",method=RequestMethod.POST) 
+	public ResponseEntity<Object> getFilteredWithPost(@RequestBody Object filter)
+			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException, InternalGeneralException {
+	         JsonParser.JsonParserColumn(filter);
+	         return new ResponseEntity<>("Product is updated successfully", HttpStatus.CREATED);
 	       }
 		
 	}
