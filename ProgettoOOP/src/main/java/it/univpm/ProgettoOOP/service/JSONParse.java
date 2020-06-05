@@ -23,6 +23,7 @@ import it.univpm.ProgettoOOP.model.urls;
  * @see Tweet
  * 
  * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
  *
  */
 
