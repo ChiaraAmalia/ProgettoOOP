@@ -29,7 +29,6 @@ import it.univpm.ProgettoOOP.service.TweetService;
  */
 @RestController
 public class ControllerClass {
-	
 	/*
 	 * Autowired consente, all'interno del controller, di creare 
 	 * un'istanza del nostro servizio che protremo utilizzare per 
@@ -56,6 +55,7 @@ public class ControllerClass {
 			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException, InternalGeneralException { 
 	         return new ResponseEntity<>(JsonParser.JsonParserColumn(filter), HttpStatus.CREATED);
 	       }
+	
 		
 	}
 	

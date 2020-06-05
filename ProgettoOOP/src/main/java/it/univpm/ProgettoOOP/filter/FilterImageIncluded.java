@@ -1,4 +1,4 @@
-package it.univpm.ProgettoOOP.filter;
+ package it.univpm.ProgettoOOP.filter;
 
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.other.Filter;

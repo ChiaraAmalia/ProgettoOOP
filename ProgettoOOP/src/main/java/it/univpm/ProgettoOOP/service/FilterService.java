@@ -9,7 +9,7 @@ import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.other.Filter;
                                                                        
-public class FilterService {
+ public class FilterService {
 private final static String path = "it.univpm.ProgettoOOP.filter.";
 	
 	private static ArrayList<Tweet> tweets = JSONParse.ParseInformazioni();

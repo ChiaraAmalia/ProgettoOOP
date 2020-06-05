@@ -8,18 +8,19 @@ import it.univpm.ProgettoOOP.other.Filter2Compare;
 import it.univpm.ProgettoOOP.other.Filter;
 
 public class FilterHashtagIncluded extends Filter1Compare implements Filter{
+	
 	public FilterHashtagIncluded(Object paramCompare) {
 		super(paramCompare);
 	}
 	
 	public boolean filter(Tweet tweet) {
 
-		for(int i=0; i<tweet.getEntities().size(); i++) {
-			for(int j=0; j<tweet.getEntities().get(i).getHashtags().size(); j++) {
-				if((tweet.getEntities().get(i).getHashtags().get(j).getText()).equals(paramCompare))
-					return true;
+			for(int i=0; i<tweet.getEntities().size(); i++) {
+				for(int j=0; j<tweet.getEntities().get(i).getHashtags().size(); j++) {
+					if(tweet.getEntities().get(i).getHashtags().get(j).getText().equals(paramCompare))
+						return true;
+				}
 			}
-		}
 		return false;
 	}
 }
