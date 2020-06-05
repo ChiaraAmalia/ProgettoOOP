@@ -30,7 +30,6 @@ public class DatabaseClass {
 
 		String data = "";
 		String line = "";
-//		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&include_rts=false&tweet_mode=extended";
 		String url = "https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/user/1.1/statuses/home_timeline.json?count=100&tweet_mode=extended";
 
 		try {
