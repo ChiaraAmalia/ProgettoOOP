@@ -39,18 +39,15 @@ public class JsonParser {
 			//Itera con tutti gli elementi dell'ArrayList
 				for(Map.Entry<String, Object> entry: result.entrySet()) {
 					filteredArray= new ArrayList<Tweet>();
+					String column=entry.getKey();
 					Object filterParam=entry.getValue();
-					Object column=entry.getKey();
 					try {
-						try {
 							filteredArray=jsonParserOperator(column,filterParam,previousArray);
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
 					}catch (SecurityException e) {
 						throw new InternalGeneralException ("Error in I/O parsing information");
 					}
 				}
+				previousArray=new ArrayList<Tweet>();
 				previousArray.addAll(filteredArray);
 				return filteredArray;
 			}
@@ -65,9 +62,9 @@ public class JsonParser {
 		HashMap <String,Object> result= new ObjectMapper().convertValue(filterParam,HashMap.class);
 
 		for(Map.Entry<String, Object> entry: result.entrySet()) {
-			String operator=(String) entry.getValue();
+			String operator=(String)entry.getKey();
 			Object value=entry.getValue();
-			if((operator.equals("type")) || (operator.contentEquals("Type"))) {
+			if((operator.equals("type")) || (operator.equals("Type"))) {
 				line=(String) value;
 				if((!(value.equals("and"))&&(!(value.equals("or"))))) {
 					throw new FilterIllegalArgumentException("'and' o 'or' expected after 'type'");
