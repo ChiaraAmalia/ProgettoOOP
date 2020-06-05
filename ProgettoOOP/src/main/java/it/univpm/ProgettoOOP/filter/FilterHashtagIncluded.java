@@ -16,7 +16,7 @@ public class FilterHashtagIncluded extends Filter1Compare implements Filter{
 
 		for(int i=0; i<tweet.getEntities().size(); i++) {
 			for(int j=0; j<tweet.getEntities().get(i).getHashtags().size(); j++) {
-				if((tweet.getEntities().get(i).getHashtags().get(j).getText()).equals(tweet.getEntities().get(i).getHashtags().get(j).getText()))
+				if((tweet.getEntities().get(i).getHashtags().get(j).getText()).equals(paramCompare))
 					return true;
 			}
 		}
