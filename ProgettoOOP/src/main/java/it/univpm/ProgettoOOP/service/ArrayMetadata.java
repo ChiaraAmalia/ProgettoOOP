@@ -31,6 +31,7 @@ public class ArrayMetadata {
 		metadata.add(new Metadata("size","dimensioni relative all'immagine","ArrayList"));
 		metadata.add(new Metadata("height","altezza dell'immagine","Long"));
 		metadata.add(new Metadata("width","larghezza dell'immagine","Long"));
+		metadata.add(new Metadata("resize","ridimensiona le immagini senza ritagliarle, si indica con la parola fit","String"));
 		metadata.add(new Metadata("retweet_count","numero di volte che il tweet è stato retweetato","Long"));
 		metadata.add(new Metadata("lang","lingua del tweet","String"));
 		metadata.add(new Metadata("users","contiene le caratteristiche riguardo l'utente che ha tweettato","ArrayList"));

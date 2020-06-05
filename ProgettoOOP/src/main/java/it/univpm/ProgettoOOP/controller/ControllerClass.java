@@ -37,20 +37,38 @@ public class ControllerClass {
 	@Autowired
 	TweetService tweetService;
 	
-	/** Risponde alla richiesta GET /timeline
-	 * @return ArrayList di oggetti Tweet
+	/** 
+	 * Risponde alla richiesta GET /data
+	 * @return ArrayList di 100 Tweet
+	 * permette di visualizzre gli ultimi 100 tweet
 	 */
-	@RequestMapping(value="/timeline", method = RequestMethod.GET)
+	@RequestMapping(value="/data", method = RequestMethod.GET)
 	public ResponseEntity<Object> getTweets() {
 		return new ResponseEntity<>(tweetService.getTweet(), HttpStatus.OK);
 	}
 	
+	/**
+	 * Risponde alla richiesta GET /metadata
+	 * @return ArrayList di informazioni riguardanti i vari campi
+	 */
 	@RequestMapping(value="/metadata", method = RequestMethod.GET)
 	public ResponseEntity<Object> getMetadatas() {
 		return new ResponseEntity<>(tweetService.getMetada(), HttpStatus.OK);
 	}
 	
-	@RequestMapping(value="/filtered",method=RequestMethod.POST) 
+	/**
+	 * Risponde alla richiesta POST /data
+	 * @param filter
+	 * @return un ArrayList di tweet filtrato 
+	 * @throws InternalParseException
+	 * @throws FilterNotFoundException
+	 * @throws FilterIllegalArgumentException
+	 * @throws InternalGeneralException
+	 * 
+	 * 
+	 */
+	
+	@RequestMapping(value="/data",method=RequestMethod.POST) 
 	public ResponseEntity<Object> getFilteredWithPost(@RequestBody Object filter)
 			 throws InternalParseException, FilterNotFoundException, FilterIllegalArgumentException, InternalGeneralException { 
 	         return new ResponseEntity<>(JsonParser.JsonParserColumn(filter), HttpStatus.CREATED);
