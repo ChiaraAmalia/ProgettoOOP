@@ -11,10 +11,12 @@ public class FilterImageNotIncluded extends Filter1Compare implements Filter {
 	}
 	
 	public boolean filter(Tweet tweet) {
+		
 		for(int i=0; i<tweet.getEntities().size(); i++) {
-			if(tweet.getEntities().get(i).getImages()==null)
-				return true;
+			for(int j=0; j<tweet.getEntities().get(i).getImages().size(); j++)
+				if((tweet.getEntities().get(i).getImages().get(j).getType()).equals(paramCompare))
+					return false;
 		}
-		return false;
+		return true;
 	}
 }

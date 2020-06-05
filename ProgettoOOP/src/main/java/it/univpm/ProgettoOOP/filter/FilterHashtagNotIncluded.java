@@ -14,11 +14,11 @@ public class FilterHashtagNotIncluded extends Filter1Compare implements Filter{
 	public boolean filter(Tweet tweet) {
 		for(int i=0; i<tweet.getEntities().size(); i++) {
 			for(int j=0; j<tweet.getEntities().get(i).getHashtags().size(); j++) {
-				if(!((tweet.getEntities().get(i).getHashtags().get(j).getText()).equals(tweet.getEntities().get(i).getHashtags().get(j).getText())))
-					return true;
+				if((tweet.getEntities().get(i).getHashtags().get(j).getText()).equals(paramCompare))
+					return false;
 			}
 	}
-		return false;
+		return true;
 		
 	}
 }
