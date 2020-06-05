@@ -65,7 +65,6 @@ public class ControllerClass {
 	 * @throws FilterIllegalArgumentException
 	 * @throws InternalGeneralException
 	 * 
-	 * 
 	 */
 	
 	@RequestMapping(value="/data",method=RequestMethod.POST) 
