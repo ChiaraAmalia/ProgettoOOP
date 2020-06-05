@@ -46,27 +46,28 @@ public class JsonParser {
 					}catch (SecurityException e) {
 						throw new InternalGeneralException ("Error in I/O parsing information");
 					}
+					
+					previousArray=new ArrayList<Tweet>();
+					previousArray.addAll(filteredArray);
 				}
-				previousArray=new ArrayList<Tweet>();
-				previousArray.addAll(filteredArray);
+
 				return filteredArray;
 			}
 	
 	
-	public static ArrayList<Tweet> jsonParserOperator (Object column,Object filterParam,
+	public static ArrayList<Tweet> jsonParserOperator (String column,Object filterParam,
 			                                          ArrayList<Tweet> previousArray)
 			throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException {
 		String line=" ";
 		Filter filter;
 		ArrayList <Tweet> filteredArray= new ArrayList <Tweet>();
 		HashMap <String,Object> result= new ObjectMapper().convertValue(filterParam,HashMap.class);
-
 		for(Map.Entry<String, Object> entry: result.entrySet()) {
-			String operator=(String)entry.getKey();
+			String operator= entry.getKey();
 			Object value=entry.getValue();
 			if((operator.equals("type")) || (operator.equals("Type"))) {
 				line=(String) value;
-				if((!(value.equals("and"))&&(!(value.equals("or"))))) {
+				if(!(value.equals("and"))&&!(value.equals("or"))) {
 					throw new FilterIllegalArgumentException("'and' o 'or' expected after 'type'");
 		    	}
 		    	continue;
@@ -82,6 +83,7 @@ public class JsonParser {
 			
 				return filteredArray;
 				
-		    }
+
+	    }
 }
 

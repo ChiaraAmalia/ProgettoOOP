@@ -14,7 +14,7 @@ private final static String path = "it.univpm.ProgettoOOP.filter.";
 	
 	private static ArrayList<Tweet> tweets = JSONParse.ParseInformazioni();
 
-	public static Filter instanceFilter(Object column,String operator,Object param) 
+	public static Filter instanceFilter(String column,String operator,Object param) 
 		   throws FilterNotFoundException, FilterIllegalArgumentException,InternalGeneralException{
 		
 		Filter filtro;

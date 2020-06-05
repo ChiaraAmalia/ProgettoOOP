@@ -12,7 +12,7 @@ public class FilterHashtagIncluded extends Filter1Compare implements Filter{
 	public FilterHashtagIncluded(Object paramCompare) {
 		super(paramCompare);
 	}
-	
+	 
 	public boolean filter(Tweet tweet) {
 
 			for(int i=0; i<tweet.getEntities().size(); i++) {
