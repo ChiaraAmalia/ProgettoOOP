@@ -10,14 +10,6 @@ public class Hashtag {
 	
 	private String text;
 
-	/**
-	 * @param testo indicate il testo dell'hashtag
-	 * il costruttore
-	 */
-	public Hashtag(String text) {
-		super();
-		this.text = text;
-	}
 
 	/**
 	 * il costruttore senza campi

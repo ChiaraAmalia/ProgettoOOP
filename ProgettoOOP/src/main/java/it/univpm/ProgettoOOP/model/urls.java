@@ -10,17 +10,7 @@ public class urls {
 	
 	private String Url;
 	private String ExpandedUrl;
-	
-	/**
-	 * @param url indica l'url
-	 * @param expanded_url indica l'url in forma estesa
-	 * il costruttore
-	 */
-	public urls(String Url, String expandedUrl) {
-		super();
-		this.Url = Url;
-		ExpandedUrl = expandedUrl;
-	}
+
 	
 	/**
 	 * il costruttore senza campi

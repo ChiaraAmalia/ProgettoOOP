@@ -24,28 +24,6 @@ public class Tweet  extends ID {
 	private ArrayList<User> user = new ArrayList<User>();
 	private long retweet_count;
 	private String lang;
-
-	/**
-	 * il costruttore con i campi
-	 * 
-	 * @param idTweet indica l'id del tweet
-	 * @param dataOra indica la data e l'ora di pubblicazione del tweet
-	 * @param testo rappresenta il testo del tweet
-	 * @param entities è un array contente hashtags, gli UserMentions, gli urls e le immagini
-	 * @param users è un array contente le caratteristiche principali dell'autore del tweet
-	 * @param retweeted è un valore booleano che indica se il tweet è stato retwettato
-	 */
-	public Tweet(long idTweet, String created_at, String text, ArrayList<Entities> entities, ArrayList<User> user,
-			long retweet_count, String lingua) {
-		super(idTweet);
-		this.idTweet = idTweet;
-		this.created_at = created_at;
-		this.text = text;
-		this.entities = entities;
-		this.user = user;
-		this.retweet_count = retweet_count;
-		lang = lingua;
-	}
 	
 	/**
 	 * il costruttore senza i campi

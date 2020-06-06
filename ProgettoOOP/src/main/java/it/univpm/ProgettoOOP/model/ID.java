@@ -18,13 +18,6 @@ public class ID {
 		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * @param id che rappresenta un id generico
-	 */
-	public ID(long id) {
-		super();
-		this.id = id;
-	}
 
 	/**
 	 * @return  id

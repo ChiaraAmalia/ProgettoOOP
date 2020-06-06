@@ -7,10 +7,12 @@ import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
 import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
 import it.univpm.ProgettoOOP.model.Tweet;
-import it.univpm.ProgettoOOP.other.Filter;
-                                                                       
+import it.univpm.ProgettoOOP.service.JSONParse;
+import it.univpm.ProgettoOOP.util.other.Filter;
+                                                                        
  public class FilterService {
-private final static String path = "it.univpm.ProgettoOOP.filter.";
+	 
+	private final static String path = "it.univpm.ProgettoOOP.util.filter.";
 	
 	private static ArrayList<Tweet> tweets = JSONParse.ParseInformazioni();
 
@@ -61,13 +63,13 @@ private final static String path = "it.univpm.ProgettoOOP.filter.";
 	}
 		
 	
-	public static ArrayList<Tweet> runFilterAND(Filter filter, ArrayList<Tweet> previousArray){
+	public static ArrayList<Tweet> runFilterAND(Filter filtro, ArrayList<Tweet> previousArray){
 
 		ArrayList<Tweet> filteredArray = new ArrayList<Tweet>();
 		
 		for(Tweet tweet :  previousArray) {
 
-			if(filter.filter(tweet))
+			if(filtro.filter(tweet))
 				filteredArray.add(tweet);
 		}				
 		

@@ -1,4 +1,4 @@
-package it.univpm.ProgettoOOP.other;
+package it.univpm.ProgettoOOP.util.other;
 
 
 import java.util.ArrayList;

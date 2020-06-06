@@ -19,23 +19,6 @@ public class User extends ID {
 	private long FollowerCount;
 	
 	/**
-	 * @param id indica l'id dell'utente
-	 * @param name indica il nome completo dell'utente
-	 * @param screenName indica il nome utente
-	 * @param description indica la bio
-	 * @param followerCount indica il numero di seguaci
-	 * 
-	 * il costruttore
-	 */
-	public User(long id, String name, String screenName, String description, long followerCount) {
-		super(id);
-		this.name = name;
-		ScreenName = screenName;
-		this.description = description;
-		FollowerCount = followerCount;
-	}
-	
-	/**
 	 * il costruttore senza campi
 	 */
 	public User() {

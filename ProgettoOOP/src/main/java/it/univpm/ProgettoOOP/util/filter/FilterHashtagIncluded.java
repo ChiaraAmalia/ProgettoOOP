@@ -1,11 +1,11 @@
-package it.univpm.ProgettoOOP.filter;
+package it.univpm.ProgettoOOP.util.filter;
 
 import it.univpm.ProgettoOOP.model.Entities;
 import it.univpm.ProgettoOOP.model.Hashtag;
 import it.univpm.ProgettoOOP.model.Tweet;
-import it.univpm.ProgettoOOP.other.Filter1Compare;
-import it.univpm.ProgettoOOP.other.Filter2Compare;
-import it.univpm.ProgettoOOP.other.Filter;
+import it.univpm.ProgettoOOP.util.other.Filter;
+import it.univpm.ProgettoOOP.util.other.Filter1Compare;
+import it.univpm.ProgettoOOP.util.other.Filter2Compare;
 
 public class FilterHashtagIncluded extends Filter1Compare implements Filter{
 	
