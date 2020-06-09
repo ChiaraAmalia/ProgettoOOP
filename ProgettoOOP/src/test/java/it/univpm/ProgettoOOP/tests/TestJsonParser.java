@@ -23,7 +23,7 @@ public class TestJsonParser {
 	
 	
 	@Test
-	public void testJsonParser() throws FilterNotFoundException, FilterIllegalArgumentException{
+	public void testJsonParser() {
 		
 		assertThrows(FilterNotFoundException.class, ()-> JsonParser.JsonParserColumn("{\"hashtags\": {\"Included\" : \"coronavirus\"}}"));
 		assertThrows(FilterNotFoundException.class, ()-> JsonParser.JsonParserColumn("{\"images\": {\"NotIncluded\" : \"mp4\"}}"));
