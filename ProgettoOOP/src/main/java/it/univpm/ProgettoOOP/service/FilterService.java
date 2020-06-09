@@ -14,7 +14,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 	 
 	private final static String path = "it.univpm.ProgettoOOP.util.filter.";
 	
-	private static ArrayList<Tweet> tweets = JSONParse.ParseInformazioni();
+    private static ArrayList<Tweet> tweets = JSONParse.ParseInformazioni();
 
 	public static Filter instanceFilter(String column,String operator,Object param) 
 		   throws FilterNotFoundException, FilterIllegalArgumentException,InternalGeneralException{
@@ -77,7 +77,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 	}
 
 	
-	public static ArrayList<Tweet> runFilterOR(Filter filtro, ArrayList<Tweet> previousArray){
+	public static  ArrayList<Tweet> runFilterOR(Filter filtro, ArrayList<Tweet> previousArray){
 
 		ArrayList<Tweet> filteredArray = new ArrayList<Tweet>();
 		

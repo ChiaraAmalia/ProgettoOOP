@@ -29,13 +29,14 @@ import it.univpm.ProgettoOOP.model.urls;
 
 public class JSONParse {
 	
+	
 	/**
 	 * Questo metodo permette di ritornare un arraylist che contiene tutte le informazioni
 	 * riguardanti la classe
 	 * @see Tweet
 	 * @return Timeline
 	 */
-	public static  ArrayList<Tweet> ParseInformazioni(){
+	public static ArrayList<Tweet> ParseInformazioni(){
 
 			JSONArray parse = DatabaseClass.downloadJSON();
 			ArrayList<Tweet> Timeline = new ArrayList<Tweet>(); 

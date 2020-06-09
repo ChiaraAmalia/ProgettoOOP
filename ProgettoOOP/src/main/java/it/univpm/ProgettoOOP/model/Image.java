@@ -13,7 +13,6 @@ import java.util.ArrayList;
  */
 public class Image extends ID {
 	
-	private long idImage;
 	private String media_url;
 	private String type;
 	private ArrayList<Dimensions> size = new ArrayList<Dimensions>();

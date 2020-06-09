@@ -9,7 +9,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.stereotype.Service;
 
-import it.univpm.ProgettoOOP.database.DatabaseClass;
 import it.univpm.ProgettoOOP.service.JSONParse;
 import it.univpm.ProgettoOOP.model.Metadata;
 import it.univpm.ProgettoOOP.model.Tweet;
