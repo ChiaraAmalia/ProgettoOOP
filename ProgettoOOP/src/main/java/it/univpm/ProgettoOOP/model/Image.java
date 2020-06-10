@@ -18,9 +18,6 @@ public class Image extends ID {
 	private ArrayList<Dimensions> size = new ArrayList<Dimensions>();
 
 
-	/**
-	 * il costruttore senza campi
-	 */
 	public Image() {
 		super();
 	}
