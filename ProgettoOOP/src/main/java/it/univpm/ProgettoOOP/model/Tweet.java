@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 public class Tweet  extends ID {
 	
-	private long idTweet;
 	private String created_at;
 	private String text;
 	private ArrayList<Entities> entities = new ArrayList<Entities>();
@@ -25,9 +24,7 @@ public class Tweet  extends ID {
 	private long retweet_count;
 	private String lang;
 	
-	/**
-	 * il costruttore senza i campi
-	 */
+	
 	public Tweet() {
 		super();
 	}

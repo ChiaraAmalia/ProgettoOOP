@@ -6,9 +6,7 @@ public class Dimensions {
 	private long width;
 	private String resize;
 	
-	/**
-	 * 
-	 */
+
 	public Dimensions() {
 		super();
 		// TODO Auto-generated constructor stub

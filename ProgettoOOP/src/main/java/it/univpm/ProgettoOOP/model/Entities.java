@@ -21,9 +21,6 @@ public class Entities {
 	private ArrayList<Image> image = new ArrayList<Image>();
 
 	
-	/**
-	 * costruttore senza campi
-	 */
 	public Entities() {
 	}
 

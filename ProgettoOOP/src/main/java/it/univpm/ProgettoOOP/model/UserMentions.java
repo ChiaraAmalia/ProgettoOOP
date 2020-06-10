@@ -13,11 +13,7 @@ public class UserMentions extends ID {
 	
 	private String ScreenName;
 	private String name;
-	private int id;
-	
-	/**
-	 * il costruttore senza campi
-	 */
+
 	public UserMentions() {
 		super();
 		// TODO Auto-generated constructor stub

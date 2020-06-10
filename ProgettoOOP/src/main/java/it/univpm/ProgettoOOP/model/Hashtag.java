@@ -10,10 +10,6 @@ public class Hashtag {
 	
 	private String text;
 
-
-	/**
-	 * il costruttore senza campi
-	 */
 	public Hashtag() {
 		super();
 	}

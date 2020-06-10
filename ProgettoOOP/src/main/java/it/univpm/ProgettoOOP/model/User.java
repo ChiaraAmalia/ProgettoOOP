@@ -12,15 +12,11 @@ package it.univpm.ProgettoOOP.model;
  */
 public class User extends ID {
 	
-	private long id;
 	private String name;
 	private String ScreenName;
 	private String description;
 	private long FollowerCount;
 	
-	/**
-	 * il costruttore senza campi
-	 */
 	public User() {
 		super();
 	}

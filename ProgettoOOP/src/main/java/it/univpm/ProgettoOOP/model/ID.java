@@ -10,9 +10,7 @@ public class ID {
 	
 	private long id;
 
-	/**
-	 * il costruttore senza campi
-	 */
+
 	public ID() {
 		super();
 		// TODO Auto-generated constructor stub

@@ -11,10 +11,6 @@ public class urls {
 	private String Url;
 	private String ExpandedUrl;
 
-	
-	/**
-	 * il costruttore senza campi
-	 */
 	public urls() {
 		super();
 		// TODO Auto-generated constructor stub

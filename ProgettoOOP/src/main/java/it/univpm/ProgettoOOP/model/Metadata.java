@@ -2,9 +2,9 @@ package it.univpm.ProgettoOOP.model;
 
 public class Metadata {
 	
-	String alias;
-	String sourceField;
-	String type;
+	private String alias;
+	private String sourceField;
+	private String type;
 	
 	
 
@@ -21,9 +21,6 @@ public class Metadata {
 	}
 
 
-	/**
-	 * 
-	 */
 	public Metadata() {
 		super();
 		// TODO Auto-generated constructor stub
