@@ -7,3 +7,6 @@ Questo progetto è finalizzato alla realizzazione di una timeline utente persona
 # Chiamate
 * Chiamata GET /metadata
 ![GETData](https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg)
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
