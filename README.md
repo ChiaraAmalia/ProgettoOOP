@@ -6,3 +6,4 @@ Questo progetto è finalizzato alla realizzazione di una timeline utente persona
 
 # Chiamate
 * Chiamata GET /metadata
+
