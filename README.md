@@ -5,4 +5,4 @@ Un Web Service è un sistema software in grado di mettersi al servizio di un Cli
 Questo progetto è finalizzato alla realizzazione di una timeline utente personalizzata contentente tutti i campi utili relativi agli ultimi cento tweet.
 
 # Chiamate
-*Chiamata GET /metadata
+* Chiamata GET /metadata
