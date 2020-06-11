@@ -24,7 +24,10 @@ public class TestFilterService {
 	@Test
 	public void testFilterService() {
 		
-		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("hashtags", "Included" , "coronavirus"));		
-		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("images", "Included", "photo"));
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("ashtags", "Included" , "coronavirus"));		
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("imageees", "Included", "photo"));
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("hashtag", "Included", "AI"));
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("Image", "In", "photo"));
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("Hashtag", "Included", 1));
 	}
 }
