@@ -47,7 +47,7 @@ public class Filter2Compare {
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
 	
-	public void setParametri (Object parametro) {
+	public void setParametri(Object parametro) {
 		
 		if(parametro instanceof ArrayList<?>) {
 			
