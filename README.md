@@ -8,4 +8,4 @@ Questo progetto è finalizzato alla realizzazione di una timeline utente persona
 * Chiamata GET /metadata
 ![GETData](https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg)
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="alt text" width="100" height="80">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="alt text" width="50%" height="50%">
