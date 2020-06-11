@@ -31,7 +31,7 @@ public class JsonParser {
 
 			//Itera con tutti gli elementi dell'ArrayList
 				for(Map.Entry<String, Object> entry: result.entrySet()) {
-//					filteredArray= new ArrayList<Tweet>();
+					filteredArray= new ArrayList<Tweet>();
 					String column=entry.getKey();
 					Object filterParam=entry.getValue();
 					try {
