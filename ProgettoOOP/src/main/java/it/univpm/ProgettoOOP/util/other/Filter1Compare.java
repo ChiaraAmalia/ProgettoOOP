@@ -2,29 +2,44 @@ package it.univpm.ProgettoOOP.util.other;
 
 public class Filter1Compare{
 	
-	protected String paramCompare;
+	protected int parametroFiltro;
 	
-public Filter1Compare (Object paramCompare) {
 	
-	if(paramCompare instanceof String) 
-		this.paramCompare=(String)paramCompare;
-	 else 
-		throw new IllegalArgumentException ("Unexpected request:String");
-}
-	
-	public void setParamToCompare (Object paramCompare) {
-		if(paramCompare instanceof String)
-			this.paramCompare=(String)paramCompare;
-		else throw new IllegalArgumentException ("Unexpected request:String");
+	/** Costruttore 
+	 * @param parametroFiltro deve essere un Int.
+	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
+	*/
+	public Filter1Compare(Object parametroFiltro){
+		
+		if(parametroFiltro instanceof Integer ) { 
+			this.parametroFiltro =(Integer)parametroFiltro;
+		}else {
+			throw new IllegalArgumentException("Type: Interger ");
+		}
+		
 	}
-	
-	public void setParamToCompare (String paramCompare) {
-		this.paramCompare=paramCompare;
+		
+	/** Set
+	 * @param parametroFiltro deve essere un Int.
+	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
+	*/
+	public void setParametroFiltro(Object parametroFiltro) {
+		
+		if(parametroFiltro instanceof Integer ) { 
+			this.parametroFiltro =(Integer)parametroFiltro;
+		}else {
+			throw new IllegalArgumentException("Type: Interger ");
+		}
 	}
-	
-	public String getParamToCompare() {
-		return paramCompare;
-	}
-	
 
+	/** Set Overloading
+	 *  
+	*/
+	public void setParametroFiltro(int parametroFiltro) {
+		this.parametroFiltro = parametroFiltro;
+	}
+
+	public int getParametroFiltro() {
+		return parametroFiltro;
+	}
 }
