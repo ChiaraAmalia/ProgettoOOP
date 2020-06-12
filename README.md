@@ -39,10 +39,12 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  | Greater          |                                             | maggiore (valido per campi numerici)            |
  | Less             |                                             | minore (valido per campi numerici)              |
  | Included    |{"Hashtag" : { "Included" : ["cybersecurity"]}}| trova una corrispondenza con i valori dell'array (valido per stringhe)|
- | NotIncluded |{"Image" : { "NotIncluded" : ["photo"]}    | non trova una corrispondenza con i valori dell'array (valido per stringhe)| 
+ | NotIncluded |{"Image" : { "NotIncluded" : ["photo"]}}   | non trova una corrispondenza con i valori dell'array (valido per stringhe)| 
  |   In             |                                             | compreso tra (valido per campi numerici)        |  
  |   Nin            |                                             |non compreso tra (valido per campi numerici)     |
  
+ In aggiunta, è possibile anche creare dei filtri concatenati, utilizzando il comando "*type*". Ad esempio il filtraggio prenderà tutti  i tweet che contengono l'hashtag "linux" ma non contengono un'immagine
+ {"Hashtag": { "Included": ["linux"]}, "Image": {"type": "and", "NotIncluded": ["photo"]}}
  
 <h2> Chiamate </h2>
 
