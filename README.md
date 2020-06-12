@@ -39,7 +39,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  |   Greater          | maggiore (valido per campi numerici)               |                                               |
  |   Less             | minore (valido per campi numerici)                 |                                               |
  |   Included         |	trova una corrispondeza con i valori dell'array       {"Hashtag": {"Included" : ["cybersecurity"]}}|            
-                       (valido per stringhe)                               |
+                       (valido per stringhe)                               |                                               |
  |   NotIncluded      | non trova una corrispondeza con i valori dell'array|                                               |
  |                    | (valido per stringhe)                              |                                               |
  |   In               | compreso tra (valido per campi numerici)           |                                               |  
