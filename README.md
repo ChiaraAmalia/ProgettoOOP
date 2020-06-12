@@ -24,7 +24,7 @@ Ora l'applicazione Web Service sarà attiva e in ascolto alla porta http://local
 Per eseguire le richieste GET o POST si può installare un API testing, (ad esempio: Postman). La seguente tabella mostra le richieste possibili.
 
  | **TIPO** |      **ROTTA**     |                                      **DESCRIZIONE**                                          |
- |----------|:------------------:|----------------------------------------------------------------------------------------------:|
+ |----------|:------------------:|:----------------------------------------------------------------------------------------------:|
  |   GET    | /metadata          | restituisce gli alias utilizzati                                                              |
  |   GET    | /data              | restituisce gli ultimi cento tweet                                                            |
  |   GET    | /stats?field="nome"| restituisce una statistica sul "nome" specificato fatta sugli ultimi cento tweet              |
