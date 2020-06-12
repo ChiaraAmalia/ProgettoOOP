@@ -21,6 +21,7 @@ Quando il programma è pronto, è possibile eseguirlo cliccando con tasto destro
 Ora l'applicazione Web Service sarà attiva e in ascolto alla porta http://localhost:8080 (indirizzo IP 127.0.0.1)
 
 <h2> Eseguire richieste </h2>
+
 Per eseguire le richieste GET o POST si può installare un API testing, (ad esempio: Postman). La seguente tabella mostra le richieste possibili.
 
  | **TIPO** |      **ROTTA**     |                                      **DESCRIZIONE**                                          |
@@ -31,6 +32,16 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  |   POST   | /data              | restituisce i tweet che rispettano i filtri specificati nel body della richiesta              |
  |   POST   | /stats?field="nome"| restituisce una statistica sul "nome" specificato basandosi sui record che rispettano i filtri                                          specificati nel body della richiesta                                                          |     
                                
+ <h4>Filtri disponibili</h4>
+ 
+ | **NOME OPERATORE** |      **DESCRIZIONE**                                                     |          **ESEMPIO**         |
+ |--------------------|:-------------------------------------------------------------------------|:-----------------------------|
+ |   Greater          | maggiore (valido per campi numerici)                                     |                              |
+ |   Less             | minore (valido per campi numerici)                                       |                              |
+ |   Included         |	trova una corrispondeza con i valori dell'array (valido per stringhe)    |                              |
+ |   NotIncluded      | non trova una corrispondeza con i valori dell'array (valido per stringhe)|                              |
+ |   In               | compreso tra (valido per campi numerici)                                 |                              |  
+ |   Nin              | non compreso tra (valido per campi numerici)                             |                              |
  
  
 <h2> Chiamate </h2>
