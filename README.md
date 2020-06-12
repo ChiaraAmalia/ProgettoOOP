@@ -23,12 +23,15 @@ Ora l'applicazione Web Service sarà attiva e in ascolto alla porta http://local
 <h2> Eseguire richieste </h2>
 Per eseguire le richieste GET o POST si può installare un API testing, (ad esempio: Postman). La seguente tabella mostra le richieste possibili.
 
- | **TIPO** | **ROTTA** | **DESCRIZIONE** |
- |----------|:---------:|----------------:|
- |          |           |                 |
- |          |           |                 |
- |          |           |                 |
- |          |           |                 |
+ | **TIPO** |  **ROTTA**  | **DESCRIZIONE** |
+ |----------|:-----------:|----------------:|
+ |   GET    | /metadata   |                 |
+ |   GET    | /data       |                 |
+ |   GET    | /stats?     |                 |
+ |            field="nome"    
+ |   POST   | /data       |                 |
+ |   POST   | /stats?     |                 |
+              field="nome"
  
  
 <h2> Chiamate </h2>
