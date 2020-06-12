@@ -11,6 +11,16 @@ La nostra applicazione permette di richiedere mediante API REST (GET o POST) con
 * Restituzione delle statistiche sui dati di uno specifico campo.
 * Restituzione delle statistiche sui dati di uno specifico campo, su tweet filtrati.
 
+<h2> Richieste possibili </h2>
+Use case diagram
+
+<h1> Come iniziare </h1>
+Dopo aver scaricato un opportuno ide (ad esempio eclipse) per la visualizzazione del codice in Java del programma, è possibile clonare la repository GitHub (attraverso il comando "clone a repository", situato nella show view della finestra Git Repositories). Adesso è possibile importare il progetto attraverso il comando "Import Project" che compare cliccando con tasto destro sulla repository clonata, nella finestra a comparsa.
+Quando il programma è pronto, è possibile eseguirlo cliccando con tasto destro sul progetto importato(situato nel Package Explorer); nella finestra a comparsa si troverà il comando "Run as", eseguire il programma come "Sprign boot App"
+
+Ora l'aplicazione Web Service sarà attiva e in ascolto alla porta http://localhost:8080 (indirizzo IP 127.0.0.1)
+
+
 <h2> Chiamate </h2>
 
 * Chiamata GET /metadata
