@@ -44,6 +44,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  |   Nin            |                                             |non compreso tra (valido per campi numerici)     |
  
  In aggiunta, è possibile anche creare dei filtri concatenati, utilizzando il comando "*type*". Ad esempio il filtraggio prenderà tutti  i tweet che contengono l'hashtag "linux" ma non contengono un'immagine
+ 
  {"Hashtag": { "Included": ["linux"]}, "Image": {"type": "and", "NotIncluded": ["photo"]}}
  
 <h2> Chiamate </h2>
