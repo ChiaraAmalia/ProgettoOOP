@@ -28,10 +28,10 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  |   GET    | /metadata   |                 |
  |   GET    | /data       |                 |
  |   GET    | /stats?     |                 |
- |            field="nome"    
+ |            field="nome"                  |
  |   POST   | /data       |                 |
  |   POST   | /stats?     |                 |
-              field="nome"
+ |            field="nome"                  |
  
  
 <h2> Chiamate </h2>
