@@ -5,6 +5,8 @@ Un Web Service è un sistema software in grado di mettersi al servizio di un Cli
 Questo progetto è finalizzato alla realizzazione di una timeline utente personalizzata contentente tutti i campi utili relativi agli ultimi cento tweet.
 
 # Chiamate
-* Chiamata GET /metadata
+* Chiamata GET /metadatadata
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="390px" height="370px">
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="alt text" width="390px" height="370px">
+* Chiamata GET /data
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="390px" height="370px">
