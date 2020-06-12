@@ -4,6 +4,13 @@ Un Web Service è un sistema software in grado di mettersi al servizio di un Cli
 
 Questo progetto è finalizzato alla realizzazione di una timeline utente personalizzata contentente tutti i campi utili relativi agli ultimi cento tweet.
 
+La nostra applicazione permette di richiedere mediante API REST (GET o POST) con rotte distinte:
+* Restituzione dei metadati, formato JSON, ovvero l’elenco degli attributi, alias degli stessi e tipo di dati contenuti.
+* Restituzione dei dati riguardanti ogni tweet, formato JSON.
+* Restituzione dei dati riguardanti record filtrati, formato JSON.
+* Restituzione delle statistiche sui dati di uno specifico campo.
+* Restituzione delle statistiche sui dati di uno specifico campo, su tweet filtrati.
+
 <h2> Chiamate </h2>
 
 * Chiamata GET /metadata
