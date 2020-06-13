@@ -47,6 +47,41 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
  {"Hashtag": { "Included": ["linux"]}, "Image": {"type": "and", "NotIncluded": ["photo"]}}
  
+ <h2> Sviluppo </h2>
+ 
+ <h3>Diagramma delle classi</h3>
+ uml class diagram completo da aggiungere qua
+ 
+ <h3>Packages</h3>
+ un diagramma delle classi con solo package
+ 
+ <h3>Classi</h3>
+ 
+ * Package it.univpm.ProgettoOOP.controller
+ 
+ 
+ * Package it.univpm.ProgettoOOP.database
+ 
+ 
+ * Package it.univpm.ProgettoOOP.Exception
+ 
+ 
+ * Package it.univpm.ProgettoOOP.model
+ 
+ 
+ * Package it.univpm.ProgettoOOP.service
+ 
+ 
+ * Package it.univpm.ProgettoOOP.util
+ 
+ 
+ * Package it.univpm.ProgettoOOP.util.filter
+ 
+ 
+ * Package it.univpm.ProgettoOOP.util.stats
+ 
+ 
+ 
 <h2> Chiamate </h2>
 
 * Chiamata GET /metadata
