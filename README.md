@@ -69,7 +69,8 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  uml class diagram completo da aggiungere qua
  
  <h3>Packages</h3>
- un diagramma delle classi con solo package
+
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20package.jpg" alt="diagramma delle classi raffiguranti i packages" width="440px" height="370px">
  
  <h3>Classi</h3>
  
