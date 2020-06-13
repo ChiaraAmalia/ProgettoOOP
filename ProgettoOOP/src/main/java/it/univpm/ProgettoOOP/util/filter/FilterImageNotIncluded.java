@@ -15,9 +15,10 @@ public class FilterImageNotIncluded extends FilterArrayStringParent implements F
 		
 		for(String p : param)
 		for(int i=0; i<tweet.getEntities().size(); i++) {
-			for(int j=0; j<tweet.getEntities().get(i).getImages().size(); j++)
+			for(int j=0; j<tweet.getEntities().get(i).getImages().size(); j++) {
 				if((tweet.getEntities().get(i).getImages().get(j).getType()).equals(p))
 					return false;
+			}
 		}
 		return true;
 	}

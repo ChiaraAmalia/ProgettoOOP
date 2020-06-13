@@ -14,14 +14,14 @@ public class FilterHashtagNotIncluded extends FilterArrayStringParent implements
 	
 	public boolean filter(Tweet tweet) {
 		
-		for(String p: param)
-		for(int i=0; i<tweet.getEntities().size(); i++) {
-			for(int j=0; j<tweet.getEntities().get(i).getHashtags().size(); j++) {
-				if((tweet.getEntities().get(i).getHashtags().get(j).getText()).equals(p))
-					return false;
+		for(String p: param) {
+			for(int i=0; i<tweet.getEntities().size(); i++) {
+				for(int j=0; j<tweet.getEntities().get(i).getHashtags().size(); j++) {
+					if((tweet.getEntities().get(i).getHashtags().get(j).getText()).equals(p))
+						return false;
+				}
 			}
-	}
+		}
 		return true;
-		
 	}
 }
