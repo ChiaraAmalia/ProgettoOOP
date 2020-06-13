@@ -130,7 +130,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 <h1>Software utilizzati</h1>
 
 * <a href="https://www.eclipse.org/">Eclipse</a> - ambiente di sviluppo integrato
-* <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo applicazioni Java
+* <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo di applicazioni in Java
 * <a href="https://maven.apache.org/">Maven</a> - strumento di gestione di progetti
 
 <h1>Autori</h1>
