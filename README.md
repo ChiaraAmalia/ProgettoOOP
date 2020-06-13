@@ -14,8 +14,17 @@ La nostra applicazione permette di richiedere mediante API REST (GET o POST) con
 <h2>Contenuti</h2>
 
 <ul type="circle">
- <li><a href="https://github.com/ChiaraAmalia">Chiara Amalia Caporusso</a></li>
- <li><a href="https://github.com/pierocampitelli">Piero Campitelli</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-richieste-possibili-">Richieste possibili</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-come-iniziare-">Come iniziare</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-eseguire-richieste-">Eseguire richieste</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#filtri-disponibili">Filtri disponibili</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-sviluppo-">Sviluppo</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#diagramma-delle-classi">Diagramma delle classi</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#packages">Packages</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#classi">Classi</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-chiamate-">Chiamate</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#software-utilizzati">Software utilizzati</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#autori">Autori</a></li>
 </ul>
 
 <h2> Richieste possibili </h2>
