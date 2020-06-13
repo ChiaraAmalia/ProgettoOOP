@@ -9,9 +9,9 @@ public class Statistics {
 	protected ArrayList<Tweet> tweets;
 	
 	/** Costruttore 
-	 * @param RecordList array su cui si vuol calcolare la statistica 
+	 * @param TweetList array su cui si vuol calcolare la statistica 
 	*/
-	public Statistics(ArrayList<Tweet> tweetList) {
-		this.tweets = tweetList;
+	public Statistics(ArrayList<Tweet> TweetList) {
+		this.tweets = TweetList;
 	}
 }
