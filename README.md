@@ -57,38 +57,38 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
  <h3>Classi</h3>
  
- * Package it.univpm.ProgettoOOP.controller
+ * **Package it.univpm.ProgettoOOP.controller**
  
  
- * Package it.univpm.ProgettoOOP.database
+ * **Package it.univpm.ProgettoOOP.database**
  
  
- * Package it.univpm.ProgettoOOP.Exception
+ * **Package it.univpm.ProgettoOOP.Exception**
  
  
- * Package it.univpm.ProgettoOOP.model
+ * **Package it.univpm.ProgettoOOP.model**
  
  
- * Package it.univpm.ProgettoOOP.service
+ * **Package it.univpm.ProgettoOOP.service**
  
  
- * Package it.univpm.ProgettoOOP.util
+ * **Package it.univpm.ProgettoOOP.util**
  
  
- * Package it.univpm.ProgettoOOP.util.filter
+ * **Package it.univpm.ProgettoOOP.util.filter**
  
  
- * Package it.univpm.ProgettoOOP.util.stats
+ * **Package it.univpm.ProgettoOOP.util.stats**
  
  
  
 <h2> Chiamate </h2>
 
-* Chiamata GET /metadata
+* **Chiamata GET /metadata**
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="390px" height="370px">
 
-* Chiamata GET /data
+* **Chiamata GET /data**
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="390px" height="370px">
 
-* Chiamata POST /data
+* **Chiamata POST /data**
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="840px" height="590px">
