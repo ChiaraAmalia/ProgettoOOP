@@ -98,7 +98,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 
 * **Chiamata POST /data**
 
-<code>ControllerClass</code> esegue una chiamata tramite <code>jsonParserColumn</code> alla classe <code>JsonParser</code>, che insieme a <code>jsonParserOperator</code> effetueranno il parsing del body ricevuto in modo ciclico. Estrapolate le informazioni relative al filtraggio richiesto, verranno utilizzate da <code>instanceFilter</code> per istanziare nuovi oggetti filtro prendedoli della classi contenute nel package it.univpm.ProgettoOOP.util.filter. A questo punto tramite <code>runFilter</code> si potrà eseguire il filtraggio e restituire a <code>ControllerClass</code> l'Arraylist di Record filtrato da consegnare al Client in formato Json. 
+<code>ControllerClass</code> esegue una chiamata tramite <code>JsonParserColumn</code> alla classe <code>JsonParser</code>, che insieme a <code>jsonParserOperator</code> effettueranno il parsing del body ricevuto in modo ciclico. Estrapolate le informazioni relative al filtraggio richiesto, verranno utilizzate da <code>instanceFilter</code> per istanziare nuovi oggetti filtro prendedoli della classi contenute nel package it.univpm.ProgettoOOP.util.filter. A questo punto tramite <code>runFilter</code> si potrà eseguire il filtraggio e restituire a <code>ControllerClass</code> l'Arraylist di Record filtrato da consegnare al Client in formato Json. 
  
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="840px" height="590px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="860px" height="610px">
  
