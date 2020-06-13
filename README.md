@@ -85,10 +85,11 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 <h2> Chiamate </h2>
 
 * **Chiamata GET /metadata**
-ControllerClass esegue una chiamata tramite il metodo <span style="background-color:green">getTweets</span>
+ControllerClass esegue una chiamata tramite il metodo '*getMetadatas*'. Nella classe '*TweetServiceImpl*',  nel costruttore, viene inizializzato l'ArrayList che conterrà i metadata, così come viene inizializzata una HashMap che conterrà i metadata identificati con i relativi id; viene poi istanziato il metodo '*getMetada*' che ci restituisce una collezione di metadata. ControllerClass trasforma quest'ultima in Json e lo ritorna al client.
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="390px" height="370px">
 
 * **Chiamata GET /data**
+ControllerClass esegue una chiamata tramite il metodo '*getTweets*'. Nella classe '*TweetServiceImpl*',  nel costruttore, viene inizializzato l'ArrayList che conterrà il file JSON scaricato, così come viene inizializzata una HashMap che conterrà i tweet identificati con i relativi id; viene poi istanziato il metodo '*getTweet*' che ci restituisce una collezione di tweet, cioè l'intera timeline contenente gli ultimi cento tweet. ControllerClass trasforma quest'ultima in Json e lo ritorna al client.
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="390px" height="370px">
 
 * **Chiamata POST /data**
