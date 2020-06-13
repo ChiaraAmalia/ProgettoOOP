@@ -16,7 +16,7 @@ Use case diagram
 
 <h1> Come iniziare </h1>
 Dopo aver scaricato un opportuno ide (ad esempio eclipse) per la visualizzazione del codice in Java del programma, è possibile clonare la repository GitHub (attraverso il comando "clone a repository", situato nella show view della finestra Git Repositories). Adesso è possibile importare il progetto attraverso il comando "Import Project" che compare cliccando con tasto destro sulla repository clonata, nella finestra a comparsa.
-Quando il programma è pronto, è possibile eseguirlo cliccando con tasto destro sul progetto importato(situato nel Package Explorer); nella finestra a comparsa si troverà il comando "Run as", eseguire il programma come "Sprign boot App".
+Quando il programma è pronto, è possibile eseguirlo cliccando con tasto destro sul progetto importato(situato nel Package Explorer); nella finestra a comparsa si troverà il comando "Run as", eseguire il programma come "Spring boot App".
 
 Ora l'applicazione Web Service sarà attiva e in ascolto alla porta http://localhost:8080 (indirizzo IP 127.0.0.1)
 
@@ -102,3 +102,15 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="880px" height="610px">
  
+* **Chiamata GET /stats?field="nome"**
+
+
+* **Chiamata POST /stats?field="nome"**
+
+
+<h1>Software utilizzati</h1>
+
+* <a href="https://www.eclipse.org/">Eclipse</a> - ambiente di sviluppo integrato
+* <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo applicazioni Java
+* <a href="https://maven.apache.org/">Maven</a> - strumento di gestione di progetti
+
