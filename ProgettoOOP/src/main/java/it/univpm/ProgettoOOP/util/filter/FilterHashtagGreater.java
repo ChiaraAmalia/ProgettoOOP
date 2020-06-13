@@ -7,7 +7,7 @@ import it.univpm.ProgettoOOP.util.other.Filter2Compare;
 
 public class FilterHashtagGreater extends Filter1Compare implements Filter { 
 
-	public FilterHashtagGreater(Object parameFilter) {                                  
+	public FilterHashtagGreater(Object paramFilter) {                                  
 		super(paramFilter);
 	}
 	
