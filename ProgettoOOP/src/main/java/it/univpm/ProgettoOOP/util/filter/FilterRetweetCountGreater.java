@@ -6,13 +6,13 @@ import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 
 public class FilterRetweetCountGreater extends Filter1Compare implements Filter{
 	
-	public FilterRetweetCountGreater(Object parametroFiltro) {                                  
-		super(parametroFiltro);
+	public FilterRetweetCountGreater(Object paramFilter) {                                  
+		super(paramFilter);
 	}
 	
 	public boolean filter (Tweet tweet) {
 		
-		if(tweet.getRetweet_count()>parametroFiltro) {
+		if(tweet.getRetweet_count()> paramFilter) {
 			return true;
 		}
 		return false;
