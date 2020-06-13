@@ -6,8 +6,8 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayStringParent;
 
 public class FilterLangNotIncluded extends FilterArrayStringParent implements Filter{
 	
-	public FilterLangNotIncluded(Object parametri) {                                  
-		super(parametri);
+	public FilterLangNotIncluded(Object parameters) {                                  
+		super(parameters);
 	}
 	
 	public boolean filter(Tweet tweet) {

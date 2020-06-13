@@ -7,8 +7,8 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayStringParent;
 
 public class FilterImageNotIncluded extends FilterArrayStringParent implements Filter {
 
-	public FilterImageNotIncluded(Object parametri) {
-		super(parametri);
+	public FilterImageNotIncluded(Object parameters) {
+		super(parameters);
 	}
 	
 	public boolean filter(Tweet tweet) {
