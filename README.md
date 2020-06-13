@@ -11,6 +11,13 @@ La nostra applicazione permette di richiedere mediante API REST (GET o POST) con
 * Restituzione delle statistiche sui dati di uno specifico campo.
 * Restituzione delle statistiche sui dati di uno specifico campo, su tweet filtrati.
 
+<h2>Contenuti</h2>
+
+<ul type="circle">
+ <li><a href="https://github.com/ChiaraAmalia">Chiara Amalia Caporusso</a></li>
+ <li><a href="https://github.com/pierocampitelli">Piero Campitelli</a></li>
+</ul>
+
 <h2> Richieste possibili </h2>
 Use case diagram
 
