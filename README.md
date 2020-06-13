@@ -83,7 +83,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
  * **Package it.univpm.ProgettoOOP.Exception**
  
-  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20Exception.jpg" alt="diagramma delle classi raffigurante il package Exception" width="450px" height="400px">
+  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20Exception.jpg" alt="diagramma delle classi raffigurante il package Exception" width="550px" height="400px">
  
  * **Package it.univpm.ProgettoOOP.model**
  
