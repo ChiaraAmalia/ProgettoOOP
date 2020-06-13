@@ -20,7 +20,7 @@ import it.univpm.ProgettoOOP.model.*;
  * Questa classe permette di scaricare il file JSON dove all'interno
  * si trovano gli ultimi 100 tweet
  * @author Chiara Amalia Caporusso
- *
+ * @author Piero Campitelli
  */
 
 
