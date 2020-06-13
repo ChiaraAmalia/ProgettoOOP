@@ -3,21 +3,24 @@ package it.univpm.ProgettoOOP.service;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
-import com.esame.model.Record;
-import com.esame.util.other.StatsCalculator;
-import com.esame.exception.InternalGeneralException;
-import com.esame.exception.StatsNotFoundException;
+
+import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
+import it.univpm.ProgettoOOP.Exception.StatsNotFoundException;
+import it.univpm.ProgettoOOP.model.Tweet;
+import it.univpm.ProgettoOOP.util.other.StatsCalculator;
 
 /** Rappresenta la classe statica che gestisce i calcoli di stats sul 
  * dataset.
- * @author Marco Sebastianelli
- * @author Cristian Vitali
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
 */
 
 public class StatsService {
 
-	/** package contenente le classi che implementato l'interfaccia StatsCalculator */
-	private final static String path = "com.esame.util.statistic.";
+	/** 
+	 * package contenente le classi che implementato l'interfaccia StatsCalculator 
+	 */
+	private final static String path = "it.univpm.ProgettoOOP.util.stats.";
 	
 	
 	/**
@@ -32,7 +35,7 @@ public class StatsService {
 	 * 			  revisione del codice)
 	 */
 	
-	public static StatsCalculator instanceStatsCalculator(String column, ArrayList<Record> records) 
+	public static StatsCalculator instanceStatsCalculator(String column, ArrayList<Tweet> tweets) 
 			throws InternalGeneralException, StatsNotFoundException {
 		
 		StatsCalculator statsCalculator;
@@ -45,7 +48,7 @@ public class StatsService {
 		
 	    	Constructor<?> ct = cls.getDeclaredConstructor(ArrayList.class); //seleziono il costruttore
 	    
-	    	statsCalculator =(StatsCalculator)ct.newInstance(records);  //instanzo oggetto StasCalulator
+	    	statsCalculator =(StatsCalculator)ct.newInstance(tweets);  //instanzo oggetto StasCalulator
 	    }
 
 	    //entra qui se il nome di StatsCalculator non è corretto 

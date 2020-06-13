@@ -1,10 +1,10 @@
 package it.univpm.ProgettoOOP.util.other;
 
-import com.esame.model.Stats;
+import it.univpm.ProgettoOOP.model.Stats;
 
-/** Rappresenta l interfaccia per StatsCalculator.
- * @author Marco Sebastianelli
- * @author Cristian Vitali
+/** Rappresenta l' interfaccia per StatsCalculator.
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
 */
 
 public interface StatsCalculator {

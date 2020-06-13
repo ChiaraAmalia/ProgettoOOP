@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /** Rappresenta la classe statica che effettua calcoli non usuali
  * su dataset di interi.
- * @author Marco Sebastianelli
- * @author Cristian Vitali
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
 */
 
 public class Calculate {
