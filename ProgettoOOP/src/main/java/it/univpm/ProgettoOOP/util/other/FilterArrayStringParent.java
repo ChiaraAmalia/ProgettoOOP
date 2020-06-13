@@ -36,7 +36,7 @@ public class FilterArrayStringParent {
 	 * @param parametri deve essere un ArrayList di stringhe
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
-	public void SetParametriFiltro(Object parameters) {
+	public void SetFilterParameters(Object parameters) {
 		
 		
 		if(parameters instanceof ArrayList<?>) {
