@@ -1,23 +1,16 @@
 package it.univpm.ProgettoOOP.service;
 
-import java.security.Security;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Collection;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
 import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
-import it.univpm.ProgettoOOP.model.Entities;
-import it.univpm.ProgettoOOP.model.Hashtag;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.service.FilterService;
-import it.univpm.ProgettoOOP.other.Filter;
+import it.univpm.ProgettoOOP.util.other.Filter;
 
 public class JsonParser {
 	
@@ -34,7 +27,7 @@ public class JsonParser {
 				ArrayList<Tweet> previousArray= new ArrayList<Tweet>();
 				ArrayList<Tweet> filteredArray= new ArrayList<Tweet>();
 			//vedere se posso anche non istanziarlo quì
-				HashMap<String,Object> result= new ObjectMapper().convertValue(filter,HashMap.class);
+				HashMap<String,Object> result= new ObjectMapper().convertValue(filter, HashMap.class);
 
 			//Itera con tutti gli elementi dell'ArrayList
 				for(Map.Entry<String, Object> entry: result.entrySet()) {
@@ -42,46 +35,48 @@ public class JsonParser {
 					String column=entry.getKey();
 					Object filterParam=entry.getValue();
 					try {
-							filteredArray=jsonParserOperator(column,filterParam,previousArray);
+							filteredArray=jsonParserOperator(column, filterParam, previousArray);
 					}catch (SecurityException e) {
 						throw new InternalGeneralException ("Error in I/O parsing information");
 					}
+					
+					previousArray=new ArrayList<Tweet>();
+					previousArray.addAll(filteredArray);
 				}
-				previousArray=new ArrayList<Tweet>();
-				previousArray.addAll(filteredArray);
 				return filteredArray;
 			}
 	
 	
-	public static ArrayList<Tweet> jsonParserOperator (Object column,Object filterParam,
+	public static  ArrayList<Tweet> jsonParserOperator (String column,Object filterParam,
 			                                          ArrayList<Tweet> previousArray)
 			throws InternalGeneralException, FilterNotFoundException, FilterIllegalArgumentException {
-		String line=" ";
+		String type="";
 		Filter filter;
-		ArrayList <Tweet> filteredArray= new ArrayList <Tweet>();
-		HashMap <String,Object> result= new ObjectMapper().convertValue(filterParam,HashMap.class);
-
+		ArrayList<Tweet> filteredArray= new ArrayList <Tweet>();
+		HashMap<String, Object> result= new ObjectMapper().convertValue(filterParam,HashMap.class);
 		for(Map.Entry<String, Object> entry: result.entrySet()) {
-			String operator=(String)entry.getKey();
+			String operator= entry.getKey();
 			Object value=entry.getValue();
-			if((operator.equals("type")) || (operator.equals("Type"))) {
-				line=(String) value;
-				if((!(value.equals("and"))&&(!(value.equals("or"))))) {
+			if(operator.equals("type") || operator.equals("Type")) {
+				type=(String) value;
+				if(!(value.equals("and"))&&!(value.equals("or"))) {
 					throw new FilterIllegalArgumentException("'and' o 'or' expected after 'type'");
 		    	}
 		    	continue;
 		    }
 			
-			filter= FilterService.instanceFilter(column,operator,value);
+			filter= FilterService.instanceFilter(column, operator, value);
 			
-			if (line.equals("and"))
+			if (type == "and")
 				filteredArray = FilterService.runFilterAND(filter, previousArray);
-			else
+			else 
 				filteredArray = FilterService.runFilterOR(filter, previousArray);
-		        }
-			
-				return filteredArray;
+		
+		}
+		
+		return filteredArray;
+		
+	}
 				
-		    }
 }
 

@@ -13,27 +13,11 @@ import java.util.ArrayList;
  */
 public class Image extends ID {
 	
-	private long idImage;
 	private String media_url;
 	private String type;
 	private ArrayList<Dimensions> size = new ArrayList<Dimensions>();
-	
-		
-	/**
-	 * @param idImage rappresenta l'id dell'immagine
-	 * @param media_url rappresenta l'url dell'immagine
-	 */
-	public Image(long idImage, String media_url, String type, ArrayList<Dimensions> size) {
-		super(idImage);
-		this.media_url = media_url;
-		this.type = type;
-		this.size = size;
-	}
 
 
-	/**
-	 * il costruttore senza campi
-	 */
 	public Image() {
 		super();
 	}

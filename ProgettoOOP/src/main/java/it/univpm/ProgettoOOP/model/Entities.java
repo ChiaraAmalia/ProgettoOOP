@@ -19,29 +19,8 @@ public class Entities {
 	private ArrayList<UserMentions> mentions = new ArrayList<UserMentions>();
 	private ArrayList<urls> Url = new ArrayList<urls>();
 	private ArrayList<Image> image = new ArrayList<Image>();
+
 	
-	/**
-	 * 
-	 * @param hashtags riguarda un arraylist contenenti tutti gli hashtag citati nel tweet
-	 * @param mentions riguarda tutti gli utenti menzionati nel tweet
-	 * @param url riguarda l'url presente nel corpo del tweet
-	 * @param images riguarda un arraylist contenente tutte le caratteristiche dell'immagine
-	 * 
-	 * il costruttore
-	 */
-	public Entities(ArrayList<Hashtag> hashtags, ArrayList<UserMentions> mentions, ArrayList<urls> Url,
-					ArrayList<Image> image) {
-		
-		super();
-		this.hashtags = hashtags;
-		this.mentions = mentions;
-		this.Url = Url;
-		this.image = image;
-	}
-	
-	/**
-	 * costruttore senza campi
-	 */
 	public Entities() {
 	}
 

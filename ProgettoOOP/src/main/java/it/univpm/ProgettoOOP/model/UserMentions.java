@@ -13,25 +13,7 @@ public class UserMentions extends ID {
 	
 	private String ScreenName;
 	private String name;
-	private int id;
-	
-	/**
-	 * @param screenName rappresenta il nome utente
-	 * @param name rappresenta il nome completo dell'utente
-	 * @param id rappresenta l'id dell'utente
-	 * 
-	 * il costruttore
-	 */
-	
-	public UserMentions(String screenName, String name, int id) {
-		super(id);
-		ScreenName = screenName;
-		this.name = name;
-	}
-	
-	/**
-	 * il costruttore senza campi
-	 */
+
 	public UserMentions() {
 		super();
 		// TODO Auto-generated constructor stub

@@ -5,21 +5,8 @@ public class Dimensions {
 	private long height;
 	private long width;
 	private String resize;
-
-	/**
-	 * @param height
-	 * @param width
-	 */
-	public Dimensions(long height, long width, String resize) {
-		super();
-		this.height = height;
-		this.width = width;
-		this.resize = resize;
-	}
 	
-	/**
-	 * 
-	 */
+
 	public Dimensions() {
 		super();
 		// TODO Auto-generated constructor stub

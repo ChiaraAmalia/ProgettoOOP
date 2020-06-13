@@ -10,21 +10,12 @@ public class ID {
 	
 	private long id;
 
-	/**
-	 * il costruttore senza campi
-	 */
+
 	public ID() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * @param id che rappresenta un id generico
-	 */
-	public ID(long id) {
-		super();
-		this.id = id;
-	}
 
 	/**
 	 * @return  id
