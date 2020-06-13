@@ -69,9 +69,7 @@ public class JsonParser {
 			
 			if (type == "and")
 				filteredArray = FilterService.runFilterAND(filter, previousArray);
-			else if(type == "or")
-				filteredArray = FilterService.runFilterOR(filter, previousArray);
-			else
+			else 
 				filteredArray = FilterService.runFilterOR(filter, previousArray);
 		
 		}
