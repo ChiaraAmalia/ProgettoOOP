@@ -6,9 +6,9 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
-public class FilterHashtagUser extends FilterArrayString implements Filter {
+public class FilterUserNotCreated extends FilterArrayString implements Filter {
 	
-	public FilterHashtagUser (Object parameters) {
+	public FilterUserNotCreated (Object parameters) {
 		super(parameters);
 	}
 	
@@ -16,10 +16,10 @@ public class FilterHashtagUser extends FilterArrayString implements Filter {
 		for(String p:param) {
 			for(int i=0; i<tweet.getUsers().size(); i++) {
 				if( tweet.getUsers().get(i).getScreenName().equals(p))
-					return true;
+					return false;
 		}
 			
 	}
-		return false;
+		return true;
 	}
 }
