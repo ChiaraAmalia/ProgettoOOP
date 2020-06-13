@@ -94,7 +94,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 
 <code>ControllerClass</code> esegue una chiamata tramite il metodo <code>getTweets</code>. Nella classe <code>TweetServiceImpl</code>,  nel costruttore, viene inizializzato l'ArrayList che conterrà il file JSON scaricato, così come viene inizializzata una HashMap che conterrà i tweet identificati con i relativi id; viene poi istanziato il metodo <code>getTweet</code> che ci restituisce una collezione di tweet, cioè l'intera timeline contenente gli ultimi cento tweet. <code>ControllerClass</code> trasforma quest'ultima in Json e lo ritorna al client.
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="4100px" height="370px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="410px" height="370px">
 
 * **Chiamata POST /data**
 
