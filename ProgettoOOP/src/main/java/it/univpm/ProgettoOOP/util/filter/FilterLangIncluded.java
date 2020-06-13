@@ -2,9 +2,9 @@ package it.univpm.ProgettoOOP.util.filter;
 
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
-import it.univpm.ProgettoOOP.util.other.FilterArrayStringParent;
+import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
-public class FilterLangIncluded extends FilterArrayStringParent implements Filter {
+public class FilterLangIncluded extends FilterArrayString implements Filter {
 
 	public FilterLangIncluded(Object parameters) {                                  
 		super(parameters);

@@ -6,9 +6,9 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 import it.univpm.ProgettoOOP.util.other.Filter2Compare;
-import it.univpm.ProgettoOOP.util.other.FilterArrayStringParent;
+import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
-public class FilterHashtagIncluded extends FilterArrayStringParent implements Filter{
+public class FilterHashtagIncluded extends FilterArrayString implements Filter{
 	
 	public FilterHashtagIncluded(Object parameters) {
 		super(parameters);

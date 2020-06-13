@@ -2,10 +2,8 @@ package it.univpm.ProgettoOOP.util.other;
 
 import java.util.ArrayList;
 
-
-
-public class FilterArrayStringParent {
-
+public class FilterArrayString {
+	
 	protected ArrayList<String> param = new ArrayList<String>();
 
 	
@@ -13,7 +11,7 @@ public class FilterArrayStringParent {
 	 * @param parametri deve essere un ArrayList String.
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
-	public FilterArrayStringParent(Object parameters) {
+	public FilterArrayString(Object parameters) {
 		
 		if(parameters instanceof ArrayList<?>) {
 			
@@ -54,6 +52,5 @@ public class FilterArrayStringParent {
 			throw new IllegalArgumentException("Type: Array ");
 		}
 	}
-	
 	
 }

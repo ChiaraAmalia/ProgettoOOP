@@ -4,7 +4,6 @@ public class Filter1Compare{
 	
 	protected int paramFilter;
 	
-	
 	/** Costruttore 
 	 * @param parametroFiltro deve essere un Int.
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 

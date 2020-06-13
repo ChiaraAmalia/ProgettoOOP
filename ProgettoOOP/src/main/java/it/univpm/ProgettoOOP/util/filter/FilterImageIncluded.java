@@ -3,9 +3,9 @@
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter1Compare;
-import it.univpm.ProgettoOOP.util.other.FilterArrayStringParent;
+import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
-public class FilterImageIncluded extends FilterArrayStringParent implements Filter {
+public class FilterImageIncluded extends FilterArrayString implements Filter {
 	
 	public FilterImageIncluded(Object parameters) {
 		super(parameters);
