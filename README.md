@@ -85,6 +85,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 <h2> Chiamate </h2>
 
 * **Chiamata GET /metadata**
+ControllerClass esegue una chiamata tramite il metodo <span style="background-color:green">getTweets</span>
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="390px" height="370px">
 
 * **Chiamata GET /data**
