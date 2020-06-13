@@ -88,17 +88,17 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 
 <code>ControllerClass</code> esegue una chiamata tramite il metodo <code>getMetadatas</code>. Nella classe <code>TweetServiceImpl</code>,  nel costruttore, viene inizializzato l'ArrayList che conterrà i metadata, così come viene inizializzata una HashMap che conterrà i metadata identificati con i relativi id; viene poi istanziato il metodo <code>getMetada</code> che ci restituisce una collezione di metadata. <code>ControllerClass</code> trasforma quest'ultima in Json e lo ritorna al client.
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="410px" height="390px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="440px" height="370px">
 
 * **Chiamata GET /data**
 
 <code>ControllerClass</code> esegue una chiamata tramite il metodo <code>getTweets</code>. Nella classe <code>TweetServiceImpl</code>,  nel costruttore, viene inizializzato l'ArrayList che conterrà il file JSON scaricato, così come viene inizializzata una HashMap che conterrà i tweet identificati con i relativi id; viene poi istanziato il metodo <code>getTweet</code> che ci restituisce una collezione di tweet, cioè l'intera timeline contenente gli ultimi cento tweet. <code>ControllerClass</code> trasforma quest'ultima in Json e lo ritorna al client.
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="410px" height="370px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="440px" height="370px">
 
 * **Chiamata POST /data**
 
 <code>ControllerClass</code> esegue una chiamata tramite <code>JsonParserColumn</code> alla classe <code>JsonParser</code>, che insieme a <code>jsonParserOperator</code> effettueranno il parsing del body ricevuto in modo ciclico. Estrapolate le informazioni relative al filtraggio richiesto, verranno utilizzate da <code>instanceFilter</code> per istanziare nuovi oggetti filtro prendedoli della classi contenute nel package it.univpm.ProgettoOOP.util.filter. A questo punto tramite <code>runFilter</code> si potrà eseguire il filtraggio e restituire a <code>ControllerClass</code> l'Arraylist di Record filtrato da consegnare al Client in formato Json. 
  
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="860px" height="610px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="880px" height="610px">
  
