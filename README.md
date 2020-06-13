@@ -70,7 +70,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
  <h3>Packages</h3>
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20package.jpg" alt="diagramma delle classi raffiguranti i packages" width="500px" height="370px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20package.jpg" alt="diagramma delle classi raffiguranti i packages" width="650px" height="370px">
  
  <h3>Classi</h3>
  
