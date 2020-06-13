@@ -114,3 +114,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 * <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo applicazioni Java
 * <a href="https://maven.apache.org/">Maven</a> - strumento di gestione di progetti
 
+<h1>Autori</h1>
+* <a href="https://github.com/ChiaraAmalia">Chiara Amalia Caporusso</a>
+* <a href="https://github.com/pierocampitelli">Piero Campitelli</a>
+
