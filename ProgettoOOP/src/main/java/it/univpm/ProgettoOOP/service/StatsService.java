@@ -9,8 +9,7 @@ import it.univpm.ProgettoOOP.Exception.StatsNotFoundException;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.StatsCalculator;
 
-/** Rappresenta la classe statica che gestisce i calcoli di stats sul 
- * dataset.
+/** Rappresenta la classe statica che gestisce i calcoli di statistiche
  * @author Chiara Amalia Caporusso
  * @author Piero Campitelli
 */
@@ -25,9 +24,9 @@ public class StatsService {
 	
 	/**
 	 * Permette di istanziare un oggetto StatsCalculator dalle classi presenti nel 
-	 * package com.esame.util.statistic 
-	 * @param     column campo su cui si vuole eseguire la stistica. (es: EsAlbArr)
-	 * @param     records è l'array su cui si vuole eseguire la statistica.
+	 * package it.univpm.ProgettoOOP.util.stats 
+	 * @param     column campo su cui si vuole eseguire la stistica. 
+	 * @param     tweets è l'array su cui si vuole eseguire la statistica.
 	 * @return    un oggetto che implementa l'interfaccia StatsCalculator.
 	 * @throws    StatsNotFoundException per il campo richiesto non è presente un StatsCalculator
 	 * 			  nel package. 
