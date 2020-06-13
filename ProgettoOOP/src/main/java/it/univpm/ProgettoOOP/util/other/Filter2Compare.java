@@ -6,28 +6,28 @@ import java.util.ArrayList;
  */
 public class Filter2Compare {
 
-	protected int parametro1;
-	protected int parametro2;
+	protected int param1;
+	protected int param2;
 	
 		
 	/** Costruttore 
 	 * @param parametro deve essere un ArrayList di Interi di lunghezza 2.
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
-	public Filter2Compare(Object parametro){
+	public Filter2Compare(Object param){
 
-		if(parametro instanceof ArrayList<?>) {
+		if(param instanceof ArrayList<?>) {
 				
-			if( ((ArrayList<?>) parametro).size() != 2) {
+			if( ((ArrayList<?>) param).size() != 2) {
 				throw new IndexOutOfBoundsException("2 Integer ") ;
 			}//control of array length 
 												
-			if(((ArrayList<?>) parametro).get(0) instanceof Integer) {
-				parametro1 = (int) ((ArrayList<?>) parametro).get(0) ;
+			if(((ArrayList<?>) param).get(0) instanceof Integer) {
+				param1 = (int) ((ArrayList<?>) param).get(0) ;
 			}else {throw new IllegalArgumentException("Type: Integer ");}
 					
-			if(((ArrayList<?>) parametro).get(1) instanceof Integer) {
-				parametro2 = (int) ((ArrayList<?>) parametro).get(1) ;
+			if(((ArrayList<?>) param).get(1) instanceof Integer) {
+				param2 = (int) ((ArrayList<?>) param).get(1) ;
 			}else{throw new IllegalArgumentException("Type: Integer ");}			
 					
 					
@@ -35,7 +35,7 @@ public class Filter2Compare {
 			throw new IllegalArgumentException("Type: Array of 2 Integer ");
 		}
 		
-		if(parametro2 < parametro1) {
+		if(param2 < param1) {
 			throw new IllegalArgumentException("Integer two must be greater than Integer one ");
 		}
 	}
@@ -47,20 +47,20 @@ public class Filter2Compare {
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
 	
-	public void setParametri(Object parametro) {
+	public void setParameters(Object param) {
 		
-		if(parametro instanceof ArrayList<?>) {
+		if(param instanceof ArrayList<?>) {
 			
-			if( ((ArrayList<?>) parametro).size() != 2) {
+			if( ((ArrayList<?>) param).size() != 2) {
 				throw new IndexOutOfBoundsException("2 Integer ") ;
 			}//control of array length 
 												
-			if(((ArrayList<?>) parametro).get(0) instanceof Integer) {
-				parametro1 = (int) ((ArrayList<?>) parametro).get(0) ;
+			if(((ArrayList<?>) param).get(0) instanceof Integer) {
+				param1 = (int) ((ArrayList<?>) param).get(0) ;
 			}else {throw new IllegalArgumentException("Type: Integer ");}
 					
-			if(((ArrayList<?>) parametro).get(1) instanceof Integer) {
-				parametro2 = (int) ((ArrayList<?>) parametro).get(1) ;
+			if(((ArrayList<?>) param).get(1) instanceof Integer) {
+				param2 = (int) ((ArrayList<?>) param).get(1) ;
 			}else{throw new IllegalArgumentException("Type: Integer ");}			
 					
 			
@@ -68,35 +68,38 @@ public class Filter2Compare {
 			throw new IllegalArgumentException("Type: Array of 2 Integer ");
 		}
 		
-		if(parametro2 < parametro1) {
+		if(param2 < param1) {
 			throw new IllegalArgumentException("Integer two must be greater than Integer one ");
 		}
 	}
-	
-	public int getParametro1() {
-		return parametro1;
+
+	/**
+	 * @return the param1
+	 */
+	public int getParam1() {
+		return param1;
 	}
 
-
-	public void setParametro1(int parametro1) {
-		this.parametro1 = parametro1;
+	/**
+	 * @param param1 the param1 to set
+	 */
+	public void setParam1(int param1) {
+		this.param1 = param1;
 	}
 
-
-	public int getParametro2() {
-		return parametro2;
+	/**
+	 * @return the param2
+	 */
+	public int getParam2() {
+		return param2;
 	}
 
-
-	public void setParametro2(int parametro2) {
-		this.parametro2 = parametro2;
+	/**
+	 * @param param2 the param2 to set
+	 */
+	public void setParam2(int param2) {
+		this.param2 = param2;
 	}
-	
-	
-
-
-
-
 }
 
 

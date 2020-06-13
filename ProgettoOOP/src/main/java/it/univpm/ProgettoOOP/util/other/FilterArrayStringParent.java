@@ -13,11 +13,11 @@ public class FilterArrayStringParent {
 	 * @param parametri deve essere un ArrayList String.
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
-	public FilterArrayStringParent(Object parametri) {
+	public FilterArrayStringParent(Object parameters) {
 		
-		if(parametri instanceof ArrayList<?>) {
+		if(parameters instanceof ArrayList<?>) {
 			
-			for(Object ele : (ArrayList<?>)parametri) {
+			for(Object ele : (ArrayList<?>)parameters) {
 				
 				if(ele instanceof String) {
 					param.add((String)ele);
@@ -36,12 +36,12 @@ public class FilterArrayStringParent {
 	 * @param parametri deve essere un ArrayList di stringhe
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
-	public void SetParametriFiltro(Object parametri) {
+	public void SetParametriFiltro(Object parameters) {
 		
 		
-		if(parametri instanceof ArrayList<?>) {
+		if(parameters instanceof ArrayList<?>) {
 			
-			for(Object ele : (ArrayList<?>)parametri) {
+			for(Object ele : (ArrayList<?>)parameters) {
 				
 				if(ele instanceof String) {
 					param.add((String)ele);
