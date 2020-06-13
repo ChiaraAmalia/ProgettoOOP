@@ -11,12 +11,28 @@ La nostra applicazione permette di richiedere mediante API REST (GET o POST) con
 * Restituzione delle statistiche sui dati di uno specifico campo.
 * Restituzione delle statistiche sui dati di uno specifico campo, su tweet filtrati.
 
+<h2>Contenuti</h2>
+
+<ul type="circle">
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-richieste-possibili-">Richieste possibili</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-come-iniziare-">Come iniziare</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-eseguire-richieste-">Eseguire richieste</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#filtri-disponibili">Filtri disponibili</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-sviluppo-">Sviluppo</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#diagramma-delle-classi">Diagramma delle classi</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#packages">Packages</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#classi">Classi</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-chiamate-">Chiamate</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#software-utilizzati">Software utilizzati</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#autori">Autori</a></li>
+</ul>
+
 <h2> Richieste possibili </h2>
 Use case diagram
 
 <h1> Come iniziare </h1>
 Dopo aver scaricato un opportuno ide (ad esempio eclipse) per la visualizzazione del codice in Java del programma, è possibile clonare la repository GitHub (attraverso il comando "clone a repository", situato nella show view della finestra Git Repositories). Adesso è possibile importare il progetto attraverso il comando "Import Project" che compare cliccando con tasto destro sulla repository clonata, nella finestra a comparsa.
-Quando il programma è pronto, è possibile eseguirlo cliccando con tasto destro sul progetto importato(situato nel Package Explorer); nella finestra a comparsa si troverà il comando "Run as", eseguire il programma come "Sprign boot App".
+Quando il programma è pronto, è possibile eseguirlo cliccando con tasto destro sul progetto importato(situato nel Package Explorer); nella finestra a comparsa si troverà il comando "Run as", eseguire il programma come "Spring boot App".
 
 Ora l'applicazione Web Service sarà attiva e in ascolto alla porta http://localhost:8080 (indirizzo IP 127.0.0.1)
 
@@ -88,16 +104,34 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 
 <code>ControllerClass</code> esegue una chiamata tramite il metodo <code>getMetadatas</code>. Nella classe <code>TweetServiceImpl</code>,  nel costruttore, viene inizializzato l'ArrayList che conterrà i metadata, così come viene inizializzata una HashMap che conterrà i metadata identificati con i relativi id; viene poi istanziato il metodo <code>getMetada</code> che ci restituisce una collezione di metadata. <code>ControllerClass</code> trasforma quest'ultima in Json e lo ritorna al client.
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="390px" height="370px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getMetadata.jpg" alt="Chiamata  GET metadata sequence diagram" width="440px" height="370px">
 
 * **Chiamata GET /data**
 
 <code>ControllerClass</code> esegue una chiamata tramite il metodo <code>getTweets</code>. Nella classe <code>TweetServiceImpl</code>,  nel costruttore, viene inizializzato l'ArrayList che conterrà il file JSON scaricato, così come viene inizializzata una HashMap che conterrà i tweet identificati con i relativi id; viene poi istanziato il metodo <code>getTweet</code> che ci restituisce una collezione di tweet, cioè l'intera timeline contenente gli ultimi cento tweet. <code>ControllerClass</code> trasforma quest'ultima in Json e lo ritorna al client.
 
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="390px" height="370px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="440px" height="370px">
 
 * **Chiamata POST /data**
 
-<code>ControllerClass</code> esegue una chiamata tramite <code>jsonParserColumn</code> alla classe <code>JsonParser</code>, che insieme a <code>jsonParserOperator</code> effetueranno il parsing del body ricevuto in modo ciclico. Estrapolate le informazioni relative al filtraggio richiesto, verranno utilizzate da <code>instanceFilter</code> per istanziare nuovi oggetti filtro prendedoli della classi contenute nel package it.univpm.ProgettoOOP.util.filter. A questo punto tramite <code>runFilter</code> si potrà eseguire il filtraggio e restituire a <code>ControllerClass</code> l'Arraylist di Record filtrato da consegnare al Client in formato Json. 
+<code>ControllerClass</code> esegue una chiamata tramite <code>JsonParserColumn</code> alla classe <code>JsonParser</code>, che insieme a <code>jsonParserOperator</code> effettueranno il parsing del body ricevuto in modo ciclico. Estrapolate le informazioni relative al filtraggio richiesto, verranno utilizzate da <code>instanceFilter</code> per istanziare nuovi oggetti filtro prendedoli della classi contenute nel package it.univpm.ProgettoOOP.util.filter. A questo punto tramite <code>runFilter</code> si potrà eseguire il filtraggio e restituire a <code>ControllerClass</code> l'Arraylist di Record filtrato da consegnare al Client in formato Json. 
  
-<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="840px" height="590px">
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="880px" height="610px">
+ 
+* **Chiamata GET /stats?field="nome"**
+
+
+* **Chiamata POST /stats?field="nome"**
+
+
+<h1>Software utilizzati</h1>
+
+* <a href="https://www.eclipse.org/">Eclipse</a> - ambiente di sviluppo integrato
+* <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo applicazioni Java
+* <a href="https://maven.apache.org/">Maven</a> - strumento di gestione di progetti
+
+<h1>Autori</h1>
+<ul type="disc">
+ <li><a href="https://github.com/ChiaraAmalia">Chiara Amalia Caporusso</a></li>
+ <li><a href="https://github.com/pierocampitelli">Piero Campitelli</a></li>
+</ul>
