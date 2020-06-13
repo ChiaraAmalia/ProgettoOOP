@@ -14,11 +14,12 @@ public class FilterImageIncluded extends FilterArrayStringParent implements Filt
 	public boolean filter(Tweet tweet) {
 		
 		for(String p : param) {
-		for(int i=0; i<tweet.getEntities().size(); i++) {
-			for(int j=0; j<tweet.getEntities().get(i).getImages().size(); j++)
-				if((tweet.getEntities().get(i).getImages().get(j).getType()).equals(p))
-					return true;
-		}
+			for(int i=0; i<tweet.getEntities().size(); i++) {
+				for(int j=0; j<tweet.getEntities().get(i).getImages().size(); j++) {
+					if((tweet.getEntities().get(i).getImages().get(j).getType()).equals(p))
+						return true;
+				}
+			}
 		}
 		return false;
 	}
