@@ -79,7 +79,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
  * **Package it.univpm.ProgettoOOP.database**
  
- <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20database.jpg" alt="diagramma delle classi raffigurante il package database" width="200px" height="180px">
+ <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20database.jpg" alt="diagramma delle classi raffigurante il package database" width="190px" height="180px">
  
  
  * **Package it.univpm.ProgettoOOP.Exception**
