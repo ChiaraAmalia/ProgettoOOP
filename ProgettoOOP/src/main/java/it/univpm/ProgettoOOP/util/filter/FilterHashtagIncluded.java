@@ -10,8 +10,8 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayStringParent;
 
 public class FilterHashtagIncluded extends FilterArrayStringParent implements Filter{
 	
-	public FilterHashtagIncluded(Object parametri) {
-		super(parametri);
+	public FilterHashtagIncluded(Object parameters) {
+		super(parameters);
 	}
 	 
 	public boolean filter(Tweet tweet) {
