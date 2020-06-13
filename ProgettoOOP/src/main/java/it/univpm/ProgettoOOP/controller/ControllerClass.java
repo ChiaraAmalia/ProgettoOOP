@@ -24,6 +24,10 @@ import it.univpm.ProgettoOOP.service.TweetService;
 /** Classe che si occupa di effettuare le chiamate al Server.
  * @author Chiara Amalia Caporusso
  * @author Piero Campitelli
+ * @see TweetService
+ * @see TweetServiceImpl
+ * @see JsonParser
+ * 
  */
 @RestController
 public class ControllerClass {
