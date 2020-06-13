@@ -14,8 +14,17 @@ La nostra applicazione permette di richiedere mediante API REST (GET o POST) con
 <h2>Contenuti</h2>
 
 <ul type="circle">
- <li><a href="https://github.com/ChiaraAmalia">Chiara Amalia Caporusso</a></li>
- <li><a href="https://github.com/pierocampitelli">Piero Campitelli</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-richieste-possibili-">Richieste possibili</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-come-iniziare-">Come iniziare</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-eseguire-richieste-">Eseguire richieste</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#filtri-disponibili">Filtri disponibili</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-sviluppo-">Sviluppo</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#diagramma-delle-classi">Diagramma delle classi</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#packages">Packages</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#classi">Classi</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#-chiamate-">Chiamate</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#software-utilizzati">Software utilizzati</a></li>
+ <li><a href="https://github.com/ChiaraAmalia/ProgettoOOP#autori">Autori</a></li>
 </ul>
 
 <h2> Richieste possibili </h2>
@@ -60,7 +69,8 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  uml class diagram completo da aggiungere qua
  
  <h3>Packages</h3>
- un diagramma delle classi con solo package
+
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20package.jpg" alt="diagramma delle classi raffiguranti i packages" width="650px" height="390px">
  
  <h3>Classi</h3>
  
@@ -69,9 +79,11 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
  * **Package it.univpm.ProgettoOOP.database**
  
+ <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20database.jpg" alt="diagramma delle classi raffigurante il package database" width="200px" height="180px">
  
  * **Package it.univpm.ProgettoOOP.Exception**
  
+  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20Exception.jpg" alt="diagramma delle classi raffigurante il package Exception" width="550px" height="400px">
  
  * **Package it.univpm.ProgettoOOP.model**
  
@@ -118,7 +130,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 <h1>Software utilizzati</h1>
 
 * <a href="https://www.eclipse.org/">Eclipse</a> - ambiente di sviluppo integrato
-* <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo applicazioni Java
+* <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo di applicazioni in Java
 * <a href="https://maven.apache.org/">Maven</a> - strumento di gestione di progetti
 
 <h1>Autori</h1>
