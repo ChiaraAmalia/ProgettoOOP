@@ -22,10 +22,8 @@ public class StatsHashtags {
 						a.setHashtag(t.getEntities().get(i).getHashtags().get(j));
 					}	
 				}
-
 			if(!nHash.contains(a))
-				nHash.add(a);
-			
+				nHash.add(a);		
 		}
 		
 		for(NumeroHashtag n: nHash) {
