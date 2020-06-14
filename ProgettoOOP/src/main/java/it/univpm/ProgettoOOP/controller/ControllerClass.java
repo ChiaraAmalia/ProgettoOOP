@@ -24,10 +24,13 @@ import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
 import it.univpm.ProgettoOOP.Exception.StatsNotFoundException;
 import it.univpm.ProgettoOOP.database.DatabaseClass;
+import it.univpm.ProgettoOOP.model.NumeroHashtag;
 import it.univpm.ProgettoOOP.model.Stats;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.service.TweetService;
 import it.univpm.ProgettoOOP.util.other.StatsCalculator;
+import it.univpm.ProgettoOOP.util.stats.StatsHashtag;
+import it.univpm.ProgettoOOP.util.stats.StatsHashtags;
 
 /** Classe che si occupa di effettuare le chiamate al Server.
  * @author Chiara Amalia Caporusso
@@ -83,13 +86,23 @@ public class ControllerClass {
 	         return new ResponseEntity<>(JsonParser.JsonParserColumn(filter), HttpStatus.CREATED);
 	       }
 	
-	@RequestMapping(value = "stats", method=RequestMethod.GET)
-	public Stats getStats(@RequestParam(value = "field") String column) 
+	/**
+	 * 
+	 * @param filter
+	 * @return ArrayList contentente frequenza per utente di hashtag
+	 * @throws InternalGeneralException
+	 * @throws StatsNotFoundException
+	 * @throws FilterNotFoundException
+	 * @throws FilterIllegalArgumentException
+	 */
+	@RequestMapping(value = "/stats", method=RequestMethod.POST)
+	public ResponseEntity<ArrayList<NumeroHashtag>> getStats(@RequestBody Object filter) 
 	throws InternalGeneralException, StatsNotFoundException, FilterNotFoundException, FilterIllegalArgumentException {
-		
-		ArrayList<Tweet> tweets = JSONParse.ParseInformazioni();
-		StatsCalculator sc = StatsService.instanceStatsCalculator(column, tweets);
-		return sc.run();
+		ArrayList<NumeroHashtag> hash = new ArrayList<NumeroHashtag>();
+		ArrayList<Tweet> filtered = JsonParser.JsonParserColumn(filter);
+		StatsHashtags st = new StatsHashtags();
+		hash = st.HashtagTweet(filtered);
+		return new ResponseEntity<>(hash, HttpStatus.CREATED);
 	}
 	
 		

@@ -18,14 +18,12 @@ public class StatsHashtag  extends Statistics implements StatsCalculator{
 	
 	public StringStatistics run(){
 		
-		int count = (int) tweets.stream().count();
+		
+		int count=  (int) tweets.stream().count();
 		Map<String, Long>  countForHashtag = null;
 		for(int i=0; i<tweets.size();i++) {
 			for(int j=0; j<tweets.get(i).getEntities().size(); j++) {
-				for(int k=0; k<tweets.get(i).getEntities().get(j).getHashtags().size();k++) {
-					
 					countForHashtag= tweets.get(i).getEntities().get(j).getHashtags().stream().collect(Collectors.groupingBy(Hashtag::getText, Collectors.counting()));
-				}
 			}
 		}
 		
