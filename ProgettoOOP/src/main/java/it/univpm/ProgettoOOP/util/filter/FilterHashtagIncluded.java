@@ -25,3 +25,4 @@ public class FilterHashtagIncluded extends FilterArrayString implements Filter{
 		return false;
 	}
 }
+//
