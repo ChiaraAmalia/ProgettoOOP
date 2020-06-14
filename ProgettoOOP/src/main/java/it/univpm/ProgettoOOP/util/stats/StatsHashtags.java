@@ -20,6 +20,7 @@ public class StatsHashtags {
 				for(int i=0; i<t.getEntities().size(); i++) {
 					for(int j=0; j<t.getEntities().get(i).getHashtags().size();j++) {
 						a.setHashtag(t.getEntities().get(i).getHashtags().get(j));
+						
 					}	
 				}
 			if(!nHash.contains(a))

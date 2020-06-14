@@ -93,7 +93,7 @@ public class ControllerClass {
 	 * @throws FilterIllegalArgumentException
 	 */
 	@RequestMapping(value = "/stats", method=RequestMethod.POST)
-	public ResponseEntity<Object> getStats(@RequestBody Object filter) 
+	public ResponseEntity<Object> postStats(@RequestBody Object filter) 
 	throws InternalGeneralException, StatsNotFoundException, FilterNotFoundException, FilterIllegalArgumentException {
 		ArrayList<NumeroHashtag> hash = new ArrayList<NumeroHashtag>();
 		ArrayList<Tweet> filtered = JsonParser.JsonParserColumn(filter);

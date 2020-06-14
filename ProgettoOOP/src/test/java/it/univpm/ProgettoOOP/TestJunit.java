@@ -2,6 +2,8 @@ package it.univpm.ProgettoOOP;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,9 +11,12 @@ import org.junit.jupiter.api.Test;
 import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
 import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.service.FilterService;
+import it.univpm.ProgettoOOP.service.JSONParse;
+import it.univpm.ProgettoOOP.service.JsonParser;
+import it.univpm.ProgettoOOP.model.Tweet;
 
-public class TestFilterService {
-
+public class TestJunit {
+	
 	@BeforeEach
 	void setUp() throws Exception {
 
@@ -30,5 +35,11 @@ public class TestFilterService {
 		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("hashtag", "Included", "AI"));
 		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("Image", "In", "photo"));
 		assertThrows(FilterIllegalArgumentException.class, ()-> FilterService.instanceFilter("Hashtag", "Included", 1));
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("Image", "ciao", "photo"));
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("Follower", "In", "[10,100]"));
+		assertThrows(FilterNotFoundException.class, ()-> FilterService.instanceFilter("RetweetCount", "In", 30));
+		assertThrows(FilterIllegalArgumentException.class, ()-> FilterService.instanceFilter("Hashtag", "In", "ciao"));
+		assertThrows(FilterIllegalArgumentException.class, ()-> FilterService.instanceFilter("Lang", "Included", 2));
 	}
+	
 }

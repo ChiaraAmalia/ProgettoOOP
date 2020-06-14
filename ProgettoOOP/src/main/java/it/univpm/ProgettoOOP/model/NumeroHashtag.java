@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class NumeroHashtag {
 	
-	int nHashtag = 0;
-	ArrayList<Hashtag> hash = new ArrayList<Hashtag>();
+	private int nHashtag = 0;
+	private ArrayList<Hashtag> hash = new ArrayList<Hashtag>();
 
 	/**
 	 * @param nHashtag
@@ -51,6 +51,7 @@ public class NumeroHashtag {
 	public void setHashtag(Hashtag newHash) {
 		
 				hash.add(newHash);
+		
 	}
 	
 	
