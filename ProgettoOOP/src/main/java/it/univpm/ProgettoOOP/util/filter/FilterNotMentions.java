@@ -6,15 +6,15 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 
 
-public class FilterInMentions extends FilterArrayString implements Filter {
+public class FilterNotMentions extends FilterArrayString implements Filter {
 
-	public FilterInMentions(Object filterParam) {
+	public FilterNotMentions(Object filterParam) {
 		super(filterParam);
 	}
 	public boolean filter(Tweet tweet) {
 			for(int i=0;i<tweet.getEntities().size();i++) {
 				for(int j=0; j<tweet.getEntities().get(i).getMentions().size(); j++)
-					if(!(tweet.getEntities().get(i).getMentions().get(j).equals(null)))
+					if((tweet.getEntities().get(i).getMentions().get(j).equals(null)))
 						return true;
 		}
 		return false;
