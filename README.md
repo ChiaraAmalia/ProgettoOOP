@@ -44,9 +44,9 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  |----------|--------------------|-----------------------------------------------------------------------------------------------|
  |   GET    | /metadata          | restituisce gli alias utilizzati                                                              |
  |   GET    | /data              | restituisce gli ultimi cento tweet                                                            |
- |   GET    | /stats?field="nome"| restituisce una statistica sul "nome" specificato fatta sugli ultimi cento tweet              |
+ |   GET    | /stats             | restituisce una statistica sul numero di hashtag contenuti in ogni tweet per gli ultimi cento tweet|
  |   POST   | /data              | restituisce i tweet che rispettano i filtri specificati nel body della richiesta              |
- |   POST   | /stats?field="nome"| restituisce una statistica sul "nome" specificato basandosi sui record che rispettano i filtri                                          specificati nel body della richiesta                                                          |     
+ |   POST   | /stats             | restituisce una statistica sul numero di hashtag utilizzati da un utente(da inserire tramite body) e                                    permette di visualizzare anche gli hashtag utilizzati dall'utente                             |     
                                
  <h4>Filtri disponibili</h4>
  
