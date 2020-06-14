@@ -10,18 +10,13 @@ public class FilterImageIncluded extends FilterArrayString implements Filter {
 	public FilterImageIncluded(Object parameters) {
 		super(parameters);
 	}
-	
 	public boolean filter(Tweet tweet) {
-		
-		for(String p : param) {
-			for(int i=0; i<tweet.getEntities().size(); i++) {
-				for(int j=0; j<tweet.getEntities().get(i).getImages().size(); j++) {
-					if((tweet.getEntities().get(i).getImages().get(j).getType()).equals(p))
-						return true;
-				}
-			}
-		}
-		return false;
+		for(int i=0;i<tweet.getEntities().size();i++) {
+			for(int j=0; j<tweet.getEntities().get(i).getMentions().size(); j++)
+				if(!(tweet.getEntities().get(i).getMentions().get(j).equals(null)))
+					return true;
 	}
+	return false;
+}
 
 }

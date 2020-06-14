@@ -8,8 +8,8 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 public class FilterInMentions extends FilterArrayString implements Filter {
 
-	public FilterInMentions(Object filterParam) {
-		super(filterParam);
+	public FilterInMentions(Object parameters) {
+		super(parameters);
 	}
 	public boolean filter(Tweet tweet) {
 			for(int i=0;i<tweet.getEntities().size();i++) {

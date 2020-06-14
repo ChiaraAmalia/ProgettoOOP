@@ -8,8 +8,8 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 public class FilterNotMentions extends FilterArrayString implements Filter {
 
-	public FilterNotMentions(Object filterParam) {
-		super(filterParam);
+	public FilterNotMentions(Object parameters) {
+		super(parameters);
 	}
 	public boolean filter(Tweet tweet) {
 			for(int i=0;i<tweet.getEntities().size();i++) {
