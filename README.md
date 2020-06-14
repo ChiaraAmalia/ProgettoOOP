@@ -58,6 +58,8 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  | NotIncluded |{"Image" : { "NotIncluded" : ["photo"]}}   | non trova una corrispondenza con i valori dell'array (valido per stringhe)| 
  |   In             |                                             | compreso tra (valido per campi numerici)        |  
  |   Nin            |                                             |non compreso tra (valido per campi numerici)     |
+ |   Created        |                                             | tweet creato da(valido per stringhe)            |
+ |   NotCreated     |                                             | tweet non creato da(valido per stringhe)        |
  
  In aggiunta, è possibile anche creare dei filtri concatenati, utilizzando il comando "*type*". Ad esempio il filtraggio prenderà tutti  i tweet che contengono l'hashtag "linux" ma non contengono un'immagine
  
@@ -121,10 +123,10 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="880px" height="610px">
  
-* **Chiamata GET /stats?field="nome"**
+* **Chiamata GET /stats**
 
 
-* **Chiamata POST /stats?field="nome"**
+* **Chiamata POST /stats**
 
 
 <h1>Software utilizzati</h1>
@@ -132,6 +134,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
 * <a href="https://www.eclipse.org/">Eclipse</a> - ambiente di sviluppo integrato
 * <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo di applicazioni in Java
 * <a href="https://maven.apache.org/">Maven</a> - strumento di gestione di progetti
+* <a href="http://www.umldesigner.org/">UML Designer</a> - strumento per la realizzazione dei diagrammi UML
 
 <h1>Autori</h1>
 <ul type="disc">
