@@ -67,12 +67,12 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 
 		ArrayList<Tweet> filteredArray = new ArrayList<Tweet>();
 		
-		for(Tweet tweet :  tweets) {
+		for(Tweet tweet :  previousArray) {
 
 			if(filtro.filter(tweet))
 				filteredArray.add(tweet);
 		}				
-		
+
 		return filteredArray;
 	}
 
