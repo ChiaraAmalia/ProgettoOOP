@@ -49,7 +49,8 @@ public class NumeroHashtag {
 	 * @param hashtag the hashtag to set
 	 */
 	public void setHashtag(Hashtag newHash) {
-		hash.add(newHash);
+		
+				hash.add(newHash);
 	}
 	
 	

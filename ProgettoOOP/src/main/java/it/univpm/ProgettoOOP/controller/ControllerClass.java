@@ -18,18 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import it.univpm.ProgettoOOP.service.JSONParse;
 import it.univpm.ProgettoOOP.service.JsonParser;
-import it.univpm.ProgettoOOP.service.StatsService;
+
 import it.univpm.ProgettoOOP.Exception.FilterIllegalArgumentException;
 import it.univpm.ProgettoOOP.Exception.FilterNotFoundException;
 import it.univpm.ProgettoOOP.Exception.InternalGeneralException;
 import it.univpm.ProgettoOOP.Exception.StatsNotFoundException;
 import it.univpm.ProgettoOOP.database.DatabaseClass;
 import it.univpm.ProgettoOOP.model.NumeroHashtag;
-import it.univpm.ProgettoOOP.model.Stats;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.service.TweetService;
-import it.univpm.ProgettoOOP.util.other.StatsCalculator;
-import it.univpm.ProgettoOOP.util.stats.StatsHashtag;
 import it.univpm.ProgettoOOP.util.stats.StatsHashtags;
 
 /** Classe che si occupa di effettuare le chiamate al Server.
@@ -96,7 +93,7 @@ public class ControllerClass {
 	 * @throws FilterIllegalArgumentException
 	 */
 	@RequestMapping(value = "/stats", method=RequestMethod.POST)
-	public ResponseEntity<ArrayList<NumeroHashtag>> getStats(@RequestBody Object filter) 
+	public ResponseEntity<Object> getStats(@RequestBody Object filter) 
 	throws InternalGeneralException, StatsNotFoundException, FilterNotFoundException, FilterIllegalArgumentException {
 		ArrayList<NumeroHashtag> hash = new ArrayList<NumeroHashtag>();
 		ArrayList<Tweet> filtered = JsonParser.JsonParserColumn(filter);
@@ -105,7 +102,15 @@ public class ControllerClass {
 		return new ResponseEntity<>(hash, HttpStatus.CREATED);
 	}
 	
-		
+	@RequestMapping(value = "/stats", method=RequestMethod.GET)
+	public ResponseEntity<Object> getStats() 
+	throws InternalGeneralException, StatsNotFoundException, FilterNotFoundException, FilterIllegalArgumentException {
+		int[] totHash;
+		StatsHashtags st = new StatsHashtags();
+		totHash = st.NumHashtag();
+		return new ResponseEntity<>(totHash, HttpStatus.OK);
 	}
+		
+}
 	
 
