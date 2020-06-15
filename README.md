@@ -28,7 +28,8 @@ La nostra applicazione permette di richiedere mediante API REST (GET o POST) con
 </ul>
 
 <h2> Richieste possibili </h2>
-Use case diagram
+
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Use%20Case%20Diagram.jpg" alt="diagramma dei casi d'uso" width="650px" height="390px">
 
 <h1> Come iniziare </h1>
 Dopo aver scaricato un opportuno ide (ad esempio eclipse) per la visualizzazione del codice in Java del programma, è possibile clonare la repository GitHub (attraverso il comando "clone a repository", situato nella show view della finestra Git Repositories). Adesso è possibile importare il progetto attraverso il comando "Import Project" che compare cliccando con tasto destro sulla repository clonata, nella finestra a comparsa.
@@ -139,6 +140,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
 * **Chiamata GET /stats**
 
+<img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_getData.jpg" alt="Chiamata GET data sequence diagram" width="440px" height="370px">
 
 * **Chiamata POST /stats**
 
