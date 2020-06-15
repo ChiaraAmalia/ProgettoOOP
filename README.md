@@ -86,7 +86,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  <h3>Classi</h3>
  
  * **Package it.univpm.ProgettoOOP.controller**
- 
+  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20controller.jpg" alt="diagramma delle classi raffigurante il package controller" width="300px" height="200px">
  
  * **Package it.univpm.ProgettoOOP.database**
  
@@ -100,6 +100,9 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
  
  * **Package it.univpm.ProgettoOOP.service**
+ 
+ 
+  * **Package it.univpm.ProgettoOOP.util**
  
  
  * **Package it.univpm.ProgettoOOP.util.filter**
