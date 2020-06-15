@@ -106,11 +106,11 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
   * **Package it.univpm.ProgettoOOP.util**
  
- <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20util.jpg" alt="diagramma delle classi raffigurante il package util" width="800px" height="530px">
+ <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20util.jpg" alt="diagramma delle classi raffigurante il package util" width="900px" height="530px">
  
  * **Package it.univpm.ProgettoOOP.util.filter**
  
-  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20filter.jpg" alt="diagramma delle classi raffigurante il package filter" width="780px" height="530px">
+  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20filter.jpg" alt="diagramma delle classi raffigurante il package filter" width="890px" height="530px">
  
  * **Package it.univpm.ProgettoOOP.util.stats**
  
