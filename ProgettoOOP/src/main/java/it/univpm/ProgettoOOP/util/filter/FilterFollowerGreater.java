@@ -11,11 +11,11 @@ public class FilterFollowerGreater extends Filter1Compare implements Filter {
 	}
 	
 	public boolean filter(Tweet tweet) {
-			for(int i=0; i<tweet.getUsers().size(); i++) {
-				if( tweet.getUsers().get(i).getFollowerCount()>paramFilter)
-					return true;
-	}
-			return false;
+		for(int i=0; i<tweet.getUsers().size(); i++) {
+			if( tweet.getUsers().get(i).getFollowerCount()>paramFilter)
+				return true;
+		}
+		return false;
 	}
 }
 	

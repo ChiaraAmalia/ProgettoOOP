@@ -50,7 +50,7 @@ public class NumeroHashtag {
 	 */
 	public void setHashtag(Hashtag newHash) {
 		hash.add(newHash);
-		
+//		this.hash = newHash;
 	}
 	
 	
