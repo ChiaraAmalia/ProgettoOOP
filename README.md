@@ -134,15 +134,20 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
 
 * **Chiamata POST /data**
 
-<code>ControllerClass</code> esegue una chiamata tramite <code>JsonParserColumn</code> alla classe <code>JsonParser</code>, che insieme a <code>jsonParserOperator</code> effettueranno il parsing del body ricevuto in modo ciclico. Estrapolate le informazioni relative al filtraggio richiesto, verranno utilizzate da <code>instanceFilter</code> per istanziare nuovi oggetti filtro prendedoli della classi contenute nel package it.univpm.ProgettoOOP.util.filter. A questo punto tramite <code>runFilter</code> si potrà eseguire il filtraggio e restituire a <code>ControllerClass</code> l'Arraylist di Record filtrato da consegnare al Client in formato Json. 
+<code>ControllerClass</code> esegue una chiamata tramite <code>JsonParserColumn</code> alla classe <code>JsonParser</code>, che insieme a <code>jsonParserOperator</code> effettueranno il parsing del body ricevuto in modo ciclico. Estrapolate le informazioni relative al filtraggio richiesto, verranno utilizzate da <code>instanceFilter</code> per istanziare nuovi oggetti filtro prendedoli della classi contenute nel package it.univpm.ProgettoOOP.util.filter. A questo punto tramite <code>runFilter</code> si potrà eseguire il filtraggio e restituire a <code>ControllerClass</code> l'Arraylist di Tweet filtrato da consegnare al Client in formato Json. 
  
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram_PostData.jpg" alt="Chiamata POST data sequence diagram" width="880px" height="610px">
  
 * **Chiamata GET /stats**
 
+<code>ControllerClass</code> esegue una chiamata tramite il metodo <code>getStats</code>. Nella classe <code>StatsHashtags</code> viene poi utilizzato un metodo chiamato <code>NumHashtag</code> che restituisce un array di interi(della stessa dimensione della timeline contente gli ultimi cento tweet) dove all'interno sono contenuti i numeri di hashtag per ogni tweet. <code>ControllerClass</code> trasforma quest ultimo in Json e lo ritorna al client.
+
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram%20get%20Stats.jpg" alt="Chiamata GET stats sequence diagram" width="440px" height="370px">
 
 * **Chiamata POST /stats**
+
+<code>ControllerClass</code> esegue una chiamata tramite il metodo <code>getStatsWithPost</code>. Nella classe <code>StatsHashtags</code> viene poi utilizzato un metodo chiamato <code>HashtagTweet</code> che prende in ingresso un ArrayList di tipo Tweet. Questo metodo ci restituirà un ArrayList di tipo NumeroHashtag contente tutti gli hashtag utilizzato da un determinato utente con il relativo numero di volte che è stato utilizzato. <code>ControllerClass</code> trasforma quest ultimo in Json e lo ritorna al client.
+
 <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Sequence%20Diagram%20postStats.jpg" alt="Chiamata POST stats sequence diagram" width="440px" height="370px">
 
 <h1>Software utilizzati</h1>
