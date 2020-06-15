@@ -93,7 +93,7 @@ public class ControllerClass {
 	 * @throws FilterIllegalArgumentException
 	 */
 	@RequestMapping(value = "/stats", method=RequestMethod.POST)
-	public ResponseEntity<Object> postStats(@RequestBody Object filter) 
+	public ResponseEntity<Object> getStatsWithPost(@RequestBody Object filter) 
 	throws InternalGeneralException, StatsNotFoundException, FilterNotFoundException, FilterIllegalArgumentException {
 		ArrayList<NumeroHashtag> hash = new ArrayList<NumeroHashtag>();
 		ArrayList<Tweet> filtered = JsonParser.JsonParserColumn(filter);
@@ -102,6 +102,14 @@ public class ControllerClass {
 		return new ResponseEntity<>(hash, HttpStatus.CREATED);
 	}
 	
+	/**
+	 * 
+	 * @return un array contenente il numero di hashtag per ogni post
+	 * @throws InternalGeneralException
+	 * @throws StatsNotFoundException
+	 * @throws FilterNotFoundException
+	 * @throws FilterIllegalArgumentException
+	 */
 	@RequestMapping(value = "/stats", method=RequestMethod.GET)
 	public ResponseEntity<Object> getStats() 
 	throws InternalGeneralException, StatsNotFoundException, FilterNotFoundException, FilterIllegalArgumentException {

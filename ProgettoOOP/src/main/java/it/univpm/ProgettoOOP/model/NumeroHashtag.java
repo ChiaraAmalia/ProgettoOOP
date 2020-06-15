@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class NumeroHashtag {
 	
-	private int nHashtag = 0;
-	private ArrayList<Hashtag> hash = new ArrayList<Hashtag>();
+	private int nHashtag;
+//	private ArrayList<Hashtag> hash = new ArrayList<Hashtag>();
+	private String hash;
 
 	/**
 	 * @param nHashtag
 	 */
-	public NumeroHashtag(int nHashtag,ArrayList<Hashtag> hash) {
+	public NumeroHashtag(int nHashtag,String hash) {
 		super();
 		this.nHashtag = nHashtag;
 		this.hash = hash;
@@ -41,16 +42,16 @@ public class NumeroHashtag {
 	/**
 	 * @return the hashtag
 	 */
-	public ArrayList<Hashtag> getHashtag() {
+	public String getHashtag() {
 		return hash;
 	}
 
 	/**
 	 * @param hashtag the hashtag to set
 	 */
-	public void setHashtag(Hashtag newHash) {
-		hash.add(newHash);
-//		this.hash = newHash;
+	public void setHashtag(String newHash) {
+//		hash.add(newHash);
+		this.hash = newHash;
 	}
 	
 	
