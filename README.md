@@ -102,7 +102,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
  * **Package it.univpm.ProgettoOOP.service**
  
-   <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20service.jpg" alt="diagramma delle classi raffigurante il package service" width="550px" height="500px">
+   <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20service.jpg" alt="diagramma delle classi raffigurante il package service" width="520px" height="530px">
  
   * **Package it.univpm.ProgettoOOP.util**
  
