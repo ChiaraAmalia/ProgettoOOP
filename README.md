@@ -57,10 +57,10 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  | Less             | {"RetweetCount" : { "Less" : 30}}           | minore (valido per campi numerici)              |
  | Included   |{"Mentions" : { "Included" : ["equipeprivacy"]}}| trova una corrispondenza con i valori dell'array (valido per stringhe)|
  | NotIncluded |{"Lang" : { "NotIncluded" : ["en"]}}       | non trova una corrispondenza con i valori dell'array (valido per stringhe)| 
- |   In             |  {"Hashtag" : { "In" : [2,7]}} | compreso tra (valido per campi numerici)        |  
- |   Nin            |   {"Hashtag" : { "Nin" : [2,5]}} |non compreso tra (valido per campi numerici)     |
- |   Created        |{"User" : { "Created" : ["cybersec_feeds"]}} | tweet creato da(valido per stringhe)            |
- |   NotCreated     |{"User" : { "NotCreated" : ["cybersec_feeds"]}}| tweet non creato da(valido per stringhe)        |
+ |   In             |  {"Hashtag" : { "In" : [2,7]}}              | compreso tra (valido per campi numerici)        |  
+ |   Nin            |   {"Hashtag" : { "Nin" : [2,5]}}            |non compreso tra (valido per campi numerici)     |
+ |  Created         |{"User" : { "Created" : ["cybersec_feeds"]}} | stampa tutti i tweet creati da un utente (valido per stringhe)|
+ |  NotCreated     |{"User" : { "NotCreated" : ["cybersec_feeds"]}}| stampa tutti i tweet non creati da un utente (valido per stringhe)|
  | Yes |{"Mentions" : { "Yes" : []}} | viene utilizzato per filtrare tutti quei tweet in cui sono presenti un'immagine o delle menzioni|
  |Not|{"Image" : { "Not" : []}}  | viene utilizzato per filtrare tutti quei tweet in cui sono non presenti un'immagine o delle menzioni|
  
