@@ -67,9 +67,11 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  {"Hashtag": { "In": [2,10]}, "Image": {"Type": "and", "Yes": []}}
  
 Inoltre, è possibile concatenare anche più di due campi. Ad esempio, questo filtraggio prenderà tutti i tweet che contengono l'hashtag "android", che non contengono un immagine e che l'account di colui che ha scritto il tweet abbia più di 3000 follower.
+
  { "Hashtag":{"Included":["android"]}, "Image":{"Type":"and","Not":[]},"Follower":{"Type":"and","Greater":3000 } }
 
 Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l'hashtag "cybersecurity", che contengano delle menzioni riferiti ad altri utenti, che siano stati scritti da "clairebotai" e che il tweet abbia più di 50 retweet.
+
  { "Hashtag":{"Included":["cybersecurity"]}, "Mentions":{"Type":"and","Yes":[]},"User":{"Type":"and", Created:["clairebotai"]},"RetweetCount":{"Type":"and","Greater":50 } }
  
  <h2> Sviluppo </h2>
