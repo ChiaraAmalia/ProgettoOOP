@@ -60,7 +60,7 @@ public class JsonParser {
 			if(operator.equals("type") || operator.equals("Type")) {
 				
 				if(operator.equals("type")) {
-					throw new FilterIllegalArgumentException("'Type' expected");
+					throw new FilterIllegalArgumentException(" Type must be 'T' caps ");
 				}
 				
 				type=(String) value;
