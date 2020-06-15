@@ -102,17 +102,20 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
  * **Package it.univpm.ProgettoOOP.service**
  
-   <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20service.jpg" alt="diagramma delle classi raffigurante il package service" width="520px" height="530px">
+   <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20service.jpg" alt="diagramma delle classi raffigurante il package service" width="500px" height="530px">
  
   * **Package it.univpm.ProgettoOOP.util**
  
+ <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20util.jpg" alt="diagramma delle classi raffigurante il package util" width="500px" height="530px">
  
  * **Package it.univpm.ProgettoOOP.util.filter**
  
+  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20filter.jpg" alt="diagramma delle classi raffigurante il package filter" width="500px" height="530px">
  
  * **Package it.univpm.ProgettoOOP.util.stats**
  
-
+ <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20stats.jpg" alt="diagramma delle classi raffigurante il package stats" width="200px" height="180px">
+ 
  
 <h2> Chiamate </h2>
 
