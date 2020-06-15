@@ -58,12 +58,18 @@ public class JsonParser {
 			String operator= entry.getKey();
 			Object value=entry.getValue();
 			if(operator.equals("type") || operator.equals("Type")) {
+				
+				if(operator.equals("type")) {
+					throw new FilterIllegalArgumentException("'Type' expected");
+				}
+				
 				type=(String) value;
+				
 				if(!(value.equals("and"))&&!(value.equals("or"))) {
 					throw new FilterIllegalArgumentException("'and' o 'or' expected after 'type'");
 		    	}
 		    	continue;
-		    }
+		    } 
 			
 			filter= FilterService.instanceFilter(column, operator, value);
 			
