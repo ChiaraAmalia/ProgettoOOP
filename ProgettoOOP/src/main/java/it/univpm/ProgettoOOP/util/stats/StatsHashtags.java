@@ -18,6 +18,7 @@ public class StatsHashtags {
 		NumeroHashtag a = new NumeroHashtag();
 //		ArrayList<String> hstg = new ArrayList<String>();
 		
+//		for(NumeroHashtag n:nHash) {
 		for(Tweet t:tw) {
 //			for(int k=0; k<a.size();k++) {
 //			a.get(k).setnHashtag(0);
@@ -43,9 +44,11 @@ public class StatsHashtags {
 								}
 						}*/
 //						a.setHashtag(t.getEntities().get(i).getHashtags().get(j));
-						a.setHashtag(t.getEntities().get(i).getHashtags().get(j).getText()); //prende il singolo hashtag
+						a.setHashtag(t.getEntities().get(i).getHashtags().get(j).getText());
 						if(!nHash.contains(a))
-							nHash.add(a);
+							nHash.add(a);//prende il singolo hashtag
+//						if(!n.equals(a))
+//							n=a;
 //						prova=t.getEntities().get(i).getHashtags().get(j).getText();
 //						a.get(k).setHashtag(t.getEntities().get(i).getHashtags().get(j).getText());
 //						if(!nHash.contains(t.getEntities().get(i).getHashtags().get(j).getText()))
@@ -62,14 +65,14 @@ public class StatsHashtags {
 //							hstg.add(t.getEntities().get(i).getHashtags().get(j).getText());
 						
 					}
-					//if(!nHash.contains(a))
-						//nHash.add(a);
+//					if(!nHash.contains(a))
+//						nHash.add(a);
 				
 				}
-			if(!nHash.contains(a))
-				nHash.add(a);	
+//			if(!nHash.contains(a))
+//				nHash.add(a);	
+//		}
 		}
-		
 		for(NumeroHashtag n: nHash) {
 //		for(int l=0; l<nHash.size(); l++) {
 //			for(int g=0; g<n.getHashtag().size();g++) {
