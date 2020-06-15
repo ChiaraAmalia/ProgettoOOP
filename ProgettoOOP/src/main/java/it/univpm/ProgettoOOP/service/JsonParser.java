@@ -13,7 +13,7 @@ import it.univpm.ProgettoOOP.service.FilterService;
 import it.univpm.ProgettoOOP.util.other.Filter;
 
 public class JsonParser {
-	
+//	
 	
 	/**Effettua il parsing dei dati esterni (Campo da analizzare)
 	  @param filtro da applicare
