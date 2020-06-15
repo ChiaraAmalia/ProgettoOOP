@@ -13,12 +13,21 @@ import it.univpm.ProgettoOOP.service.JSONParse;
 import it.univpm.ProgettoOOP.model.Metadata;
 import it.univpm.ProgettoOOP.model.Tweet;
 
+/**
+ * Questa classe permette di creare dapprima due HashMap dove all'interno vengono istanziati
+ * due ArrayList di tipo Tweet e metadata. In seguito, vengono istanziati i due metodi di TweetService
+ * per visualizzare la collezione dove all'interno sono contenuti i relativi tweet/metadati
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
+ *
+ */
 @Service
 public class TweetServiceImpl implements TweetService{
 
 	private Map<Long, Tweet> timeline=new HashMap<>();
 	private Map<String, Metadata> metadata=new HashMap<>();
 	
+	//Qui vengono popolate le HashMap
 	public TweetServiceImpl(){
 		super();
 		try {
@@ -38,12 +47,18 @@ public class TweetServiceImpl implements TweetService{
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * @return una collezione di Tweet
+	 */
 	@Override
 	public Collection<Tweet> getTweet() {
 		return timeline.values();
 	}
 	
+	/**
+	 * @return una collezione di Metadata
+	 */
 	@Override
 	public Collection<Metadata> getMetada(){
 		return metadata.values();

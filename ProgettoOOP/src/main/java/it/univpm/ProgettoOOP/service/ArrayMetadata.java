@@ -4,11 +4,22 @@ import java.util.ArrayList;
 
 import it.univpm.ProgettoOOP.model.Metadata;
 
+/**
+ * Questa classe permette di visualizzare un intero array contenente tutti i dettagli
+ * riguardanti ogni campo del tweet
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
+ *
+ */
 
 public class ArrayMetadata {
 	
 	private static ArrayList<Metadata> metadata = new ArrayList<Metadata>();
 	
+	/**
+	 * 
+	 * @return un array contenente tutti i metadati
+	 */
 	public static ArrayList<Metadata> getArrayMetadata() {
 		
 		metadata.add(new Metadata("id","id del tweet","Long"));

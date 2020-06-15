@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * La classe Entities contiene diversi arraylist contenenti gli hashtag, gli userMentions
- * l'url citato nel tweet e la relativa immagine contenuta nel tweet.
+ * gli url citati nel tweet e le relative immagini contenute nel tweet.
  * @see Hashtag
  * @see UserMentions
  * @see urls

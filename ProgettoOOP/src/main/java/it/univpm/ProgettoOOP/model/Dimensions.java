@@ -1,5 +1,12 @@
 package it.univpm.ProgettoOOP.model;
 
+/**
+ * Questa classe viene utilizzata per rappresentare le dimensioni delle immagini
+ * contenute nel tweet
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
+ *
+ */
 public class Dimensions {
 	
 	private long height;
@@ -13,42 +20,42 @@ public class Dimensions {
 	}
 
 	/**
-	 * @return the height
+	 * @return l'altezza
 	 */
 	public long getHeight() {
 		return height;
 	}
 
 	/**
-	 * @param height the height to set
+	 * @param l'altezza settata a un nuovo valore
 	 */
 	public void setHeight(long height) {
 		this.height = height;
 	}
 
 	/**
-	 * @return the width
+	 * @return la larghezza
 	 */
 	public long getWidth() {
 		return width;
 	}
 
 	/**
-	 * @param width the width to set
+	 * @param la larghezza settata a un nuovo valore
 	 */
 	public void setWidth(long width) {
 		this.width = width;
 	}
 
 	/**
-	 * @return the resize
+	 * @return l'adattamento dell'immagine
 	 */
 	public String getResize() {
 		return resize;
 	}
 
 	/**
-	 * @param resize the resize to set
+	 * @param l'adattamento dell'immagine settato a un nuovo valore
 	 */
 	public void setResize(String resize) {
 		this.resize = resize;
