@@ -64,7 +64,7 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  | Yes |{"Mentions" : { "Yes" : []}} | viene utilizzato per filtrare tutti quei tweet in cui sono presenti un'immagine o delle menzioni|
  |Not|{"Image" : { "Not" : []}}  | viene utilizzato per filtrare tutti quei tweet in cui sono non presenti un'immagine o delle menzioni|
  
- In aggiunta, è possibile anche creare dei filtri concatenati, utilizzando il comando "*Type*"(viene lanciata un'eccezione se viene scritto qualsiasi altra parola).
+ In aggiunta, è possibile anche creare dei filtri concatenati, utilizzando il comando "*Type*" (viene lanciata un'eccezione se viene scritta qualsiasi altra parola).
  Ad esempio il filtraggio prenderà tutti  i tweet che hanno hashtag compresi tra 2 e 10 e che contengano un'immagine
  
  {"Hashtag": { "In": [2,10]}, "Image": {"Type": "and", "Yes": []}}
