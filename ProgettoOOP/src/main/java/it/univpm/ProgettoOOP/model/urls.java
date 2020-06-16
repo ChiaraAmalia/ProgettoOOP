@@ -24,7 +24,7 @@ public class urls {
 	}
 
 	/**
-	 * @param url 
+	 * @param Url 
 	 * permette di modificare l'url
 	 */
 	public void setUrl(String Url) {

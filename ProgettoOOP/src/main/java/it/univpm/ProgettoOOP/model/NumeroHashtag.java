@@ -28,14 +28,16 @@ public class NumeroHashtag {
 	}
 
 	/**
-	 * @return il numero di hashtag
+	 * @return nHashtag
+	 * il numero di hashtag
 	 */
 	public int getnHashtag() {
 		return nHashtag;
 	}
 
 	/**
-	 * @param il numero di hashtag settato a un nuovo valore
+	 * @param nHashtag
+	 * il numero di hashtag settato a un nuovo valore
 	 */
 	public void setnHashtag(int nHashtag) {
 		this.nHashtag = nHashtag;
@@ -49,7 +51,8 @@ public class NumeroHashtag {
 	}
 
 	/**
-	 * @param il valore dell'hashtag settato ad un altro valore
+	 * @param newHash
+	 * il valore dell'hashtag settato ad un altro valore
 	 */
 	public void setHashtag(String newHash) {
 		this.hash = newHash;

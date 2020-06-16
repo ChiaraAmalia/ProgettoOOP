@@ -37,7 +37,7 @@ public class Tweet  extends ID {
 	}
 
 	/**
-	 * @param dataOra 
+	 * @param created_at 
 	 * viene settato ad un altro valore
 	 */
 	public void setCreated_at(String created_at) {
@@ -52,7 +52,7 @@ public class Tweet  extends ID {
 	}
 
 	/**
-	 * @param testo 
+	 * @param text 
 	 * viene settato ad un altro valore
 	 */
 	public void setText(String text) {
@@ -84,7 +84,7 @@ public class Tweet  extends ID {
 	}
 
 	/**
-	 * @param enties 
+	 * @param NewEnties 
 	 * le nuove entita' vengono aggiunte all'array entities
 	 */
 	public void setEntities(Entities newEntities) {
@@ -100,7 +100,7 @@ public class Tweet  extends ID {
 	}
 
 	/**
-	 * @param user
+	 * @param newUser
 	 * viene aggiunto l'autore del tweet
 	 */
 	public void setUsers(User newUser) {

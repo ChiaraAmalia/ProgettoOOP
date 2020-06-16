@@ -8,7 +8,7 @@ import it.univpm.ProgettoOOP.util.other.Filter1Compare;
  *  è stato retweettato meno di X volte. X viene passato tramite paramFilter.
  *  
  *  @see Tweet
- *  @see Filter1compare
+ *  @see Filter1Compare
  *  @see Filter
  *  
  *  @author Chiara Amalia Caporusso

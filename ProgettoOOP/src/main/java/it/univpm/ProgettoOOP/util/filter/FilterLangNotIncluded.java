@@ -15,7 +15,7 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayString;
  *  @author Chiara Amalia Caporusso
  *  @author Piero Campitelli
 */
-
+ 
 public class FilterLangNotIncluded extends FilterArrayString implements Filter{
 	
 	public FilterLangNotIncluded(Object parameters) {                                  

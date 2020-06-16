@@ -9,7 +9,7 @@ import it.univpm.ProgettoOOP.util.other.FilterArrayString;
  *  La mention viene passata tramite parameters
  *  
  *  @see Tweet
- *  @see Filter1compare
+ *  @see FilterArrayString
  *  @see Filter
  *  
  *  @author Chiara Amalia Caporusso
