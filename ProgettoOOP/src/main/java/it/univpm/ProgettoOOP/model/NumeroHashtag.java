@@ -54,5 +54,24 @@ public class NumeroHashtag {
 		this.hash = newHash;
 	}
 	
-	
+	/**
+	 * Viene utilizzato per confrontare l'uguaglianza tra due hashtag
+	 * @param n oggetto di tipo NumeroHashtag
+	 * @return hash
+	 */
+	public boolean equals(NumeroHashtag n) {
+		if (n == this) {
+			return true;
+		}
+		if (!(n instanceof NumeroHashtag)) {
+			return false;
+		}
+		NumeroHashtag Hash = (NumeroHashtag) n;
+		return this.hash.equals(Hash.hash);
+	}
+
+	public int hashCode() {
+		return hash.hashCode();
+	}
 }
+
