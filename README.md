@@ -81,7 +81,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
  <h3>Diagramma delle classi</h3>
  
- <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram.jpg" alt="diagramma delle classi raffigurante tutti i package con tutte le classi" width="900px" height="530px">
+ <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram.jpg" alt="diagramma delle classi raffigurante tutti i package con tutte le classi" width="1000px" height="550px">
  
  <h3>Packages</h3>
 
@@ -103,7 +103,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
  * **Package it.univpm.ProgettoOOP.model**
  
-  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20model.jpg" alt="diagramma delle classi raffigurante il package model" width="900px" height="530px">
+  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20model.jpg" alt="diagramma delle classi raffigurante il package model" width="1000px" height="550px">
  
  * **Package it.univpm.ProgettoOOP.service**
  
