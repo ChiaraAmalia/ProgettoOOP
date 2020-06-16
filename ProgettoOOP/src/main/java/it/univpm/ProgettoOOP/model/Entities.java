@@ -33,7 +33,7 @@ public class Entities {
 	}
 
 	/**
-	 * @param newHashtags 
+	 * @param newHashtag
 	 * permette di aggiungere hashtag all'array
 	 */
 	public void setHashtags(Hashtag newHashtag) {
@@ -49,7 +49,7 @@ public class Entities {
 	}
 
 	/**
-	 * @param newMentions
+	 * @param newMention
 	 * permette di aggiungere all'array gli account citati
 	 */
 	public void setMentions(UserMentions newMention) {
@@ -79,7 +79,7 @@ public class Entities {
 	}
 
 	/**
-	 * @param newImages 
+	 * @param newImage 
 	 * permette di aggiungere l'immagine contenuta nel tweet
 	 */
 	public void setImages(Image newImage) {

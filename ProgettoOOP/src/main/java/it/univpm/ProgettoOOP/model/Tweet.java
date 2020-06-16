@@ -30,7 +30,7 @@ public class Tweet  extends ID {
 	}
 	
 	/**
-	 * @return il campo dataOra
+	 * @return il campo con la data e l'ora
 	 */
 	public String getCreated_at() {
 		return created_at;
@@ -84,7 +84,7 @@ public class Tweet  extends ID {
 	}
 
 	/**
-	 * @param newEnties 
+	 * @param newEntities 
 	 * le nuove entita' vengono aggiunte all'array entities
 	 */
 	public void setEntities(Entities newEntities) {
