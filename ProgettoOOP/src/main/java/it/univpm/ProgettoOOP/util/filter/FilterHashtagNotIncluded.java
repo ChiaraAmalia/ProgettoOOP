@@ -6,6 +6,17 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
+/** Questa classe controlla se il tweet che gli viene passato
+ *  non contiene un determinato hashtag,il quale viene passato tramite parameters
+ *  
+ *  @see Tweet
+ *  @see FilterArrayString
+ *  @see Filter
+ *  
+ *  @author Chiara Amalia Caporusso
+ *  @author Piero Campitelli
+*/
+
 public class FilterHashtagNotIncluded extends FilterArrayString implements Filter{
 	
 	public FilterHashtagNotIncluded(Object parameters) {

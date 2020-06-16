@@ -4,6 +4,17 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
+/** Questa classe controlla se il tweet che gli viene passato
+ *  contiene delle mentions
+ *  
+ *  @see Tweet
+ *  @see FilterArrayString
+ *  @see Filter
+ *  
+ *  @author Chiara Amalia Caporusso
+ *  @author Piero Campitelli
+*/
+
 public class FilterMentionsYes extends FilterArrayString implements Filter{
 	
 	public FilterMentionsYes(Object parameters) {

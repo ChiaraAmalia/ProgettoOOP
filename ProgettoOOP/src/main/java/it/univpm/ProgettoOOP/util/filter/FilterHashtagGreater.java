@@ -5,6 +5,17 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 import it.univpm.ProgettoOOP.util.other.Filter2Compare;
 
+/** Questa classe controlla se il tweet che gli viene passato
+ *  contiene più di X hashtag,X viene passato tramite paramFilter
+ *  
+ *  @see Tweet
+ *  @see Filter1Compare
+ *  @see Filter
+ *  
+ *  @author Chiara Amalia Caporusso
+ *  @author Piero Campitelli
+*/
+
 public class FilterHashtagGreater extends Filter1Compare implements Filter { 
 
 	public FilterHashtagGreater(Object paramFilter) {                                  

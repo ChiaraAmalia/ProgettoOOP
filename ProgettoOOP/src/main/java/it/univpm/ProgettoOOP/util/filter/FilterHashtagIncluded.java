@@ -6,10 +6,21 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
+/** Questa classe controlla se il tweet che gli viene passato
+ *  contiene un determinato hashtag,il quale viene passati tramite paramFilter
+ *  
+ *  @see Tweet
+ *  @see FilterArrayString
+ *  @see Filter
+ *  
+ *  @author Chiara Amalia Caporusso
+ *  @author Piero Campitelli
+*/
+
 public class FilterHashtagIncluded extends FilterArrayString implements Filter{
 	
-	public FilterHashtagIncluded(Object parameters) {
-		super(parameters);
+	public FilterHashtagIncluded(Object paramFilter) {
+		super(paramFilter);
 	}
 	 
 	public boolean filter(Tweet tweet) {

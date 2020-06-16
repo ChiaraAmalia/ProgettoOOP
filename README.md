@@ -64,16 +64,16 @@ Per eseguire le richieste GET o POST si può installare un API testing, (ad esem
  | Yes |{"Mentions" : { "Yes" : []}} | viene utilizzato per filtrare tutti quei tweet in cui sono presenti un'immagine o delle menzioni|
  |Not|{"Image" : { "Not" : []}}  | viene utilizzato per filtrare tutti quei tweet in cui sono non presenti un'immagine o delle menzioni|
  
- In aggiunta, è possibile anche creare dei filtri concatenati, utilizzando il comando "*Type*" (viene lanciata un'eccezione se viene scritta qualsiasi altra parola).
- Ad esempio il filtraggio prenderà tutti  i tweet che hanno hashtag compresi tra 2 e 10 e che contengano un'immagine
+ In aggiunta, è possibile anche creare dei filtri concatenati, utilizzando il comando "*Type*" (ATTENZIONE: Viene fatto notare che è esclusivamente possibile inserire "Type" con l'iniziale maiuscola,in caso contrario o se viene scritta qualsiasi altra parola verrà lanciata un'eccezione con un messaggio di errore).
+ Ad esempio il filtraggio prenderà tutti i tweet che contengono dai 2 ai 10 hashtag e che contengono un'immagine
  
  {"Hashtag": { "In": [2,10]}, "Image": {"Type": "and", "Yes": []}}
  
-Inoltre, è possibile concatenare anche più di due campi. Ad esempio, questo filtraggio prenderà tutti i tweet che contengono l'hashtag "android", che non contengono un immagine e che l'account di colui che ha scritto il tweet abbia più di 3000 follower.
+Inoltre, è possibile concatenare anche più di due campi. Ad esempio, questo filtraggio prenderà tutti i tweet che contengono l'hashtag "android", che non contengono un'immagine e che l'account di colui che ha scritto il tweet abbia più di 3000 follower.
 
  { "Hashtag":{"Included":["android"]}, "Image":{"Type":"and","Not":[]},"Follower":{"Type":"and","Greater":3000 } }
 
-Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l'hashtag "cybersecurity", che contengano delle menzioni riferiti ad altri utenti, che siano stati scritti da "clairebotai" e che il tweet abbia più di 50 retweet.
+Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l'hashtag "cybersecurity", che contengono delle menzioni riferiti ad altri utenti,che siano stati scritti da "clairebotai" e che il tweet abbia più di 50 retweet.
 
  { "Hashtag":{"Included":["cybersecurity"]}, "Mentions":{"Type":"and","Yes":[]},"User":{"Type":"and", Created:["clairebotai"]},"RetweetCount":{"Type":"and","Greater":50 } }
  

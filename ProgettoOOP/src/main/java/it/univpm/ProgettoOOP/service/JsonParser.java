@@ -83,7 +83,9 @@ public class JsonParser {
 		    // lancia il metodo runfilter corrispondente
 			if(operator.equals("type") || operator.equals("Type")) {
 				if(operator.equals("type")) {
-					throw new FilterNotFoundException("'Type' expected");
+
+					throw new FilterIllegalArgumentException(" Type must be 'T' caps ");
+
 				}
 				type=(String) value;
 				if(!(value.equals("and"))&&!(value.equals("or"))) {
@@ -100,4 +102,5 @@ public class JsonParser {
 		return filteredArray;
 	}			
 }
+
 
