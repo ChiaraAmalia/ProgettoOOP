@@ -79,6 +79,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
  Il programma consente di concatenare più filtri anche con l'opzione "or" restituendo i tweet che rispecchiano almeno un filtro richiesto.
  Ad esempio il seguente comando ci consente di visualizzare tutti i tweet che contengono l'hashtag da noi richiesto "cybersecurity" oppure i tweet che contengono un'immagine.
+ 
  { "Hashtag":{"Included":["cybersecurity"]}, "Image":{"Type":"or","Yes":[]} }
  
  <h2> Sviluppo </h2>
