@@ -17,6 +17,12 @@ import it.univpm.ProgettoOOP.service.JsonParser;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.model.Tweet;
 
+/**
+ * Questa classe effettua alcuni test sul corretto funzionamento delle eccezioni 
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
+ *
+ */
 public class TestJunit {
 	
 	@BeforeEach
