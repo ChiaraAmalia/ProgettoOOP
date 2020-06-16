@@ -7,9 +7,9 @@ Questo progetto è finalizzato alla realizzazione di una timeline utente persona
 La nostra applicazione permette di richiedere mediante API REST (GET o POST) con rotte distinte:
 * Restituzione dei metadati, formato JSON, ovvero l’elenco degli attributi, alias degli stessi e tipo di dati contenuti.
 * Restituzione dei dati riguardanti ogni tweet, formato JSON.
-* Restituzione dei dati riguardanti record filtrati, formato JSON.
-* Restituzione delle statistiche sui dati di uno specifico campo.
-* Restituzione delle statistiche sui dati di uno specifico campo, su tweet filtrati.
+* Restituzione dei dati riguardanti tweet filtrati, formato JSON.
+* Restituzione delle statistiche, formato JSON, sul numero di hashtag per ogni tweet contenuto nella timeline contenente gli ultimi cento tweet
+* Restituzione delle statistiche, formato JSON, sul numero hashtag contenuto in ogni post per un determinato utente.
 
 <h2>Contenuti</h2>
 
