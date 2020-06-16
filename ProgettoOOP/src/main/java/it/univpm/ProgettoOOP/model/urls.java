@@ -1,7 +1,7 @@
 package it.univpm.ProgettoOOP.model;
 
 /**
- * Questa classe indica l'url presente all'interno del tweet
+ * Questa classe indica gli url presenti all'interno del tweet
  * @author Chiara Amalia Caporusso
  * @author Piero Campitelli
  *
