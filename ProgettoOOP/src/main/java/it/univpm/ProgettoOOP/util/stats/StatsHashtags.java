@@ -7,13 +7,21 @@ import it.univpm.ProgettoOOP.model.NumeroHashtag;
 import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.service.JSONParse;
 
+/**
+ * Questa classe viene utilizzata per effettuare le statistiche sugli ultimi cento tweet
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
+ *
+ */
+
 public class StatsHashtags {
 	
 	/**
 	 * Questo metodo permette di filtrare i tweet in base all'user che l'ha creato.
 	 * Viene utilizzato per contare quante volte un hashtag compare nei tweet scritti dall'utente
 	 * @param tw ArrayList di Tweet filtrato
-	 * @return un ArrayList di tipo NumeroHashtag con all'interno tutti gli hashtag con il relativo conteggio
+	 * @return un ArrayList di tipo NumeroHashtag con all'interno tutti gli hashtag con il relativo conteggio.
+	 * @see Tweet
 	 */
 	public ArrayList<NumeroHashtag> HashtagTweet(ArrayList<Tweet> tw){
 		
@@ -53,6 +61,7 @@ public class StatsHashtags {
 	 * Il conteggio di hashtag per ogni tweet viene poi salvato all'interno di un array che poi verrà
 	 * passato al metodo all'interno della ControllerClass
 	 * @return un array di interi contenente il numero di hashtag per ogni tweet
+	 * @see JSONParse
 	 */
 	public int[] NumHashtag() {
 		
