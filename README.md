@@ -8,7 +8,7 @@ La nostra applicazione permette di richiedere mediante API REST (GET o POST) con
 * Restituzione dei metadati, formato JSON, ovvero l’elenco degli attributi, alias degli stessi e tipo di dati contenuti.
 * Restituzione dei dati riguardanti ogni tweet, formato JSON.
 * Restituzione dei dati riguardanti tweet filtrati, formato JSON.
-* Restituzione delle statistiche, formato JSON, sul numero di hashtag per ogni tweet contenuto nella timeline contenente gli ultimi cento tweet
+* Restituzione delle statistiche, formato JSON, sul numero di hashtag per ogni tweet contenuto nella timeline contenente gli ultimi cento tweet.
 * Restituzione delle statistiche, formato JSON, sul numero hashtag contenuto in ogni post per un determinato utente.
 
 <h2>Contenuti</h2>
@@ -80,7 +80,8 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  <h2> Sviluppo </h2>
  
  <h3>Diagramma delle classi</h3>
- uml class diagram completo da aggiungere qua
+ 
+ <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram.jpg" alt="diagramma delle classi raffigurante tutti i package con tutte le classi" width="900px" height="530px">
  
  <h3>Packages</h3>
 
@@ -102,6 +103,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
  
  * **Package it.univpm.ProgettoOOP.model**
  
+  <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20model.jpg" alt="diagramma delle classi raffigurante il package model" width="900px" height="530px">
  
  * **Package it.univpm.ProgettoOOP.service**
  
