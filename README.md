@@ -102,7 +102,7 @@ Questo filtraggio, ad esempio, permette di visualizzare i tweet che contengono l
   <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20Exception.jpg" alt="diagramma delle classi raffigurante il package Exception" width="550px" height="400px">
  
  * **Package it.univpm.ProgettoOOP.model**
- 
+  
   <img src="https://github.com/ChiaraAmalia/ProgettoOOP/blob/master/UMLDiagram/OOP%20Class%20Diagram%20model.jpg" alt="diagramma delle classi raffigurante il package model" width="1000px" height="650px">
  
  * **Package it.univpm.ProgettoOOP.service**
