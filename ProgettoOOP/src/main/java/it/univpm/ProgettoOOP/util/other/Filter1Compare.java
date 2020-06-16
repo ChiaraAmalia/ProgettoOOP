@@ -1,12 +1,18 @@
 package it.univpm.ProgettoOOP.util.other;
 
+/**
+ * Rappresenta la superclasse per i filtri che lavorano su un intero.
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
+ *
+ */
 public class Filter1Compare{
 	
 	protected int paramFilter;
 	
 	/** Costruttore 
-	 * @param parametroFiltro deve essere un Int.
-	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
+	 * @param paramFilter deve essere un Int.
+	 * @throws IllegalArgumentException viene lanciata se non si inserisce il tipo richiesto. 
 	*/
 	public Filter1Compare(Object paramFilter){
 		
@@ -19,8 +25,8 @@ public class Filter1Compare{
 	}
 		
 	/** Set
-	 * @param parametroFiltro deve essere un Int.
-	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
+	 * @param paramFilter deve essere un Int.
+	 * @throws IllegalArgumentException viene lanciata se non si inserisce il tipo richiesto.
 	*/
 	public void setParamFilter(Object paramFilter) {
 		
@@ -31,9 +37,10 @@ public class Filter1Compare{
 		}
 	}
 
-	/** Set Overloading
-	 *  
-	*/
+	/**Set Overloading
+	 * 
+	 * @param paramFilter
+	 */
 	public void setParamFilter(int paramFilter) {
 		this.paramFilter = paramFilter;
 	}

@@ -5,7 +5,8 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  è nel formato di lingua richiesta,la lingua selezionata viene passata con prameters
+ *  è scritto in una lingua richiesta dal client. 
+ *  La lingua selezionata viene passata con parameters
  *  
  *  @see Tweet
  *  @see FilterArrayString

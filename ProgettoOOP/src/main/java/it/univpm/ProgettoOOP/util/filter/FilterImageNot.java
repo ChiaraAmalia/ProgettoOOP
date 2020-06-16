@@ -5,7 +5,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  non contiene un'immagine
+ *  non contiene un'immagine.
  *  
  *  @see Tweet
  *  @see FilterArrayString

@@ -7,7 +7,8 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  è stato creato da un determinato utente,l'utente viene passato tramite tramite parameters
+ *  è stato creato da un determinato utente.
+ *  L'utente viene passato tramite tramite parameters
  *  
  *  @see Tweet
  *  @see FilterArrayString

@@ -7,7 +7,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  contiene un determinato hashtag,il quale viene passati tramite paramFilter
+ *  contiene un determinato hashtag, il quale viene passato tramite paramFilter.
  *  
  *  @see Tweet
  *  @see FilterArrayString

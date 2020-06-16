@@ -2,14 +2,20 @@ package it.univpm.ProgettoOOP.util.other;
 
 import java.util.ArrayList;
 
+/**
+ * Rappresenta la superclasse che lavora con le stringhe
+ * @author Chiara Amalia Caporusso
+ * @author Piero Campitelli
+ *
+ */
 public class FilterArrayString {
 	
 	protected ArrayList<String> param = new ArrayList<String>();
 
 	
 	/** Costruttore 
-	 * @param parametri deve essere un ArrayList String.
-	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
+	 * @param parameters deve essere un ArrayList String.
+	 * @throws IllegalArgumentException il valore inserito non è del tipo richiesto
 	*/
 	public FilterArrayString(Object parameters) {
 		
@@ -31,8 +37,8 @@ public class FilterArrayString {
 	
 	
 	/** Set 
-	 * @param parametri deve essere un ArrayList di stringhe
-	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
+	 * @param parameters deve essere un ArrayList di stringhe
+	 * @throws IllegalArgumentException il valore inserito non è del tipo richiesto 
 	*/
 	public void SetFilterParameters(Object parameters) {
 		

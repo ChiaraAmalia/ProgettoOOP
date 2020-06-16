@@ -5,7 +5,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 
 /** Questa classe controlla se l'utente del tweet che gli viene passato
- *  ha più di X follower,X viene passato tramite paramFilter
+ *  ha più di X follower. X viene passato tramite paramFilter
  *  
  *  @see Tweet
  *  @see Filter1Compare

@@ -5,7 +5,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  ha meno di X hashtag,X viene passato tramite paramFilter
+ *  ha meno di X hashtag, X viene passato tramite paramFilter.
  *  
  *  @see Tweet
  *  @see Filter1Compare

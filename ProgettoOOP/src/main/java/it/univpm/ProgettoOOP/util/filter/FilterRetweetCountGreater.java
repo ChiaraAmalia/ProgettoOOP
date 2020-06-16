@@ -5,7 +5,7 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  è stato retweettato più di X volte,X viene passata tramite paramFilter
+ *  è stato retweettato più di X volte. X viene passata tramite paramFilter
  *  
  *  @see Tweet
  *  @see Filter1compare

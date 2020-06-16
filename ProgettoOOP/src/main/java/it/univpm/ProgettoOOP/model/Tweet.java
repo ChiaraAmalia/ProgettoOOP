@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Questa classe contiene le principali caratteristiche di un Tweet tra cui
- * l'id del tweet, la data e l'ra di pubblicazione, il testo del tweet
+ * l'id del tweet, la data e l'ora di pubblicazione, il testo del tweet
  * le entita' del tweet, l'user che ha scrittp il tweet e una variabile booleana
  * che indica se il post è stato retweettato o meno. Viene estesa dalla classe ID
  * @see ID

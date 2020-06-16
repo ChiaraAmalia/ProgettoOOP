@@ -6,7 +6,8 @@ import it.univpm.ProgettoOOP.util.other.Filter2Compare;
 
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  non contiene un numero X di hashtag compreso tra 2 valori,i quali vengono passati tramite param
+ *  non contiene un numero X di hashtag compreso tra 2 valori,
+ *  i quali vengono passati tramite param
  *  
  *  @see Tweet
  *  @see Filter2Compare

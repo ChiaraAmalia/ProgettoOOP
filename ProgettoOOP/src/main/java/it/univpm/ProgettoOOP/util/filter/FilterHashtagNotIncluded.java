@@ -7,7 +7,7 @@ import it.univpm.ProgettoOOP.util.other.Filter1Compare;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  non contiene un determinato hashtag,il quale viene passato tramite parameters
+ *  non contiene un determinato hashtag, il quale viene passato tramite parameters.
  *  
  *  @see Tweet
  *  @see FilterArrayString

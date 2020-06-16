@@ -5,7 +5,8 @@ import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
 /** Questa classe controlla se il tweet che gli viene passato
- *  non contiene la mentions richiesta,la mention viene passata tramite parameters
+ *  non contiene la mentions richiesta.
+ *  La mention viene passata tramite parameters
  *  
  *  @see Tweet
  *  @see Filter1compare
