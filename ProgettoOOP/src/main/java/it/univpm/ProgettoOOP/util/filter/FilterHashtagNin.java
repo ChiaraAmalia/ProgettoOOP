@@ -4,6 +4,18 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.Filter2Compare;
 
+
+/** Questa classe controlla se il tweet che gli viene passato
+ *  non contiene un numero X di hashtag compreso tra 2 valori,i quali vengono passati tramite param
+ *  
+ *  @see Tweet
+ *  @see Filter2Compare
+ *  @see Filter
+ *  
+ *  @author Chiara Amalia Caporusso
+ *  @author Piero Campitelli
+*/
+
 public class FilterHashtagNin extends Filter2Compare implements Filter{
 	
 	public FilterHashtagNin(Object param) {

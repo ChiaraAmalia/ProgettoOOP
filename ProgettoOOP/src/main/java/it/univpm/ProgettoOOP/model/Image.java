@@ -5,8 +5,10 @@ import java.util.ArrayList;
 /**
  * Questa classe contiene le caratteristiche principali dell'immagine condivisa nel tweet come
  * ad esempio l'id dell'immagine e l'url dell'immagine.
+ * Inoltre contiene anche le dimensioni dell'immagine
  * Viene estesa dalla classe ID
  * @see ID
+ * @see Dimensions
  * @author Chiara Amalia Caporusso
  * @author Piero Campitelli
  *

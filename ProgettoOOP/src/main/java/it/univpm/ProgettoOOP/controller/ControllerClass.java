@@ -35,6 +35,7 @@ import it.univpm.ProgettoOOP.util.stats.StatsHashtags;
  * @see TweetService
  * @see TweetServiceImpl
  * @see JsonParser
+ * @see StatsHashtags
  * 
  */
 @RestController
@@ -68,7 +69,7 @@ public class ControllerClass {
 	
 	/**
 	 * Risponde alla richiesta POST /data
-	 * @param filter
+	 * @param filter filtro che deve essere passato dal body
 	 * @return un ArrayList di tweet filtrato 
 	 * @throws InternalParseException
 	 * @throws FilterNotFoundException
@@ -85,7 +86,7 @@ public class ControllerClass {
 	
 	/**
 	 * 
-	 * @param filter
+	 * @param filter filtro riguardante l'utente che ha creato il tweet
 	 * @return ArrayList contentente frequenza per utente di hashtag
 	 * @throws InternalGeneralException
 	 * @throws StatsNotFoundException

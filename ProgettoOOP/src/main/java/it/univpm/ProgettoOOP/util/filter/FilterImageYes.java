@@ -4,6 +4,17 @@ import it.univpm.ProgettoOOP.model.Tweet;
 import it.univpm.ProgettoOOP.util.other.Filter;
 import it.univpm.ProgettoOOP.util.other.FilterArrayString;
 
+/** Questa classe controlla il tweet che gli viene passato
+ *  contiene l'immagine
+ *  
+ *  @see Tweet
+ *  @see FilterArrayString
+ *  @see Filter
+ *  
+ *  @author Chiara Amalia Caporusso
+ *  @author Piero Campitelli
+*/
+
 public class FilterImageYes extends FilterArrayString implements Filter{
 	
 	public FilterImageYes(Object parameters) {
