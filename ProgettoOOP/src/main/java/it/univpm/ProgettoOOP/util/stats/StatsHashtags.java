@@ -67,7 +67,7 @@ public class StatsHashtags {
 		
 		ArrayList<Tweet> tw = JSONParse.ParseInformazioni();
 		int count=0;
-		int nhash[] = new int[tw.size()];
+		int nhash[] = new int[100];
 		for(int i=0; i<tw.size();i++) {
 			for(int j=0; j<tw.get(i).getEntities().size();j++) {
 				count=tw.get(i).getEntities().get(j).getHashtags().size();
