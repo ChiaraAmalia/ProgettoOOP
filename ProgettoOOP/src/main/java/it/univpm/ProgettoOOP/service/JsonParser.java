@@ -83,11 +83,9 @@ public class JsonParser {
 		    // lancia il metodo runfilter corrispondente
 			if(operator.equals("type") || operator.equals("Type")) {
 				if(operator.equals("type")) {
-<<<<<<< HEAD
+
 					throw new FilterIllegalArgumentException(" Type must be 'T' caps ");
-=======
-					throw new FilterNotFoundException("'Type' expected");
->>>>>>> branch 'master' of https://github.com/ChiaraAmalia/ProgettoOOP.git
+
 				}
 				type=(String) value;
 				if(!(value.equals("and"))&&!(value.equals("or"))) {
