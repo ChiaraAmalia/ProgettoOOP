@@ -33,7 +33,6 @@ import it.univpm.ProgettoOOP.util.stats.StatsHashtags;
  * @author Chiara Amalia Caporusso
  * @author Piero Campitelli
  * @see TweetService
- * @see TweetServiceImpl
  * @see JsonParser
  * @see StatsHashtags
  * 

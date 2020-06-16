@@ -27,7 +27,8 @@ public class Dimensions {
 	}
 
 	/**
-	 * @param l'altezza settata a un nuovo valore
+	 * @param height
+	 * l'altezza settata a un nuovo valore
 	 */
 	public void setHeight(long height) {
 		this.height = height;
@@ -41,7 +42,8 @@ public class Dimensions {
 	}
 
 	/**
-	 * @param la larghezza settata a un nuovo valore
+	 * @param width
+	 * la larghezza settata a un nuovo valore
 	 */
 	public void setWidth(long width) {
 		this.width = width;
@@ -55,7 +57,8 @@ public class Dimensions {
 	}
 
 	/**
-	 * @param l'adattamento dell'immagine settato a un nuovo valore
+	 * @param resize
+	 * l'adattamento dell'immagine settato a un nuovo valore
 	 */
 	public void setResize(String resize) {
 		this.resize = resize;

@@ -84,7 +84,7 @@ public class Tweet  extends ID {
 	}
 
 	/**
-	 * @param NewEnties 
+	 * @param newEnties 
 	 * le nuove entita' vengono aggiunte all'array entities
 	 */
 	public void setEntities(Entities newEntities) {

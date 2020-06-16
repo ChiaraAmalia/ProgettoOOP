@@ -41,7 +41,7 @@ public class Image extends ID {
 
 
 	/**
-	 * @return the type
+	 * @return il tipo dell'immagine
 	 */
 	public String getType() {
 		return type;
@@ -49,7 +49,8 @@ public class Image extends ID {
 
 
 	/**
-	 * @param type the type to set
+	 * @param type
+	 * il tipo della foto viene settato a un nuovo valore
 	 */
 	public void setType(String type) {
 		this.type = type;
@@ -57,7 +58,8 @@ public class Image extends ID {
 
 
 	/**
-	 * @return the size
+	 * @return size
+	 * le dimensioni dell'immagine
 	 */
 	public ArrayList<Dimensions> getSize() {
 		return size;
@@ -65,7 +67,8 @@ public class Image extends ID {
 
 
 	/**
-	 * @param size the size to set
+	 * @param newSize
+	 * le dimensioni delle immagini vengono settate a un nuovo valore
 	 */
 	public void setSize(Dimensions newSize) {
 		size.add(newSize);

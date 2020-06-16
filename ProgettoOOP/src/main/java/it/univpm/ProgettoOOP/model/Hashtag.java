@@ -22,7 +22,7 @@ public class Hashtag {
 	}
 
 	/**
-	 * @param testo 
+	 * @param text 
 	 * permette di modificare il testo dell'hashtag
 	 */
 	public void setText(String text) {
